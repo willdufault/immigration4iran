@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "deploy": "type nul > build/.nojekyll && gh-pages -d build -t true"
+  },
+  "devDependencies": {
+    "@iconify/svelte": "^3.1.0",
+    "@sveltejs/adapter-static": "^2.0.1",
+    "@sveltejs/kit": "^1.10.0",
+    "gh-pages": "^5.0.0",
+    "svelte": "^3.55.1",
+    "vite": "^4.1.4"
+  }
+}
