@@ -5,16 +5,19 @@
 		</div>
 		<div class={"nav-wrapper"}>
 			<div class={"nav-item"}>
-				<p>Legal <Icon icon="ph:caret-down" /></p>
+				<p>Legal</p>&nbsp;<Icon icon="ph:caret-down"/>
 			</div>
+			<HeaderSpacer/>
 			<div class={"nav-item"}>
-				<p>Social Services <Icon icon="ph:caret-down" /></p>
+				<p>Social Services</p>&nbsp;<Icon icon="ph:caret-down"/>
 			</div>
+			<HeaderSpacer/>
 			<div class={"nav-item"}>
-				<p>Community Building <Icon icon="ph:caret-down" /></p>
+				<p>Community Building</p>&nbsp;<Icon icon="ph:caret-down"/>
 			</div>
+			<HeaderSpacer/>
 			<div class={"nav-item"}>
-				<p>Language <Icon icon="ph:caret-down" /></p>
+				<p>Language</p>&nbsp;<Icon icon="ph:caret-down"/>
 			</div>
 		</div>
 	</div>
@@ -39,14 +42,16 @@
 	.nav-wrapper
 	{
 		display: flex;
-		gap: 5%;
 	}
 
 	.nav-item
 	{
 		display: flex;
+		align-items: center;
+		font-size: 20px;
 	}
 </style>
 <script>
 	import Icon from '@iconify/svelte';
+	import HeaderSpacer from '../header-spacer.svelte';
 </script>
