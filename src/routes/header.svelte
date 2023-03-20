@@ -5,19 +5,36 @@
 		</div>
 		<div class={"nav-wrapper"}>
 			<div class={"nav-item"}>
-				<p>Legal</p>&nbsp;<Icon icon="ph:caret-down"/>
+				<div class={"nav-title"}>
+					<p>Legal</p>&nbsp;<Icon icon="ph:caret-down"/>
+				</div>
+				<div class={"dropdown-wrapper"}>
+
+				</div>
 			</div>
-			<HeaderSpacer/>
 			<div class={"nav-item"}>
-				<p>Social Services</p>&nbsp;<Icon icon="ph:caret-down"/>
+				<div class={"nav-title"}>
+					<p>Social Services</p>&nbsp;<Icon icon="ph:caret-down"/>
+				</div>
+				<div class={"dropdown-wrapper"}>
+
+				</div>
 			</div>
-			<HeaderSpacer/>
 			<div class={"nav-item"}>
-				<p>Community Building</p>&nbsp;<Icon icon="ph:caret-down"/>
+				<div class={"nav-title"}>
+					<p>Community Building</p>&nbsp;<Icon icon="ph:caret-down"/>
+				</div>
+				<div class={"dropdown-wrapper"}>
+
+				</div>
 			</div>
-			<HeaderSpacer/>
 			<div class={"nav-item"}>
-				<p>Language</p>&nbsp;<Icon icon="ph:caret-down"/>
+				<div class={"nav-title"}>
+					<p>Language</p>&nbsp;<Icon icon="ph:caret-down"/>
+				</div>
+				<div class={"dropdown-wrapper"}>
+
+				</div>
 			</div>
 		</div>
 	</div>
@@ -32,26 +49,48 @@
 
 	.header-wrapper
 	{
-		border: 3px solid blue;
-		padding: 2vmin;
+		border: 3px solid var(--primary-color);
+		height: 8vmin;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
 
+	.logo-wrapper
+	{
+		font-size: 2vmax;
+		padding: 0 2vmin;
+	}
+
 	.nav-wrapper
 	{
 		display: flex;
+		font-size: 1.3vmax;
 	}
 
-	.nav-item
+	.nav-title
 	{
 		display: flex;
 		align-items: center;
-		font-size: 20px;
+		height: 8vmin;
+		padding: 0 2vmin;
+		border: 1px solid purple;
+	}
+
+	.dropdown-wrapper
+	{
+		position: absolute;
+		height: 100px;
+		width: 100%;
+		border: 2px solid green;
+		display: none;
+	}
+
+	.nav-title:hover
+	{
+		color: blue;
 	}
 </style>
 <script>
 	import Icon from '@iconify/svelte';
-	import HeaderSpacer from '../header-spacer.svelte';
 </script>

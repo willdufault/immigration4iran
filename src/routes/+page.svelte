@@ -6,7 +6,18 @@
 	<Header/>
 </main>
 <style>
+	*
+	{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
 
+	/* declare theme colors here */
+	:root
+	{
+		--primary-color: red;
+	}
 </style>
 <script>
 	import { base } from "$app/paths";
