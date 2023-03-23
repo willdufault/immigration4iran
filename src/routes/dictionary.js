@@ -5,7 +5,9 @@ const Languages = {
 };
 export class Dictionary {
     dict;
-    languages = Languages;
+    static languages = Languages;
+
+    static currentLanguage;
     constructor() {
         this.dict = new Map();
         for (let lang in Languages) {
@@ -22,8 +24,20 @@ export class Dictionary {
         this.dict.set(lang, text)
     }
 
-    getText(lang) {
+    getLangsText(lang) {
         return this.dict.get(lang);
+    }
+
+    getText() {
+        return this.dict.get(Dictionary.currentLanguage);
+    }
+
+    static get currentLanguage() {
+
+    }
+
+    static set currentLanguage(currentLanguage) {
+
     }
 
     /**
