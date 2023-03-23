@@ -25,3 +25,5 @@ console.log(component2.getText(langs.German));
 console.log(component2.getText(langs.Persian));
 
 
+
+

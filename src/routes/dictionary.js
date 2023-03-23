@@ -1,7 +1,7 @@
 const Languages = {
-    English: Symbol("English"),
-    German: Symbol("German"),
-    Persian: Symbol("Persian"),
+    English: "English",
+    German: "Deutsch",
+    Persian: "فارسی",
 };
 export class Dictionary {
     dict;

@@ -1,7 +1,7 @@
 <main>
 	<div class={"header-wrapper"}>
 		<div class={"logo-wrapper"}>
-			<p>Immigration4Iran</p>
+			<p>{title.getText()}</p>
 		</div>
 		<div class={"nav-wrapper"}>
 			<div class={"nav-item"}>
@@ -30,6 +30,9 @@
 			</div>
 			<div class={"nav-item"}>
 				<div class={"nav-title"}>
+					<Select options={[{"text":langs.English},{"text":langs.German},{"text":langs.Persian}]}
+							display_func={o => o.text}
+							bind:value={selected}/>
 					<p>Language</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
 				<div class={"dropdown-wrapper"}>
@@ -93,4 +96,10 @@
 </style>
 <script>
 	import Icon from '@iconify/svelte';
+	import Select from "./Select.svelte";
+	let selected;
+	import {Dictionary} from "./dictionary.js";
+	let langs = Dictionary.languages;
+	import {title} from "./headerText.js";
+	Dictionary.currentLanguage = langs.English;
 </script>
