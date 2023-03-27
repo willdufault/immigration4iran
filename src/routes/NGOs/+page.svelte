@@ -2,7 +2,7 @@
     <Header/>
     <p> {component.title.getText()}</p>
     <TextBlock>
-        <p slot="title"> {component.sample1title.getText()} </p>
+        <a slot="title" href="https://www.google.com/"> {component.sample1title.getText()} </a>
         <p slot="body"> {component.sample1body.getText()} </p>
     </TextBlock>
 
