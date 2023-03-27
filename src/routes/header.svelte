@@ -4,40 +4,77 @@
 			<p>{title.getText()}</p>
 		</div>
 		<div class={"nav-wrapper"}>
-			<div class={"nav-item"}>
+			<div class={"nav-item"} on:mouseover={() => legal_down = true} on:focus={{}} on:mouseleave={() => legal_down = false}>
 				<div class={"nav-title"}>
-					<a href="{base}/legal">{legal.getText()}</a> <Icon icon="ph:caret-down"/>
+					<p>{legal.getText()}</p> <Icon icon="ph:caret-down"/>
 				</div>
-				<div class={"dropdown-wrapper"}>
-
-				</div>
+				{#if legal_down}
+					<div class={"dropdown-wrapper"}>
+						<div class={"dropdown-item"}>
+							<p>thing 1</p>
+						</div>
+						<div class={"dropdown-item"}>
+							<p>thing 2</p>
+						</div>
+						<div class={"dropdown-item"}>
+							<p>thing 3</p>
+						</div>
+					</div>
+				{/if}
 			</div>
-			<div class={"nav-item"}>
+			<div class={"nav-item"} on:mouseover={() => social_down = true} on:focus={{}} on:mouseleave={() => social_down = false}>
 				<div class={"nav-title"}>
 					<p>Social Services</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
-				<div class={"dropdown-wrapper"}>
-
-				</div>
+				{#if social_down}
+					<div class={"dropdown-wrapper"}>
+						<div class={"dropdown-item"}>
+							<p>thing 1</p>
+						</div>
+						<div class={"dropdown-item"}>
+							<p>thing 2</p>
+						</div>
+						<div class={"dropdown-item"}>
+							<p>thing 3</p>
+						</div>
+					</div>
+				{/if}
 			</div>
-			<div class={"nav-item"}>
+			<div class={"nav-item"} on:mouseover={() => comm_down = true} on:focus={{}} on:mouseleave={() => comm_down = false}>
 				<div class={"nav-title"}>
 					<p>Community Building</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
-				<div class={"dropdown-wrapper"}>
-
-				</div>
+				{#if comm_down}
+					<div class={"dropdown-wrapper"}>
+						<div class={"dropdown-item"}>
+							<p>thing 1</p>
+						</div>
+						<div class={"dropdown-item"}>
+							<p>thing 2</p>
+						</div>
+						<div class={"dropdown-item"}>
+							<p>thing 3</p>
+						</div>
+					</div>
+				{/if}
 			</div>
-			<div class={"nav-item"}>
+			<div class={"nav-item"} on:mouseover={() => lang_down = true} on:focus={{}} on:mouseleave={() => lang_down = false}>
 				<div class={"nav-title"}>
-					<Select options={[{"text":langs.English},{"text":langs.German},{"text":langs.Persian}]}
-							display_func={o => o.text}
-							bind:value={selected} on:change="{(o) => Dictionary.setCurrentLanguage(o.text())}"/>
 					<p>Language</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
-				<div class={"dropdown-wrapper"}>
-
-				</div>
+				{#if lang_down}
+					<div class={"dropdown-wrapper"} style={"right: 0; left: auto; text-align: right;"}>
+						<div class={"dropdown-item"}>
+							<p>thing 1</p>
+						</div>
+						<div class={"dropdown-item"}>
+							<p>thing 2</p>
+						</div>
+						<div class={"dropdown-item"}>
+							<p>thing 3</p>
+						</div>
+					</div>
+				{/if}	
 			</div>
 		</div>
 	</div>
@@ -83,10 +120,14 @@
 	.dropdown-wrapper
 	{
 		position: absolute;
-		height: 100px;
-		width: 100%;
+		padding: 2vmin;
+		min-width: 15vw;
 		border: 2px solid green;
-		display: none;
+	}
+
+	.dropdown-item
+	{
+		
 	}
 
 	.nav-title:hover
@@ -97,11 +138,15 @@
 <script>
 	import { base } from "$app/paths";
 	import Icon from '@iconify/svelte';
-	import Select from "./Select.svelte";
-	let selected;
 	import {Dictionary} from "./dictionary.js";
-	let langs = Dictionary.languages;
 	import {title} from "./headerText.js";
 	import {legal} from "./headerText.js";
+	
+	let langs = Dictionary.languages;
 	Dictionary.currentLanguage = langs.English;
+
+	let legal_down = false;
+	let social_down = false;
+	let comm_down = false;
+	let lang_down = false;
 </script>
