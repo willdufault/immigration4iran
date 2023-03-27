@@ -2,8 +2,13 @@
 	<link rel="icon" href="./favicon.png" type="image/png" />
 	<title>Immigration4Iran</title>
 </svelte:head>
-<main>
+<main dir={cur_lang === Dictionary.languages.Persian ? "rtl" : "ltr"}>
 	<Header/>
+	<a href="{base}/test">test routing</a>
+	<TextBlock>
+		<p slot="body"> 2 </p>
+		<p slot="title"> This is the title of my block </p>
+	</TextBlock>
 </main>
 <style>
 	*
@@ -22,4 +27,7 @@
 <script>
 	import { base } from "$app/paths";
     import Header from "./header.svelte";
+	import TextBlock from "./textBlock.svelte";
+	import {Dictionary} from "./dictionary.js";
+	let cur_lang =  Dictionary.currentLanguage;
 </script>

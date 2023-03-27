@@ -6,6 +6,7 @@ const Languages = {
 export class Dictionary {
     dict;
     static languages = Languages;
+    defaultLanguage;
 
     static currentLanguage;
     constructor() {
@@ -21,7 +22,14 @@ export class Dictionary {
      * @param text the text being added
      */
     setText(lang, text) {
-        this.dict.set(lang, text)
+        this.dict.set(lang, text);
+        if (!this.defaultLanguage){
+            this.defaultLanguage = lang;
+        }
+    }
+
+    set defaultLanguage(lang){
+
     }
 
     getLangsText(lang) {
@@ -29,7 +37,13 @@ export class Dictionary {
     }
 
     getText() {
-        return this.dict.get(Dictionary.currentLanguage);
+        let text = this.dict.get(Dictionary.currentLanguage);
+        if (text) {
+            return text;
+        }
+        else {
+            return this.getLangsText(this.defaultLanguage);
+        }
     }
 
     static get currentLanguage() {
@@ -46,6 +60,10 @@ export class Dictionary {
      * the current languages that translations are available for
      */
     static get languages() {
+    }
+
+    static setCurrentLanguage(lang) {
+        Dictionary.currentLanguage = lang;
     }
 
 }

@@ -6,7 +6,7 @@
 		<div class={"nav-wrapper"}>
 			<div class={"nav-item"}>
 				<div class={"nav-title"}>
-					<p>Legal</p>&nbsp;<Icon icon="ph:caret-down"/>
+					<a href="{base}/legal">{legal.getText()}</a> <Icon icon="ph:caret-down"/>
 				</div>
 				<div class={"dropdown-wrapper"}>
 
@@ -32,7 +32,7 @@
 				<div class={"nav-title"}>
 					<Select options={[{"text":langs.English},{"text":langs.German},{"text":langs.Persian}]}
 							display_func={o => o.text}
-							bind:value={selected}/>
+							bind:value={selected} on:change="{(o) => Dictionary.setCurrentLanguage(o.text())}"/>
 					<p>Language</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
 				<div class={"dropdown-wrapper"}>
@@ -95,11 +95,13 @@
 	}
 </style>
 <script>
+	import { base } from "$app/paths";
 	import Icon from '@iconify/svelte';
 	import Select from "./Select.svelte";
 	let selected;
 	import {Dictionary} from "./dictionary.js";
 	let langs = Dictionary.languages;
 	import {title} from "./headerText.js";
+	import {legal} from "./headerText.js";
 	Dictionary.currentLanguage = langs.English;
 </script>

@@ -15,3 +15,6 @@ let persian = langs.Persian;
 title.setText(english, "Immigration4Iran");
 title.setText(german, "EinwanderungFürIran");
 title.setText(persian, "مهاجرت4ایران");
+
+legal.setText(english, "Legal");
+legal.setText(german, "Gesetzlich");
