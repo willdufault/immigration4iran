@@ -1,7 +1,11 @@
 <main>
     <Header/>
-    here
-    <Abc text="hi this is working"/>
+    <p> {component.title.getText()}</p>
+    <TextBlock>
+        <p slot="title"> {component.sample1title.getText()} </p>
+        <p slot="body"> {component.sample1body.getText()} </p>
+    </TextBlock>
+
 </main>
 
 <style>
@@ -15,8 +19,9 @@
 
 <script>
     import { base } from "$app/paths";
-    import Abc from "./abc.svelte";
     import Header from "../header.svelte";
     import TextBlock from "../textBlock.svelte";
     import {Dictionary} from "../dictionary.js";
+    import {title} from "./ngoText.js";
+    import * as component from "./ngoText.js";
 </script>

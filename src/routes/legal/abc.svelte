@@ -12,5 +12,5 @@
 </style>
 
 <script>
-    let text;
+    export let text;
 </script>

@@ -9,6 +9,7 @@
 		<p slot="body"> 2 </p>
 		<p slot="title"> This is the title of my block </p>
 	</TextBlock>
+	<a href="{base}/NGOs">NGOs</a>
 </main>
 <style>
 	*
@@ -30,4 +31,5 @@
 	import TextBlock from "./textBlock.svelte";
 	import {Dictionary} from "./dictionary.js";
 	let cur_lang =  Dictionary.currentLanguage;
+
 </script>
