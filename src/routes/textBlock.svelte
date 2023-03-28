@@ -22,6 +22,7 @@
             <slot name = "title"> Title </slot>
 <!--            <h1>{title_}</h1>-->
         </div>
+        <slot name="languages"> </slot>
         <slot name="body"> Text Body </slot>
 <!--        <p>{text_}</p>-->
     </div>
