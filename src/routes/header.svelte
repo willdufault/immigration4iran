@@ -89,7 +89,7 @@
 
 	.header-wrapper
 	{
-		border: 3px solid var(--primary-color);
+		border: 3px solid var(--primary_color);
 		height: 8vmin;
 		display: flex;
 		justify-content: space-between;
@@ -140,6 +140,7 @@
 <script>
 	import { base } from "$app/paths";
 	import Icon from '@iconify/svelte';
+    import { primary_color } from "../theme.js";
 	import {Dictionary} from "./dictionary.js";
 	import {title} from "./headerText.js";
 	import {legal} from "./headerText.js";

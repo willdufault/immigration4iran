@@ -1,0 +1,1 @@
+export let primary_color = "#ff0000";
