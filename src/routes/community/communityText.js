@@ -8,5 +8,5 @@ let persian = langs.Persian;
 
 export let title = new Dictionary();
 
-title.setText(english, "Legal Information");
-title.setText(german, "Rechtsinformation");
+title.setText(english, "Community Information");
+title.setText(german, "Community-Informationen");

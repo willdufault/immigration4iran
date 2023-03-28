@@ -17,5 +17,5 @@
     import Header from "../header.svelte";
     import TextBlock from "../textBlock.svelte";
     import {Dictionary} from "../dictionary.js";
-    import * as component from "./legalText.js";
+    import * as component from "./communityText.js";
 </script>
