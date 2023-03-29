@@ -104,8 +104,6 @@
 	.nav-item
 	{
 		position: relative;
-		background: green;
-		z-index: 2;
 	}
 
 	.nav-title
@@ -114,6 +112,9 @@
 		align-items: center;
 		height: 8vmin;
 		padding: 0 2vmin;
+		position: relative;
+		z-index: 2;
+		background: white;
 		justify-content: space-between;
 	}
 
@@ -123,7 +124,6 @@
 		min-width: 100%;
 		top: -120%;
 		transition: 0.5s ease-in-out;
-		z-index: -1;
 	}
 
 	.dropdown-item
