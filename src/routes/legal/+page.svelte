@@ -1,17 +1,44 @@
 <main>
     <PageWrapper>
         <Header/>
-        <p> {component.title.getText()}</p>
+        <div style="margin: 0 20%; display: flex; justify-content:space-evenly"><h1>{component.title.getText()}</h1><h1>|</h1><h1>The Asylum Roadmap</h1></div>
 
-        <div class="flip">
-            <div class="card-front">
-                <h1>Hello</h1>/
+        <div class="big-wrapper">
+            <div class="tile-wrapper">
+                <div class="tile-back" style="background:#3F7C85;">
+                    back
+                </div>
+                <div class="tile-front" style="background:#747E7E">
+                    front
+                </div>
             </div>
-            <div class="card-back">
-                <h1>Yeppers</h1>
+            <div class="tile-wrapper">
+                <div class="tile-back" style="background:#00CCBF">
+                    back
+                </div>
+                <div class="tile-front" style="background:#72F2EB">
+                    front
+                </div>
+            </div>
+            <div class="tile-wrapper">
+                <div class="tile-back" style="background:#3F7C85;">
+                    back
+                </div>
+                <div class="tile-front" style="background:#747E7E">
+                    front
+                </div>
+            </div>
+            <div class="tile-wrapper">
+                <div class="tile-back" style="background:#00CCBF">
+                    back
+                </div>
+                <div class="tile-front" style="background:#72F2EB">
+                    front
+                </div>
             </div>
         </div>
-        
+
+
 
 
     </PageWrapper>
@@ -24,30 +51,53 @@
         padding: 0;
         box-sizing: border-box;
     }
-    .flip 
+
+    .big-wrapper
     {
-        background-color: transparent;
-        width: 300px;
-        height: 200px;
-        border: 1px solid #f1f1f1;
+        display: flex;
+        justify-content: center;
     }
-    .card-front, .card-back
+
+    .tile-wrapper
+    {
+        position: relative;
+        height: 350px;
+        width: 250px;
+    }
+
+    .tile-front
     {
         position: absolute;
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: hotpink;
         height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
+        width: 100%;
+
     }
 
-
+    .tile-back
+    {
+        position: absolute;
+        background: lime;
+        height: 100%;
+        width: 100%;
+        
+    }
+    
+    .tile-front:hover
+    {
+        opacity: 0;
+        transition: opacity 0.1s;
+        
+    }
 </style>
 
 <script>
-    import { base } from "$app/paths";
-    import Header from "../header.svelte";
     import TextBlock from "../textBlock.svelte";
     import {Dictionary} from "../dictionary.js";
     import * as component from "./legalText.js";
     import PageWrapper from "../pageWrapper.svelte";
+    import Header from "../header.svelte";
 </script>
