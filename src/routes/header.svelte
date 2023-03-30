@@ -6,7 +6,7 @@
 		<div class="nav-wrapper">
 			<div class="nav-item" on:mouseover={() => toggleDropDown(legal_dropdown, true)} on:mouseleave={() => toggleDropDown(legal_dropdown, false)} on:focus={{}}>
 				<div class="nav-title">
-					<p>{legal.getText()}</p> <Icon icon="ph:caret-down"/>
+					<p>{legal.getText()}</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
 				<div bind:this={legal_dropdown} class="dropdown-wrapper">
 					<div class="dropdown-item">
@@ -81,7 +81,6 @@
 
 	.header-wrapper
 	{
-		height: 8vmin;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -91,27 +90,28 @@
 
 	.logo-wrapper
 	{
-		font-size: 2vmax;
-		padding: 0 2vmin;
+		font-size: 2em;
+		padding: 0 1%;
 	}
 
 	.nav-wrapper
 	{
 		display: flex;
-		font-size: 1.3vmax;
+		font-size: 1.3em;
 	}
 
 	.nav-item
 	{
 		position: relative;
+		display: flex;
 	}
 
 	.nav-title
 	{
+		position: relative;
 		display: flex;
 		align-items: center;
-		height: 8vmin;
-		padding: 0 2vmin;
+		padding: 25% 1vw;
 		position: relative;
 		z-index: 2;
 		background: white;
@@ -121,25 +121,27 @@
 	.dropdown-wrapper
 	{
 		position: absolute;
+		top: 100%;
 		min-width: 100%;
-		top: -120%;
-		transition: 0.5s ease-in-out;
+		border-radius: 0 0 4% 4%;
+		overflow: hidden;
 	}
 
 	.dropdown-item
 	{
-		padding: 1vmin;
+		padding: 1vh;
 		background: var(--color3);
+	}
+
+	.nav-title, .dropdown-item
+	{
+		cursor: pointer;
 	}
 
 	.nav-title:hover, .dropdown-item:hover
 	{
+		color: var(--color1);
 		background: var(--color4);
-	}
-
-	.nav-title:hover
-	{
-		color: blue;
 	}
 </style>
 <script>
@@ -159,6 +161,6 @@
 
 	function toggleDropDown(dropdown, status)
 	{
-		dropdown.style.top = status ? "100%" : "-120%";
+		dropdown.style.display = status ? "block" : "none";
 	}
 </script>
