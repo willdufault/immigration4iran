@@ -2,6 +2,7 @@
 	<link rel="icon" href="./favicon.png" type="image/png" />
 	<title>Immigration4Iran</title>
 </svelte:head>
+<<<<<<< Updated upstream
 <main dir={cur_lang === Dictionary.languages.Persian ? "rtl" : "ltr"}>
 	<PageWrapper>
 		<Header/>
@@ -12,6 +13,16 @@
 		</TextBlock>
 		<a href="{base}/NGOs">NGOs</a>
 	</PageWrapper>
+=======
+<main style="--color1: {color1}; --color2: {color2}; --color3: {color3}; --color4: {color4};" dir={cur_lang === Dictionary.languages.Persian ? "rtl" : "ltr"}>
+	<Header/>
+	<a href="{base}/legal">test routing</a>
+	<TextBlock>
+		<p slot="body"> 2 </p>
+		<p slot="title"> This is the title of my block </p>
+	</TextBlock>
+	<a href="{base}/NGOs">NGOs</a>
+>>>>>>> Stashed changes
 </main>
 <style>
 	*
