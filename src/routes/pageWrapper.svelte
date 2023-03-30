@@ -1,5 +1,5 @@
 <main style="--color1: {color1}; --color2: {color2}; --color3: {color3}; --color4: {color4};">
-
+    <slot></slot>
 </main>
 <style>
 	*
