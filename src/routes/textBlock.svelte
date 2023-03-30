@@ -1,10 +1,8 @@
 <script>
-	import Icon from '@iconify/svelte';
     import {Dictionary} from "./dictionary.js";
     let dict = new Dictionary();
     let title;
     let other;
-    export let src_;
 </script>
 
 <!--<main>-->
@@ -17,10 +15,8 @@
 <main>
     <div class="tile-wrapper">
         <div class="sub-wrapper">
-			<div class="ngo-icon">
-				<Icon icon="mdi:hammer-sickle"/>
-			</div>
-            <slot name = "title"> Title </slot>
+			<slot name="icon"></slot>
+            <slot name="title"> Title </slot>
         </div>
         <slot name="languages"> </slot>
         <slot name="body"> Text Body </slot>
@@ -60,17 +56,10 @@
     .sub-wrapper
     {
         display: flex;
-        /* justify-content: space-between; */
         align-items: center;
-    }
-
-	.ngo-icon Icon
-	{
-		width: 30%;
 	}
-
-    .sub-wrapper img
-    {
-        width: 20%;
-    }
+	slot[name=title]::slotted(*)
+	{
+		font-size: 10em;
+	}
 </style>
