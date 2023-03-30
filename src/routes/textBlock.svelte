@@ -24,6 +24,7 @@
         </div>
         <slot name="languages"> </slot>
         <slot name="body"> Text Body </slot>
+        <slot name="contact"> Contact </slot>
 <!--        <p>{text_}</p>-->
     </div>
 </main>

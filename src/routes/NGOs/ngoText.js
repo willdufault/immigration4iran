@@ -13,6 +13,10 @@ let french = "Français";
 let turkish = "Türkçe";
 let arabic = "عربي";
 
+export let contact = new Dictionary();
+contact.setText(english, "Contact:");
+contact.setText(german, "Kontact:")
+
 export let title = new Dictionary();
 
 title.setText(english, "NGO Information");
@@ -35,6 +39,8 @@ wu_body.setText(english, "Welcome United is a social and antiracism group that o
 wu_body.setText(german, "German description of NGO");
 export let wu_lang = new Dictionary();
 wu_lang.setText(english, german + ", " + english);
+export let wu_contact = new Dictionary();
+wu_contact.setText(english, "mail@welcome-united.org");
 
 export let jog_title = new Dictionary();
 jog_title.setText(english, "Youth without Borders");
@@ -46,6 +52,9 @@ jog_body.setText(english, "Youth without Borders is an organization for German r
 jog_body.setText(german, "German description of NGO");
 export let jog_lang = new Dictionary();
 jog_lang.setText(english, german);
+export let jog_contact = new Dictionary();
+jog_contact.setText(english, "info@b-umf.de");
+
 
 export let kar_title = new Dictionary();
 kar_title.setText(english, "The Caravan for the Right of Refugees and Migrants");
@@ -56,12 +65,16 @@ kar_body.setText(english, "The Caravan is a website which allows users to post a
 kar_body.setText(german, "German description of NGO");
 export let kar_lang = new Dictionary();
 kar_lang.setText(english, german + ", " + english + ", " + french + ", " + turkish + ", " + persian);
+export let kar_contact = new Dictionary();
+kar_contact.setText(english, "caravan@emdash.org");
 
 export let voice_title = new Dictionary();
 voice_title.setText(english, "The VOICE Refugee Forum Germany");
 export let voice_body = new Dictionary();
 voice_body.setText(english, "The VOICE is a forum for refugees, where users can post about events, news, and other community activities.");
 voice_body.setText(german, "German description of NGO");
+export let voice_contact = new Dictionary();
+voice_contact.setText(english, "thevoicerefugeeforum@gmx.de");
 
 
 export let pa_title = new Dictionary();
@@ -73,6 +86,8 @@ pa_body.setText(english, "For human rights and refugee protection in Europe (wit
 pa_body.setText(german, "German description of NGO");
 export let pa_lang = new Dictionary();
 pa_lang.setText(english, german + ", " + english);
+export let pa_contact = new Dictionary();
+pa_contact.setText(english, "proasyl@proasyl.de");
 
 export let weu_title = new Dictionary();
 weu_title.setText(english, "Welcome to Europe (w2eu.info)");
@@ -83,6 +98,8 @@ weu_body.setText(english, "Welcome to Europe gives migrants and refugees informa
 weu_body.setText(german, "German description of NGO");
 export let weu_lang = new Dictionary();
 weu_lang.setText(english, arabic + ", " + english + ", " + french + ", " + persian);
+export let weu_contact = new Dictionary();
+weu_contact.setText(english, "contact@w2eu.info");
 
 export let tdf_title = new Dictionary();
 tdf_title.setText(english, "Terre des Femmes");
@@ -92,6 +109,8 @@ tdf_body.setText(english, "Terre des Femmes is an organization focused on womens
 tdf_body.setText(german, "German description of NGO");
 export let tdf_lang = new Dictionary();
 tdf_lang.setText(english, german);
+export let tdf_contact = new Dictionary();
+tdf_contact.setText(english, "info@frauenrechte.de");
 
 export let mk_title = new Dictionary();
 mk_title.setText(english, "Medibüro Kiel");
@@ -101,3 +120,17 @@ mk_body.setText(english, "Medibüro Kiel helps undocumented migrants and refugee
 mk_body.setText(german, "German description of NGO");
 export let mk_lang = new Dictionary();
 mk_lang.setText(english, german);
+export let mk_contact = new Dictionary();
+mk_contact.setText(english, "info@medibuero-kiel.de");
+
+export let ussa_title = new Dictionary();
+mk_title.setText(english, "Union der Syrischen Studenten und Akademiker");
+export let ussa_body = new Dictionary();
+mk_body.setText(english, "This is an organization of students with Syrian descent, with a focus of helping Syrian refugees. \
+                            USSA also offers consultation in Arabic for refugees. Their parent organization: \
+                            Verband Deutsch-Syrischer Hilfsvereine e.V. also offers many programs to support Syrians in Germany.");
+mk_body.setText(german, "German description of NGO");
+export let ussa_lang = new Dictionary();
+mk_lang.setText(english, arabic + ", " + german);
+export let ussa_contact = new Dictionary();
+mk_contact.setText(english, "info@ussa-syria.org");

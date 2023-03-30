@@ -1,50 +1,65 @@
 <main>
-    <Header/>
-    <p> {component.title.getText()}</p>
-    <!--<TextBlock>
-        <a slot="title" href="https://www.google.com/" target="_blank" rel="noreferrer"> {component.sample1title.getText()} </a>
-        <p slot="body"> {component.sample1body.getText()} </p>
-    </TextBlock>-->
-    <TextBlock>
-        <a slot="title" href="https://www.welcome-united.org/" target="_blank" rel="noreferrer"> {component.wu_title.getText()} </a>
-        <p slot="languages"> {component.available_langs.getText()} {component.wu_lang.getText()} </p>
-        <p slot="body"> {component.wu_body.getText()} </p>
-    </TextBlock>
-    <TextBlock>
-        <a slot="title" href="http://jogspace.net/" target="_blank" rel="noreferrer"> {component.jog_title.getText()} </a>
-        <p slot="languages"> {component.available_langs.getText()} {component.jog_lang.getText()} </p>
-        <p slot="body"> {component.jog_body.getText()} </p>
-    </TextBlock>
-    <TextBlock>
-        <a slot="title" href="http://thecaravan.org/" target="_blank" rel="noreferrer"> {component.kar_title.getText()} </a>
-        <p slot="languages"> {component.available_langs.getText()} {component.kar_lang.getText()} </p>
-        <p slot="body"> {component.kar_body.getText()} </p>
-    </TextBlock>
-    <TextBlock>
-        <a slot="title" href="http://www.thevoiceforum.org/" target="_blank" rel="noreferrer"> {component.voice_title.getText()} </a>
-        <p slot="body"> {component.voice_body.getText()} </p>
-    </TextBlock>
-    <TextBlock>
-        <a slot="title" href="https://www.proasyl.de/en/" target="_blank" rel="noreferrer"> {component.pa_title.getText()} </a>
-        <p slot="languages"> {component.available_langs.getText()} {component.pa_lang.getText()} </p>
-        <p slot="body"> {component.pa_body.getText()} </p>
-    </TextBlock>
-    <TextBlock>
-        <a slot="title" href="https://w2eu.info/" target="_blank" rel="noreferrer"> {component.weu_title.getText()} </a>
-        <p slot="languages"> {component.available_langs.getText()} {component.weu_lang.getText()} </p>
-        <p slot="body"> {component.weu_body.getText()} </p>
-    </TextBlock>
-    <TextBlock>
-        <a slot="title" href="https://www.frauenrechte.de/" target="_blank" rel="noreferrer"> {component.tdf_title.getText()} </a>
-        <p slot="languages"> {component.available_langs.getText()} {component.tdf_lang.getText()} </p>
-        <p slot="body"> {component.tdf_body.getText()} </p>
-    </TextBlock>
-    <TextBlock>
-        <a slot="title" href="https://www.medibuero-kiel.de/" target="_blank" rel="noreferrer"> {component.mk_title.getText()} </a>
-        <p slot="languages"> {component.available_langs.getText()} {component.mk_lang.getText()} </p>
-        <p slot="body"> {component.mk_body.getText()} </p>
-    </TextBlock>
-
+    <PageWrapper>
+        <Header/>
+        <p> {component.title.getText()}</p>
+        <!--<TextBlock>
+            <a slot="title" href="https://www.google.com/" target="_blank" rel="noreferrer"> {component.sample1title.getText()} </a>
+            <p slot="body"> {component.sample1body.getText()} </p>
+        </TextBlock>-->
+        <TextBlock>
+            <a slot="title" href="https://www.welcome-united.org/" target="_blank" rel="noreferrer"> {component.wu_title.getText()} </a>
+            <p slot="languages"> {component.available_langs.getText()} {component.wu_lang.getText()} </p>
+            <p slot="body"> {component.wu_body.getText()} </p>
+            <a slot="contact" href="mailto:{component.wu_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.wu_contact.getText()} </a>
+        </TextBlock>
+        <TextBlock>
+            <a slot="title" href="http://jogspace.net/" target="_blank" rel="noreferrer"> {component.jog_title.getText()} </a>
+            <p slot="languages"> {component.available_langs.getText()} {component.jog_lang.getText()} </p>
+            <p slot="body"> {component.jog_body.getText()} </p>
+            <a slot="contact" href="mailto:{component.jog_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.jog_contact.getText()} </a>
+        </TextBlock>
+        <TextBlock>
+            <a slot="title" href="http://thecaravan.org/" target="_blank" rel="noreferrer"> {component.kar_title.getText()} </a>
+            <p slot="languages"> {component.available_langs.getText()} {component.kar_lang.getText()} </p>
+            <p slot="body"> {component.kar_body.getText()} </p>
+            <a slot="contact" href="mailto:{component.kar_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.kar_contact.getText()} </a>
+        </TextBlock>
+        <TextBlock>
+            <a slot="title" href="http://www.thevoiceforum.org/" target="_blank" rel="noreferrer"> {component.voice_title.getText()} </a>
+            <p slot="body"> {component.voice_body.getText()} </p>
+            <a slot="contact" href="mailto:{component.voice_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.voice_contact.getText()} </a>
+        </TextBlock>
+        <TextBlock>
+            <a slot="title" href="https://www.proasyl.de/en/" target="_blank" rel="noreferrer"> {component.pa_title.getText()} </a>
+            <p slot="languages"> {component.available_langs.getText()} {component.pa_lang.getText()} </p>
+            <p slot="body"> {component.pa_body.getText()} </p>
+            <a slot="contact" href="mailto:{component.pa_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.pa_contact.getText()} </a>
+        </TextBlock>
+        <TextBlock>
+            <a slot="title" href="https://w2eu.info/" target="_blank" rel="noreferrer"> {component.weu_title.getText()} </a>
+            <p slot="languages"> {component.available_langs.getText()} {component.weu_lang.getText()} </p>
+            <p slot="body"> {component.weu_body.getText()} </p>
+            <a slot="contact" href="mailto:{component.weu_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.weu_contact.getText()} </a>
+        </TextBlock>
+        <TextBlock>
+            <a slot="title" href="https://www.frauenrechte.de/" target="_blank" rel="noreferrer"> {component.tdf_title.getText()} </a>
+            <p slot="languages"> {component.available_langs.getText()} {component.tdf_lang.getText()} </p>
+            <p slot="body"> {component.tdf_body.getText()} </p>
+            <a slot="contact" href="mailto:{component.tdf_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.tdf_contact.getText()} </a>
+        </TextBlock>
+        <TextBlock>
+            <a slot="title" href="https://www.medibuero-kiel.de/" target="_blank" rel="noreferrer"> {component.mk_title.getText()} </a>
+            <p slot="languages"> {component.available_langs.getText()} {component.mk_lang.getText()} </p>
+            <p slot="body"> {component.mk_body.getText()} </p>
+            <a slot="contact" href="mailto:{component.mk_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.mk_contact.getText()} </a>
+        </TextBlock>
+        <TextBlock>
+            <a slot="title" href="https://verband-dsh.de/ussa/" target="_blank" rel="noreferrer"> {component.ussa_title.getText()} </a>
+            <p slot="languages"> {component.available_langs.getText()} {component.ussa_lang.getText()} </p>
+            <p slot="body"> {component.ussa_body.getText()} </p>
+            <a slot="contact" href="mailto:{component.ussa_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.ussa_contact.getText()} </a>
+        </TextBlock>
+    </PageWrapper>
 </main>
 
 <style>
@@ -63,4 +78,5 @@
     import {Dictionary} from "../dictionary.js";
     import {title} from "./ngoText.js";
     import * as component from "./ngoText.js";
+    import PageWrapper from "../pageWrapper.svelte";
 </script>
