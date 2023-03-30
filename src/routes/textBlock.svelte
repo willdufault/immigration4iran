@@ -20,12 +20,10 @@
                 <img src={src_} alt="test image"/>
             {/if}
             <slot name = "title"> Title </slot>
-<!--            <h1>{title_}</h1>-->
         </div>
         <slot name="languages"> </slot>
         <slot name="body"> Text Body </slot>
-        <slot name="contact"> Contact </slot>
-<!--        <p>{text_}</p>-->
+        <slot name="contact"> </slot>
     </div>
 </main>
 
@@ -39,18 +37,27 @@
 
     .tile-wrapper
     {
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
+		margin: 5%;
+		background: var(--color3);
+		border-radius: 0.2em;
         display: flex;
         padding: 2%;
         justify-content: space-between;
         width: fit-content;
         flex-direction: column;
-
+		box-shadow: 0 0 0.5em #444;
+		transition: 0.3s ease-in-out;
     }
+
+	.tile-wrapper:hover
+	{
+		box-shadow: 0 0 1.5em #666;
+		transform: scale(1.02)
+	}
 
     .sub-wrapper
     {
-        border: 2px dotted red;
         display: flex;
         justify-content: space-between;
         align-items: center;

@@ -2,7 +2,6 @@
 	<link rel="icon" href="./favicon.png" type="image/png" />
 	<title>Immigration4Iran</title>
 </svelte:head>
-<<<<<<< Updated upstream
 <main dir={cur_lang === Dictionary.languages.Persian ? "rtl" : "ltr"}>
 	<PageWrapper>
 		<Header/>
@@ -13,16 +12,15 @@
 		</TextBlock>
 		<a href="{base}/NGOs">NGOs</a>
 	</PageWrapper>
-=======
-<main style="--color1: {color1}; --color2: {color2}; --color3: {color3}; --color4: {color4};" dir={cur_lang === Dictionary.languages.Persian ? "rtl" : "ltr"}>
-	<Header/>
-	<a href="{base}/legal">test routing</a>
-	<TextBlock>
-		<p slot="body"> 2 </p>
-		<p slot="title"> This is the title of my block </p>
-	</TextBlock>
-	<a href="{base}/NGOs">NGOs</a>
->>>>>>> Stashed changes
+	<br><br>
+	<div class="tile-wrapper">
+		<div class="tile-back">
+			back
+		</div>
+		<div class="tile-front">
+			front
+		</div>
+	</div>
 </main>
 <style>
 	*
@@ -30,6 +28,34 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
+	}
+
+	.tile-wrapper
+	{
+		position: relative;
+		height: 100px;
+		width: 100px;
+	}
+
+	.tile-front
+	{
+		position: absolute;
+		background: hotpink;
+		height: 100%;
+		width: 100%;
+	}
+
+	.tile-back
+	{
+		position: absolute;
+		background: lime;
+		height: 100%;
+		width: 100%;
+	}
+	
+	.tile-front:hover
+	{
+		display: none;
 	}
 </style>
 <script>

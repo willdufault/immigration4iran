@@ -124,7 +124,7 @@
 		top: 100%;
 		display: none;
 		min-width: 100%;
-		border-radius: 0 0 4% 4%;
+		border-radius: 0 0 0.2em 0.2em;
 		overflow: hidden;
 	}
 
