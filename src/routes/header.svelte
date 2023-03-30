@@ -164,4 +164,10 @@
 	{
 		dropdown.style.display = status ? "block" : "none";
 	}
+
+	function changeLanguage(language)
+	{
+		Dictionary.currentLanguage = language;
+		//refresh somehow
+	}
 </script>
