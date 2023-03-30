@@ -85,7 +85,6 @@
 		justify-content: space-between;
 		align-items: center;
 		background: var(--color3);
-		z-index: 2;
 	}
 
 	.logo-wrapper
@@ -126,6 +125,7 @@
 		min-width: 100%;
 		border-radius: 0 0 0.2em 0.2em;
 		overflow: hidden;
+		z-index: 1;
 	}
 
 	.dropdown-item

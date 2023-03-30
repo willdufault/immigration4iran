@@ -30,14 +30,14 @@
 		box-sizing: border-box;
 	}
 
-	.tile-wrapper
+	div.tile-wrapper
 	{
 		position: relative;
 		height: 100px;
 		width: 100px;
 	}
 
-	.tile-front
+	div.tile-front
 	{
 		position: absolute;
 		background: hotpink;
@@ -64,7 +64,6 @@
 	import TextBlock from "./textBlock.svelte";
 	import {Dictionary} from "./dictionary.js";
 	import PageWrapper from "./pageWrapper.svelte"
-	import { color1, color2, color3, color4 } from "../theme";
 
 	let cur_lang =  Dictionary.currentLanguage;
 

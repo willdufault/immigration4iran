@@ -1,4 +1,5 @@
 <script>
+	import Icon from '@iconify/svelte';
     import {Dictionary} from "./dictionary.js";
     let dict = new Dictionary();
     let title;
@@ -16,9 +17,9 @@
 <main>
     <div class="tile-wrapper">
         <div class="sub-wrapper">
-            {#if src_}
-                <img src={src_} alt="test image"/>
-            {/if}
+			<div class="ngo-icon">
+				<Icon icon="mdi:hammer-sickle"/>
+			</div>
             <slot name = "title"> Title </slot>
         </div>
         <slot name="languages"> </slot>
@@ -59,9 +60,14 @@
     .sub-wrapper
     {
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         align-items: center;
     }
+
+	.ngo-icon Icon
+	{
+		width: 30%;
+	}
 
     .sub-wrapper img
     {
