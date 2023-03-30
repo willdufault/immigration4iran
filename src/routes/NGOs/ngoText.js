@@ -11,6 +11,7 @@ available_langs.setText(english, "Available in: ");
 
 let french = "Français";
 let turkish = "Türkçe";
+let arabic = "عربي";
 
 export let title = new Dictionary();
 
@@ -72,3 +73,31 @@ pa_body.setText(english, "For human rights and refugee protection in Europe (wit
 pa_body.setText(german, "German description of NGO");
 export let pa_lang = new Dictionary();
 pa_lang.setText(english, german + ", " + english);
+
+export let weu_title = new Dictionary();
+weu_title.setText(english, "Welcome to Europe (w2eu.info)");
+export let weu_body = new Dictionary();
+weu_body.setText(english, "Welcome to Europe gives migrants and refugees information about coming to and living in Europe. \
+                            On the website there are a lot of helpful resources for refugees coming to Germany, \
+                            including information about the legal processes and available social services.");
+weu_body.setText(german, "German description of NGO");
+export let weu_lang = new Dictionary();
+weu_lang.setText(english, arabic + ", " + english + ", " + french + ", " + persian);
+
+export let tdf_title = new Dictionary();
+tdf_title.setText(english, "Terre des Femmes");
+export let tdf_body = new Dictionary();
+tdf_body.setText(english, "Terre des Femmes is an organization focused on womens’ rights. \
+                            Their website includes a newsletter, recent campaigns, and ways to get involved.");
+tdf_body.setText(german, "German description of NGO");
+export let tdf_lang = new Dictionary();
+tdf_lang.setText(english, german);
+
+export let mk_title = new Dictionary();
+mk_title.setText(english, "Medibüro Kiel");
+export let mk_body = new Dictionary();
+mk_body.setText(english, "Medibüro Kiel helps undocumented migrants and refugees seek medical help. \
+                            They offer anonymous and free access to health services, as well as allowing for opportunities to volunteer and participate.");
+mk_body.setText(german, "German description of NGO");
+export let mk_lang = new Dictionary();
+mk_lang.setText(english, german);
