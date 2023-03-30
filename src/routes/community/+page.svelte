@@ -1,6 +1,8 @@
 <main>
-    <Header/>
-    <p> {component.title.getText()}</p>
+    <PageWrapper>
+        <Header/>
+        <p> {component.title.getText()}</p>
+    </PageWrapper>
 </main>
 
 <style>
@@ -18,4 +20,5 @@
     import TextBlock from "../textBlock.svelte";
     import {Dictionary} from "../dictionary.js";
     import * as component from "./communityText.js";
+    import PageWrapper from "../pageWrapper.svelte";
 </script>
