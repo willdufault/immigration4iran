@@ -111,7 +111,7 @@
 		position: relative;
 		display: flex;
 		align-items: center;
-		padding: 25% 1vw;
+		padding: 8% 1vw;
 		position: relative;
 		z-index: 2;
 		background: white;
@@ -122,6 +122,7 @@
 	{
 		position: absolute;
 		top: 100%;
+		display: none;
 		min-width: 100%;
 		border-radius: 0 0 4% 4%;
 		overflow: hidden;
