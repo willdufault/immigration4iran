@@ -12,6 +12,8 @@ available_langs.setText(english, "Available in: ");
 let french = "Français";
 let turkish = "Türkçe";
 let arabic = "عربي";
+let russian = "русский";
+let ukrainian = "українська";
 
 export let contact = new Dictionary();
 contact.setText(english, "Contact:");
@@ -124,13 +126,36 @@ export let mk_contact = new Dictionary();
 mk_contact.setText(english, "info@medibuero-kiel.de");
 
 export let ussa_title = new Dictionary();
-mk_title.setText(english, "Union der Syrischen Studenten und Akademiker");
+ussa_title.setText(english, "Union der Syrischen Studenten und Akademiker");
 export let ussa_body = new Dictionary();
-mk_body.setText(english, "This is an organization of students with Syrian descent, with a focus of helping Syrian refugees. \
+ussa_body.setText(english, "This is an organization of students with Syrian descent, with a focus of helping Syrian refugees. \
                             USSA also offers consultation in Arabic for refugees. Their parent organization: \
                             Verband Deutsch-Syrischer Hilfsvereine e.V. also offers many programs to support Syrians in Germany.");
-mk_body.setText(german, "German description of NGO");
+ussa_body.setText(german, "German description of NGO");
 export let ussa_lang = new Dictionary();
-mk_lang.setText(english, arabic + ", " + german);
+ussa_lang.setText(english, arabic + ", " + german);
 export let ussa_contact = new Dictionary();
-mk_contact.setText(english, "info@ussa-syria.org");
+ussa_contact.setText(english, "info@ussa-syria.org");
+
+export let ufu_title = new Dictionary();
+ufu_title.setText(english, "United for Ukraine");
+export let ufu_body = new Dictionary();
+ufu_body.setText(english, "United for Ukraine offers a wide range of information for those coming to European countries, \
+                            focusing on asylum seekers from Ukraine. There are useful resources for all refugees, including legal and social support.");
+ufu_body.setText(german, "German description of NGO");
+export let ufu_lang = new Dictionary();
+ufu_lang.setText(english, english + ", " + russian + ", " + ukrainian);
+export let ufu_contact = new Dictionary();
+ufu_contact.setText(english, "info@unitedforukraine.org");
+
+export let ifu_title = new Dictionary();
+ifu_title.setText(english, "Immigration4Ukraine");
+export let ifu_body = new Dictionary();
+ifu_body.setText(english, "Immigration4Ukraine is a website created by UPJ Pro Bono Rechtsberatung, \
+                            made to provide information for Ukrainian refugees in Germany. \
+                            Much of the information on the website could be helpful to refugees from any country.");
+ufu_body.setText(german, "German description of NGO");
+export let ifu_lang = new Dictionary();
+ifu_lang.setText(english, english + ", " + german + ", " + russian + ", " + ukrainian);
+export let ifu_contact = new Dictionary();
+ifu_contact.setText(english, "immigration4ukraine@upj.de");

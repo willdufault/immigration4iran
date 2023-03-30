@@ -30,7 +30,7 @@
             <a slot="contact" href="mailto:{component.voice_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.voice_contact.getText()} </a>
         </TextBlock>
         <TextBlock>
-            <a slot="title" href="https://www.proasyl.de/en/" target="_blank" rel="noreferrer"> {component.pa_title.getText()} </a>
+            <a slot="title" href="https://www.proasyl.de" target="_blank" rel="noreferrer"> {component.pa_title.getText()} </a>
             <p slot="languages"> {component.available_langs.getText()} {component.pa_lang.getText()} </p>
             <p slot="body"> {component.pa_body.getText()} </p>
             <a slot="contact" href="mailto:{component.pa_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.pa_contact.getText()} </a>
@@ -58,6 +58,18 @@
             <p slot="languages"> {component.available_langs.getText()} {component.ussa_lang.getText()} </p>
             <p slot="body"> {component.ussa_body.getText()} </p>
             <a slot="contact" href="mailto:{component.ussa_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.ussa_contact.getText()} </a>
+        </TextBlock>
+        <TextBlock>
+            <a slot="title" href="https://www.unitedforukraine.org" target="_blank" rel="noreferrer"> {component.ufu_title.getText()} </a>
+            <p slot="languages"> {component.available_langs.getText()} {component.ufu_lang.getText()} </p>
+            <p slot="body"> {component.ufu_body.getText()} </p>
+            <a slot="contact" href="mailto:{component.ufu_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.ufu_contact.getText()} </a>
+        </TextBlock>
+        <TextBlock>
+            <a slot="title" href="https://immigration4ukraine.eu/" target="_blank" rel="noreferrer"> {component.ifu_title.getText()} </a>
+            <p slot="languages"> {component.available_langs.getText()} {component.ifu_lang.getText()} </p>
+            <p slot="body"> {component.ifu_body.getText()} </p>
+            <a slot="contact" href="mailto:{component.ifu_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.ifu_contact.getText()} </a>
         </TextBlock>
     </PageWrapper>
 </main>
