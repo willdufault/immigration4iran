@@ -15,10 +15,16 @@
 <main>
     <div class="tile-wrapper">
         <div class="sub-wrapper">
-			<slot name="icon"></slot>
-            <slot name="title"> Title </slot>
+			<div class="icon-wrapper">
+				<slot name="icon"></slot>
+			</div>
+			<div class="title-wrapper">
+				<slot name="title"> Title </slot>
+			</div>
         </div>
-        <slot  name="languages"> </slot>
+		<div class="languages-wrapper">
+			<slot name="languages"> </slot>
+		</div>
         <slot name="body"> Text Body </slot>
         <slot name="contact"> </slot>
     </div>
@@ -37,7 +43,7 @@
         /* border: 2px solid blue; */
 		margin: 5%;
 		background: var(--color3);
-		border-radius: 0.2em;
+		border-radius: 0.2rem;
         display: flex;
         padding: 2%;
         justify-content: space-between;
@@ -59,8 +65,18 @@
         align-items: center;
 	}
 
-	.tile-wrapper :global(p)
+	.icon-wrapper :global(*)
 	{
-		font-size: 100px;
+		font-size: 10rem;
+	}
+
+	.title-wrapper :global(*)
+	{
+		font-size: 3rem;
+	}
+
+	.languages-wrapper :global(*)
+	{
+		font-size: 2rem;
 	}
 </style>

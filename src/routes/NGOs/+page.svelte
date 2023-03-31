@@ -7,7 +7,7 @@
             <p slot="body"> {component.sample1body.getText()} </p>
         </TextBlock>-->
         <TextBlock>
-			<Icon slot="icon" icon="memory:pickaxe" width="4em"/>
+			<Icon slot="icon" icon="memory:pickaxe"/>
             <a slot="title" href="https://www.welcome-united.org/" target="_blank" rel="noreferrer"> {component.wu_title.getText()} </a>
             <p slot="languages"> {component.available_langs.getText()} {component.wu_lang.getText()} </p>
             <p slot="body"> {component.wu_body.getText()} </p>

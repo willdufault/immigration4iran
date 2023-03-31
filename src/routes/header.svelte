@@ -89,14 +89,14 @@
 
 	.logo-wrapper
 	{
-		font-size: 2em;
+		font-size: 2rem;
 		padding: 0 1%;
 	}
 
 	.nav-wrapper
 	{
 		display: flex;
-		font-size: 1.3em;
+		font-size: 1.3rem;
 	}
 
 	.nav-item
@@ -122,7 +122,7 @@
 		position: absolute;
 		top: 100%;
 		min-width: 100%;
-		border-radius: 0 0 0.2em 0.2em;
+		border-radius: 0 0 0.2em 0.2rem;
 		overflow: hidden;
 		z-index: 1;
 		transform-origin: top;
