@@ -113,7 +113,7 @@
 		padding: 8% 1vw;
 		position: relative;
 		z-index: 2;
-		background: white;
+		background: var(--color3);
 		justify-content: space-between;
 	}
 
