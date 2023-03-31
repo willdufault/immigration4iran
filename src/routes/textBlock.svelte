@@ -59,7 +59,7 @@
         align-items: center;
 	}
 
-	.sub-wrapper *
+	slot :global(*)
 	{
 		font-size: 100px;
 	}
