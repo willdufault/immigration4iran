@@ -18,7 +18,7 @@
 			<slot name="icon"></slot>
             <slot name="title"> Title </slot>
         </div>
-        <slot name="languages"> </slot>
+        <slot  name="languages"> </slot>
         <slot name="body"> Text Body </slot>
         <slot name="contact"> </slot>
     </div>
@@ -59,7 +59,7 @@
         align-items: center;
 	}
 
-	slot :global(*)
+	.tile-wrapper :global(p)
 	{
 		font-size: 100px;
 	}
