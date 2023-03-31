@@ -1,11 +1,11 @@
 <main>
 	<div class="header-wrapper">
-		<div class="logo-wrapper">
-			<p>{title.getText()}</p>
+		<div class="logo-wrapper" >
+			<p on:click={() => openHome()} on:keypress={{}}>{title.getText()}</p>
 		</div>
 		<div class="nav-wrapper">
 			<div class="nav-item" on:mouseover={() => toggleDropDown(legal_dropdown, true)} on:mouseleave={() => toggleDropDown(legal_dropdown, false)} on:focus={{}}>
-				<div class="nav-title">
+				<div class="nav-title" on:click={() => openLegal()} on:keypress={{}}>
 					<p>{legal.getText()}</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
 				<div bind:this={legal_dropdown} class="dropdown-wrapper">
@@ -21,7 +21,7 @@
 				</div>
 			</div>
 			<div class="nav-item" on:mouseover={() => toggleDropDown(social_dropdown, true)} on:mouseleave={() => toggleDropDown(social_dropdown, false)} on:focus={{}}>
-				<div class="nav-title">
+				<div class="nav-title" on:click={() => openSocial()} on:keypress={{}}>
 					<p>Social Services</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
 				<div bind:this={social_dropdown} class="dropdown-wrapper">
@@ -37,7 +37,7 @@
 				</div>
 			</div>
 			<div class="nav-item" on:mouseover={() => toggleDropDown(comm_dropdown, true)} on:mouseleave={() => toggleDropDown(comm_dropdown, false)} on:focus={{}}>
-				<div class="nav-title">
+				<div class="nav-title" on:click={() => openComm()} on:keypress={{}}>
 					<p>Community Building</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
 				<div bind:this={comm_dropdown} class="dropdown-wrapper">
@@ -121,20 +121,23 @@
 	{
 		position: absolute;
 		top: 100%;
-		display: none;
 		min-width: 100%;
 		border-radius: 0 0 0.2em 0.2em;
 		overflow: hidden;
 		z-index: 1;
+		transform-origin: top;
+		transform: scaleY(0);
+		/* uncomment for animated menus */
+		/* transition: 0.3s ease-in-out; */
 	}
-
+/*  */
 	.dropdown-item
 	{
 		padding: 1vh;
 		background: var(--color3);
 	}
 
-	.nav-title, .dropdown-item
+	.nav-title, .dropdown-item, .logo-wrapper p
 	{
 		cursor: pointer;
 	}
@@ -162,12 +165,32 @@
 
 	function toggleDropDown(dropdown, status)
 	{
-		dropdown.style.display = status ? "block" : "none";
+		dropdown.style.transform = status ? "scaleY(1)" : "scaleY(0)";
 	}
 
 	function changeLanguage(language)
 	{
 		Dictionary.currentLanguage = language;
 		//refresh somehow
+	}
+
+	function openHome()
+	{
+		window.open(`${base}/`, "_self");
+	}
+
+	function openLegal()
+	{
+		window.open(`${base}/legal`, "_self");
+	}
+
+	function openSocial()
+	{
+		window.open(`${base}/social`, "_self");
+	}
+
+	function openComm()
+	{
+		window.open(`${base}/community`, "_self");
 	}
 </script>

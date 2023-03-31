@@ -58,8 +58,9 @@
         display: flex;
         align-items: center;
 	}
-	slot[name=title]::slotted(*)
+
+	.sub-wrapper *
 	{
-		font-size: 10em;
+		font-size: 100px;
 	}
 </style>
