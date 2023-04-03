@@ -12,15 +12,6 @@
 		</TextBlock>
 		<a href="{base}/NGOs">NGOs</a>
 	</PageWrapper>
-	<br><br>
-	<div class="tile-wrapper">
-		<div class="tile-back">
-			back
-		</div>
-		<div class="tile-front">
-			front
-		</div>
-	</div>
 </main>
 <style>
 	*
@@ -29,34 +20,6 @@
 		padding: 0;
 		box-sizing: border-box;
 	}
-
-	div.tile-wrapper
-	{
-		position: relative;
-		height: 100px;
-		width: 100px;
-	}
-
-	div.tile-front
-	{
-		position: absolute;
-		background: hotpink;
-		height: 100%;
-		width: 100%;
-	}
-
-	.tile-back
-	{
-		position: absolute;
-		background: lime;
-		height: 100%;
-		width: 100%;
-	}
-	
-	.tile-front:hover
-	{
-		display: none;
-	}
 </style>
 <script>
 	import { base } from "$app/paths";
@@ -64,6 +27,7 @@
 	import TextBlock from "./textBlock.svelte";
 	import {Dictionary} from "./dictionary.js";
 	import PageWrapper from "./pageWrapper.svelte"
+	import TextBlock2 from "./textBlockNGO.svelte";
 
 	let cur_lang =  Dictionary.currentLanguage;
 

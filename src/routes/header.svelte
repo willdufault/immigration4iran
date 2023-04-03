@@ -58,13 +58,13 @@
 				</div>
 				<div bind:this={lang_dropdown} class="dropdown-wrapper" style="right: 0; left: auto;">
 					<div class="dropdown-item">
-						<p>thing 1</p>
+						<p>English</p>
 					</div>
 					<div class="dropdown-item">
-						<p>thing 2</p>
+						<p>Deutsch</p>
 					</div>
 					<div class="dropdown-item">
-						<p>thing 3</p>
+						<p>فارسی</p>
 					</div>
 				</div>
 			</div>
