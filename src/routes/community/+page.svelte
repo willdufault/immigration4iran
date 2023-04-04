@@ -3,8 +3,6 @@
         <Header/>
         <p> {component.title.getText()}</p>
 
-        <iframe title="I4I Discord" src="https://discord.com/widget?id=1089878589115224074&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>    
-        
         <TextBlock>
             <a slot="title" href="https://gsbtb.org/activity-calendar/" target="_blank" rel="noreferrer"> {component.gsbtb_title.getText()} </a>
             <p slot="languages"> {component.available_langs.getText()} {component.gsbtb_lang.getText()} </p>
@@ -15,6 +13,8 @@
             <p slot="languages"> {component.available_langs.getText()} {component.fnet_lang.getText()} </p>
             <p slot="body"> {component.fnet_body.getText()} </p>
         </TextBlock>
+
+        <iframe title="I4I Discord" src="https://discord.com/widget?id=1089878589115224074&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>    
 
     </PageWrapper>
 </main>

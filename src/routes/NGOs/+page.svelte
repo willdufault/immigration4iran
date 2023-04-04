@@ -2,46 +2,76 @@
     <PageWrapper>
         <Header/>
         <p> {component.title.getText()}</p>
-        <!--<TextBlock>
-            <a slot="title" href="https://www.google.com/" target="_blank" rel="noreferrer"> {component.sample1title.getText()} </a>
-            <p slot="body"> {component.sample1body.getText()} </p>
-        </TextBlock>-->
-        <TextBlock>
-			<Icon slot="icon" icon="memory:pickaxe"/>
-            <a slot="title" href="https://www.welcome-united.org/" target="_blank" rel="noreferrer"> {component.wu_title.getText()} </a>
-            <p slot="languages"> {component.available_langs.getText()} {component.wu_lang.getText()} </p>
-            <p slot="body"> {component.wu_body.getText()} </p>
-            <a slot="contact" href="mailto:{component.wu_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.wu_contact.getText()} </a>
-        </TextBlock>
-        <TextBlock>
-            <a slot="title" href="http://jogspace.net/" target="_blank" rel="noreferrer"> {component.jog_title.getText()} </a>
-            <p slot="languages"> {component.available_langs.getText()} {component.jog_lang.getText()} </p>
-            <p slot="body"> {component.jog_body.getText()} </p>
-            <a slot="contact" href="mailto:{component.jog_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.jog_contact.getText()} </a>
-        </TextBlock>
-        <TextBlock>
-            <a slot="title" href="http://thecaravan.org/" target="_blank" rel="noreferrer"> {component.kar_title.getText()} </a>
-            <p slot="languages"> {component.available_langs.getText()} {component.kar_lang.getText()} </p>
-            <p slot="body"> {component.kar_body.getText()} </p>
-            <a slot="contact" href="mailto:{component.kar_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.kar_contact.getText()} </a>
-        </TextBlock>
-        <TextBlock>
-            <a slot="title" href="http://www.thevoiceforum.org/" target="_blank" rel="noreferrer"> {component.voice_title.getText()} </a>
-            <p slot="body"> {component.voice_body.getText()} </p>
-            <a slot="contact" href="mailto:{component.voice_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.voice_contact.getText()} </a>
-        </TextBlock>
-        <TextBlock>
-            <a slot="title" href="https://www.proasyl.de" target="_blank" rel="noreferrer"> {component.pa_title.getText()} </a>
-            <p slot="languages"> {component.available_langs.getText()} {component.pa_lang.getText()} </p>
-            <p slot="body"> {component.pa_body.getText()} </p>
-            <a slot="contact" href="mailto:{component.pa_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.pa_contact.getText()} </a>
-        </TextBlock>
-        <TextBlock>
-            <a slot="title" href="https://w2eu.info/" target="_blank" rel="noreferrer"> {component.weu_title.getText()} </a>
-            <p slot="languages"> {component.available_langs.getText()} {component.weu_lang.getText()} </p>
-            <p slot="body"> {component.weu_body.getText()} </p>
-            <a slot="contact" href="mailto:{component.weu_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.weu_contact.getText()} </a>
-        </TextBlock>
+
+
+		<!-- need to make sure "available langs" is in correct language. do we need to pass this in? -->
+
+
+		<TextBlockNGO
+		icon="memory:pickaxe"
+		header_text={component.wu_title.getText()}
+		header_link="https://www.welcome-united.org"
+		languages={component.wu_lang.getText()}
+		body={component.wu_body.getText()}
+		email={component.wu_contact.getText()}>
+		</TextBlockNGO>
+
+		<TextBlockNGO
+		icon=""
+		header_text={component.jog_title.getText()}
+		header_link="http://jogspace.net"
+		languages={component.jog_lang.getText()}
+		body={component.jog_body.getText()}
+		email={component.jog_contact.getText()}>
+		</TextBlockNGO>
+
+		<TextBlockNGO
+		icon=""
+		header_text={component.kar_title.getText()}
+		header_link="http://thecaravan.org"
+		languages={component.kar_lang.getText()}
+		body={component.kar_body.getText()}
+		email={component.kar_contact.getText()}>
+		</TextBlockNGO>
+
+		<TextBlockNGO
+		icon=""
+		header_text={component.voice_title.getText()}
+		header_link="http://www.thevoiceforum.org/"
+		languages=""
+		body={component.voice_body.getText()}
+		email={component.voice_contact.getText()}>
+		</TextBlockNGO>
+		
+		<TextBlockNGO
+		icon=""
+		header_text={component.pa_title.getText()}
+		header_link="https://www.proasyl.de"
+		languages={component.pa_lang.getText()}
+		body={component.pa_body.getText()}
+		email={component.pa_contact.getText()}>
+		</TextBlockNGO>
+
+		<TextBlockNGO
+		icon=""
+		header_text={component.weu_title.getText()}
+		header_link="https://w2eu.info"
+		languages={component.weu_lang.getText()}
+		body={component.weu_body.getText()}
+		email={component.weu_contact.getText()}>
+		</TextBlockNGO>
+
+		<TextBlockNGO
+		icon=""
+		header_text={component.tdf_title.getText()}
+		header_link="http://thecaravan.org"
+		languages={component.tdf_lang.getText()}
+		body={component.kar_body.getText()}
+		email={component.kar_contact.getText()}>
+		</TextBlockNGO>
+
+		<!-- finish converting these later -->
+
         <TextBlock>
             <a slot="title" href="https://www.frauenrechte.de/" target="_blank" rel="noreferrer"> {component.tdf_title.getText()} </a>
             <p slot="languages"> {component.available_langs.getText()} {component.tdf_lang.getText()} </p>
@@ -72,6 +102,12 @@
             <p slot="body"> {component.ifu_body.getText()} </p>
             <a slot="contact" href="mailto:{component.ifu_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.ifu_contact.getText()} </a>
         </TextBlock>
+        <TextBlock>
+            <a slot="title" href="https://immigration4ukraine.eu/" target="_blank" rel="noreferrer"> {component.ifu_title.getText()} </a>
+            <p slot="languages"> {component.available_langs.getText()} {component.ifu_lang.getText()} </p>
+            <p slot="body"> {component.ifu_body.getText()} </p>
+            <a slot="contact" href="mailto:{component.ifu_contact.getText()}" target="_blank" rel="noreferrer"> {component.contact.getText()} {component.ifu_contact.getText()} </a>
+        </TextBlock>
     </PageWrapper>
 </main>
 
@@ -93,4 +129,5 @@
     import * as component from "./ngoText.js";
     import PageWrapper from "../pageWrapper.svelte";
 	import Icon from '@iconify/svelte';
+	import TextBlockNGO from "../textBlockNGO.svelte";
 </script>
