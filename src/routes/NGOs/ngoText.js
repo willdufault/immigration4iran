@@ -26,7 +26,6 @@ title.setText(german, "NGO-Informationen");
 
 export let sample1title = new Dictionary();
 sample1title.setText(english, "Name of NGO");
-//probably don't want a translation for ngo names? unsure
 sample1title.setText(german, "Name von NGO");
 export let sample1body = new Dictionary();
 sample1body.setText(english, "Description of NGO");
@@ -156,6 +155,6 @@ ifu_body.setText(english, "Immigration4Ukraine is a website created by UPJ Pro B
                             Much of the information on the website could be helpful to refugees from any country.");
 ufu_body.setText(german, "German description of NGO");
 export let ifu_lang = new Dictionary();
-ifu_lang.setText(english, english + ", " + german + ", " + russian + ", " + ukrainian);
+ifu_lang.setText(english, german + ", " + english + ", " + russian + ", " + ukrainian);
 export let ifu_contact = new Dictionary();
 ifu_contact.setText(english, "immigration4ukraine@upj.de");
