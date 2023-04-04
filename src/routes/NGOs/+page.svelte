@@ -8,7 +8,7 @@
 
 
 		<TextBlockNGO
-		icon="memory:pickaxe"
+		icon=""
 		header_text={component.wu_title.getText()}
 		header_link="https://www.welcome-united.org"
 		languages={component.wu_lang.getText()}

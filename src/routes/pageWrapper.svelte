@@ -11,4 +11,6 @@
 </style>
 <script>
 	import { color1, color2, color3, color4 } from "../theme";
+
+
 </script>

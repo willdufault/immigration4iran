@@ -12,6 +12,7 @@
 		</TextBlock>
 		<a href="{base}/NGOs">NGOs</a>
 	</PageWrapper>
+	<button on:click={() => test()}>testing</button>
 </main>
 <style>
 	*
@@ -26,9 +27,8 @@
     import Header from "./header.svelte";
 	import TextBlock from "./textBlock.svelte";
 	import {Dictionary} from "./dictionary.js";
-	import PageWrapper from "./pageWrapper.svelte"
-	import TextBlock2 from "./textBlockNGO.svelte";
-
+	import PageWrapper from "./pageWrapper.svelte";
+	
 	let cur_lang =  Dictionary.currentLanguage;
 
 </script>
