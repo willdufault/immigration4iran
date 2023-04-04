@@ -28,7 +28,7 @@
 	import TextBlock from "./textBlock.svelte";
 	import {Dictionary} from "./dictionary.js";
 	import PageWrapper from "./pageWrapper.svelte";
-	
+
 	let cur_lang =  Dictionary.currentLanguage;
 
 </script>
