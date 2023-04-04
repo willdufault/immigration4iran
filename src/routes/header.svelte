@@ -56,16 +56,14 @@
 				<div class="nav-title">
 					<p>Language</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
-				<div bind:this={lang_dropdown} class="dropdown-wrapper" style="right: 0; left: auto;">
-					<div class="dropdown-item">
-						<p>English</p>
-					</div>
-					<div class="dropdown-item">
-						<p>Deutsch</p>
-					</div>
-					<div class="dropdown-item">
-						<p>فارسی</p>
-					</div>
+				<div bind:this={lang_dropdown} class="dropdown-wrapper">
+					<ul>
+						{#each langsITR as lang}
+							<div class="dropdown-item" on:click={() => changeLanguage(lang)}>
+								<p>{lang}</p>
+							</div>
+						{/each}
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -156,6 +154,7 @@
 	import {legal} from "./headerText.js";
 	
 	let langs = Dictionary.languages;
+	let langsITR = Object.values(langs);
 	Dictionary.currentLanguage = langs.English;
 
 	let legal_dropdown;
