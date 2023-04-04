@@ -53,19 +53,34 @@ export let wb_title = new Dictionary();
 wb_title.setText(english, "Willkommensbündnis Stieglitz-Zehlendorf");
 export let wb_body = new Dictionary();
 wb_body.setText(english, "Willkommensbündnis is an NGO that holds local events in Berlin like job fares and \
-                            round tables where refugees can come and meet people while getting help.");
+                            round tables where refugees can come and meet people while getting help. The round \
+                            table lets people of many different backgrounds discuss what they need help on.");
 wb_body.setText(german, "German description of NGO");
 export let wb_lang = new Dictionary();
-wb_lang.setText(german, german);
+wb_lang.setText(english, german);
 
 
 export let be_title = new Dictionary();
-be_title.setText(english, "Willkommensbündnis Stieglitz-Zehlendorf");
+be_title.setText(english, "The Official Website of Berlin");
 export let be_body = new Dictionary();
 be_body.setText(english, "The official website for the city of Berlin displays events in many languages \
                             to encourage the local community to go out and meet people. They display local \
                             monthly events like arts and crafts, opera, and various concerts.");
 be_body.setText(german, "German description of Website");
 export let be_lang = new Dictionary();
-be_lang.setText(english, german + ", " + english + ", " + italian, + ", " + french);
+be_lang.setText(english, german + ", " + english + ", " + italian + ", " + french);
+
+
+export let disc_title = new Dictionary();
+disc_title.setText(english, "Discord Community Forum");
+export let disc_body = new Dictionary();
+disc_body.setText(english, "Join our local community on Discord! Click the Join Discord button. Our local \
+                                community consists of NGOs and volunteers dedicated to helping refugees who \
+                                are coming to Germany.");
+disc_body.setText(german, "German description of Website");
+export let disc_lang = new Dictionary();
+disc_lang.setText(english, german + ", " + english + ", " + arabic);
+
+
+
 
