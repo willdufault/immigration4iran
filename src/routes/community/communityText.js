@@ -1,4 +1,4 @@
-import {Dictionary} from "../dictionary.js";
+import { Dictionary } from "../dictionary.js";
 
 let langs = Dictionary.languages;
 
@@ -8,6 +8,15 @@ let persian = langs.Persian;
 
 export let available_langs = new Dictionary();
 available_langs.setText(english, "Available in: ");
+
+let french = "Français";
+let turkish = "Türkçe";
+let arabic = "عربي";
+let russian = "русский";
+let ukrainian = "українська";
+let italian = "Italiano";
+
+
 
 export let contact = new Dictionary();
 contact.setText(english, "Contact:");
@@ -27,8 +36,6 @@ gsbtb_body.setText(english, "Give Something Back to Berlin holds local events in
 gsbtb_body.setText(german, "German description of NGO");
 export let gsbtb_lang = new Dictionary();
 gsbtb_lang.setText(english, german + ", " + english);
-export let gsbtb_contact = new Dictionary();
-gsbtb_contact.setText(english, "mail@welcome-united.org");
 
 
 export let fnet_title = new Dictionary();
@@ -39,6 +46,26 @@ fnet_body.setText(english, "Fare Networks is a football network that believes sp
                               welcoming refugees to training sessions or other fun activities.");
 fnet_body.setText(german, "German description of NGO");
 export let fnet_lang = new Dictionary();
-fnet_lang.setText(english, german + ", " + english);
-export let fnet_contact = new Dictionary();
-fnet_contact.setText(english, "mail@welcome-united.org");
+fnet_lang.setText(english, english);
+
+
+export let wb_title = new Dictionary();
+wb_title.setText(english, "Willkommensbündnis Stieglitz-Zehlendorf");
+export let wb_body = new Dictionary();
+wb_body.setText(english, "Willkommensbündnis is an NGO that holds local events in Berlin like job fares and \
+                            round tables where refugees can come and meet people while getting help.");
+wb_body.setText(german, "German description of NGO");
+export let wb_lang = new Dictionary();
+wb_lang.setText(german, german);
+
+
+export let be_title = new Dictionary();
+be_title.setText(english, "Willkommensbündnis Stieglitz-Zehlendorf");
+export let be_body = new Dictionary();
+be_body.setText(english, "The official website for the city of Berlin displays events in many languages \
+                            to encourage the local community to go out and meet people. They display local \
+                            monthly events like arts and crafts, opera, and various concerts.");
+be_body.setText(german, "German description of Website");
+export let be_lang = new Dictionary();
+be_lang.setText(english, german + ", " + english + ", " + italian, + ", " + french);
+
