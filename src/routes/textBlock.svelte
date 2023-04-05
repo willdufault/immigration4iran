@@ -1,6 +1,5 @@
 <script>
     import {Dictionary} from "./dictionary.js";
-    let dict = new Dictionary();
     let title;
     let other;
 </script>
@@ -41,16 +40,17 @@
     .tile-wrapper
     {
         /* border: 2px solid blue; */
-		margin: 5%;
+		margin-bottom: 3%;
 		background: var(--color3);
 		border-radius: 0.2rem;
         display: flex;
         padding: 2%;
         justify-content: space-between;
-        width: fit-content;
+        width: 100%;
         flex-direction: column;
 		box-shadow: 0 0 0.5em #444;
 		transition: 0.3s ease-in-out;
+		/* cursor: pointer; */
     }
 
 	.tile-wrapper:hover
