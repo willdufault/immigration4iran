@@ -79,7 +79,7 @@ disc_body.setText(english, "Join our local community on Discord! Click the Join 
                                 are coming to Germany.");
 disc_body.setText(german, "German description of Website");
 export let disc_lang = new Dictionary();
-disc_lang.setText(english, german + ", " + english + ", " + arabic);
+disc_lang.setText(english, german + ", " + english + ", " + arabic + "       ," + persian);
 
 
 
