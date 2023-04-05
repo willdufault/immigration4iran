@@ -50,7 +50,7 @@
         flex-direction: column;
 		box-shadow: 0 0 0.5em #444;
 		transition: 0.3s ease-in-out;
-		/* cursor: pointer; */
+		/* cursor: pointer 	; */
     }
 
 	.tile-wrapper:hover

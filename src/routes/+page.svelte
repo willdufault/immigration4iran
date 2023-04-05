@@ -6,10 +6,10 @@
 	<PageWrapper>
 		<Header/>
 		<div class="sdg-wrapper">
-			<img src="https://conflictoflaws.net/News/2019/04/english_SDG_17goals_poster_all_languages_with_UN_emblem_1.png" alt="sdgs"/>
+			<img on:click={() => window.open(`${base}/legal`)} src="https://conflictoflaws.net/News/2019/04/english_SDG_17goals_poster_all_languages_with_UN_emblem_1.png" alt="sdgs"/>
 		</div>
 		<p class="roadmap-title">Legal Roadmap</p>
-		<button on:click={() => window.open(`${base}/NGOs`)}>NGOs page</button>
+		<!-- <button on:click={() => window.open(`${base}/NGOs`)}>NGOs page</button> -->
 		<!-- <a href="{base}/NGOs">NGOs</a> -->
 		
 	</PageWrapper>
@@ -29,13 +29,21 @@
 		justify-content: center;
 		width: auto;
 	}
-
+	
 	.sdg-wrapper img
 	{
 		background: white;
 		padding: 1%;
-		border: 1px solid blue;
+		box-shadow: 0 0 0.5em #444;
+		transition: 0.3s ease-in-out;
 		border-radius: 0.2rem;;
+		cursor: pointer;
+	}
+
+	.sdg-wrapper img:hover
+	{
+		box-shadow: 0 0 1.5em #666;
+		transform: scale(1.02)
 	}
 
 	.roadmap-title
