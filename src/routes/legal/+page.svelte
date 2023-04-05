@@ -1,7 +1,11 @@
 <main>
     <PageWrapper>
         <Header/>
-        <div style="margin: 0 20%; display: flex; justify-content:space-evenly"><h1>{component.title.getText()}</h1><h1>|</h1><h1>The Asylum Roadmap</h1></div>
+        <div class="title-wrapper">
+			<h1>{component.title.getText()}</h1>
+			<h1>|</h1>
+			<h1>The Asylum Roadmap</h1>
+		</div>
 
         <div class="big-wrapper">
             <div class="tile-wrapper">
@@ -32,15 +36,11 @@
                 <div class="tile-back" style="background:#FA7F08">
                     {component.step4_body.getText()}
                 </div>
-                <div class="tile-front" style="background:#13678A">
+                <div class="tile-front" style="background:#1d678A">
                     {component.step4_title.getText()}
                 </div>
             </div>
         </div>
-
-
-
-
     </PageWrapper>
 </main>
 
@@ -52,10 +52,20 @@
         box-sizing: border-box;
     }
 
+	.title-wrapper
+	{
+		margin: 0 20%; 
+		display: flex; 
+		justify-content: space-around;
+		margin: 3% 0;
+		margin: 4% 25%;
+	}
+
     .big-wrapper
     {
         display: flex;
         justify-content: center;
+		gap: 1%;
     }
 
     .tile-wrapper
@@ -74,7 +84,7 @@
         background: hotpink;
         height: 100%;
         width: 100%;
-
+		border-radius: 0.2rem;
     }
 
     .tile-back
@@ -83,7 +93,11 @@
         background: lime;
         height: 100%;
         width: 100%;
-        
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 5%;
+		border-radius: 0.2rem;
     }
     
     .tile-front:hover

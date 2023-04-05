@@ -41,8 +41,8 @@
 					<p>Community Building</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
 				<div bind:this={comm_dropdown} class="dropdown-wrapper">
-					<div class="dropdown-item">
-						<p>thing 1</p>
+					<div on:click={() => openNGO()} class="dropdown-item">
+						<p>NGOs</p>
 					</div>
 					<div class="dropdown-item">
 						<p>thing 2</p>
@@ -91,6 +91,11 @@
 		padding: 0 1%;
 	}
 
+	.logo-wrapper:hover
+	{
+		color: var(--color1);
+	}
+
 	.nav-wrapper
 	{
 		display: flex;
@@ -128,7 +133,7 @@
 		/* uncomment for animated menus */
 		/* transition: 0.3s ease-in-out; */
 	}
-/*  */
+
 	.dropdown-item
 	{
 		padding: 1vh;
@@ -191,5 +196,10 @@
 	function openComm()
 	{
 		window.open(`${base}/community`, "_self");
+	}
+
+	function openNGO()
+	{
+		window.open(`${base}/NGOs`, "_self")
 	}
 </script>

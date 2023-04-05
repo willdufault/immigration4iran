@@ -8,6 +8,13 @@
 		padding: 0;
 		box-sizing: border-box;
 	}
+
+	main
+	{
+		/* causes issues with margin on bottom element, temporarily in app.html */
+		/* background: #99c0ff; */
+		min-height: 100vh;
+	}
 </style>
 <script>
 	import { color1, color2, color3, color4 } from "../theme";
