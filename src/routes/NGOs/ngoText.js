@@ -74,6 +74,8 @@ voice_title.setText(english, "The VOICE Refugee Forum Germany");
 export let voice_body = new Dictionary();
 voice_body.setText(english, "The VOICE is a forum for refugees, where users can post about events, news, and other community activities.");
 voice_body.setText(german, "German description of NGO");
+export let voice_lang = new Dictionary();
+voice_lang.setText(english, german + ", " + english);
 export let voice_contact = new Dictionary();
 voice_contact.setText(english, "thevoicerefugeeforum@gmx.de");
 
