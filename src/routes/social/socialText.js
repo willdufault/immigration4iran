@@ -36,15 +36,17 @@ housing_body1.setText(english, "The following resources are available for those 
 export let housing_link = new Dictionary();
 housing_link.setText(english, "Refugees Welcome");
 // Could make this an unordered list later
-export let housing_list = new Dictionary();
-housing_list.setText(english, " is a program designed to match refugees to open rooms across Germany, also allowing people to rent out their open rooms if they want to help! \n\
-                                A few other links to sites which offer housing aid are: \
-                                warmes-bett.de, \
-                                jugendherberge.de, \
-                                icanhelp.host, \
-                                mapahelp.me, \
-                                wunderflats.com, \
-                                everybedhelps.com");
+export let housing_body2 = new Dictionary();
+housing_body2.setText(english, " is a program designed to match refugees to open rooms across Germany, also allowing people to rent out their open rooms if they want to help! \n\
+                                A few other links to sites which offer housing aid are: ");
+export const housing_list = [
+                                "warmes-bett.de",
+                                "jugendherberge.de",
+                                "icanhelp.host",
+                                "mapahelp.me",
+                                "wunderflats.com",
+                                "everybedhelps.com"
+                            ]
 
 export let health_title = new Dictionary();
 health_title.setText(english, "Healthcare");

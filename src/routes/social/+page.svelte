@@ -19,9 +19,40 @@
 						<a href="https://www.refugees-welcome.net/" target="_blank" rel="noreferrer">
 							{component.housing_link.getText()}
 						</a>
-						<!-- Can make this a ul later -->
-						{component.housing_list.getText()}
+						{component.housing_body2.getText()}
 					</p>
+					<ul style="margin:1em">
+						<li>
+							<MyLink
+								link="https://{component.housing_list[0]}"
+								text={component.housing_list[0]}/>
+						</li>
+						<li>
+							<MyLink
+								link="https://{component.housing_list[1]}"
+								text={component.housing_list[1]}/>
+						</li>
+						<li>
+							<MyLink
+								link="https://{component.housing_list[2]}"
+								text={component.housing_list[2]}/>
+						</li>
+						<li>
+							<MyLink
+								link="https://{component.housing_list[3]}"
+								text={component.housing_list[3]}/>
+						</li>
+						<li>
+							<MyLink
+								link="https://{component.housing_list[4]}"
+								text={component.housing_list[4]}/>
+						</li>
+						<li>
+							<MyLink
+								link="https://{component.housing_list[5]}"
+								text={component.housing_list[5]}/>
+						</li>
+					</ul>
 				</div>
 			</TextBlock>
 
@@ -29,9 +60,9 @@
 				<p slot="title"> {component.health_title.getText()} </p>
 				<p slot="body">
 					{component.health_body1.getText()} 
-					<a href="https://medibueros.org/" target="_blank" rel="noreferrer">
-						{component.health_link.getText()}
-					</a>
+					<MyLink
+						link="https://medibueros.org/"
+						text={component.health_link.getText()}/>
 					{component.health_body2.getText()}
 				</p>
 			</TextBlock>
@@ -107,5 +138,7 @@
     import TextBlock from "../textBlock.svelte";
     import {Dictionary} from "../dictionary.js";
     import * as component from "./socialText.js";
-    import PageWrapper from "../pageWrapper.svelte"
+    import PageWrapper from "../pageWrapper.svelte";
+	import MyLink from "../myLink.svelte";
+	import MailLink from "../mailLink.svelte";
 </script>
