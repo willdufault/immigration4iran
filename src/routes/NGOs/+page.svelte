@@ -2,7 +2,6 @@
     <PageWrapper>
         <Header/>
         <p class="ngo-title"> {component.title.getText()}</p>
-
 		<div class="block-wrapper">
 			<TextBlock>
 				<a slot="title" href="https://www.welcome-united.org" target="_blank" rel="noreferrer"> {component.wu_title.getText()} </a>
