@@ -1,5 +1,5 @@
 <main>
-    <a href={link} target="_blank" rel="noreferrer"> {text.getText()} </a>
+    <a href={link} target="_blank" rel="noreferrer"> {text} </a>
 </main>
 
 
