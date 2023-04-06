@@ -39,7 +39,6 @@
 
     .tile-wrapper
     {
-        /* border: 2px solid blue; */
 		margin-bottom: 3%;
 		background: var(--color3);
 		border-radius: 0.2rem;
@@ -48,15 +47,23 @@
         justify-content: space-between;
         width: 100%;
         flex-direction: column;
-		box-shadow: 0 0 0.5em #444;
-		transition: 0.3s ease-in-out;
-		/* cursor: pointer 	; */
+		border: 0.1rem solid #cccccc;
+		/* un-comment for 3d shadow effect */
+		/* box-shadow: 0 0 0.5em #444;
+		transition: 0.3s ease-in-out; */
     }
 
 	.tile-wrapper:hover
 	{
-		box-shadow: 0 0 1.5em #666;
-		transform: scale(1.02)
+		border: 0.1rem solid #666666;
+		/* un-comment for 3d shadow effect */
+		/* box-shadow: 0 0 1.5em #666;
+		transform: scale(1.02) */
+	}
+
+	.tile-wrapper:hover .title-wrapper :global(*)
+	{
+		text-decoration: 0.2rem underline;
 	}
 
     .sub-wrapper
@@ -67,7 +74,15 @@
 
 	.icon-wrapper :global(*)
 	{
-		font-size: 10rem;
+		font-size: 5rem;
+		margin-right: 1rem;
+	}
+
+	.title-wrapper :global(*)
+	{
+		font-size: 3rem;
+		color: black;
+		text-decoration: none;
 	}
 
 	.title-wrapper :global(*)
@@ -77,6 +92,6 @@
 
 	.languages-wrapper :global(*)
 	{
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 </style>

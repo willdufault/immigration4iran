@@ -4,6 +4,7 @@
         <p class="ngo-title"> {component.title.getText()}</p>
 		<div class="block-wrapper">
 			<TextBlock>
+				<!-- <Icon slot="icon" icon="carbon:face-cool" /> -->
 				<a slot="title" href="https://www.welcome-united.org" target="_blank" rel="noreferrer"> {component.wu_title.getText()} </a>
 				<p slot="languages"> {component.available_langs.getText()} {component.wu_lang.getText()} </p>
 				<p slot="body"> {component.wu_body.getText()} </p>
