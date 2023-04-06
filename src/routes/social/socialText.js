@@ -97,13 +97,11 @@ asylum_link2.setText(english, "the ELENA index.");
 export let edu_title = new Dictionary();
 edu_title.setText(english, "Education");
 export let edu_body1 = new Dictionary();
-edu_body1.setText(english, " (from Pro Asyl) contains locations of German Universities that offer ways for refugees to learn or study, \
+edu_body1.setText(english, "This Google Map (from Pro Asyl) contains locations of German Universities that offer ways for refugees to learn or study, \
                                 with more information about each location on the map. There are many sources of free informative videos and articles for refugees, \
                                 collected on sites such as ");
 export let edu_body2 = new Dictionary();
 edu_body2.setText(english, " and ");
-export let edu_link1 = new Dictionary();
-edu_link1.setText(english, "This Google Map");
 export let edu_link2 = new Dictionary();
 edu_link2.setText(english, "Hochschulforum Digitalisierung");
 export let edu_link3 = new Dictionary();
