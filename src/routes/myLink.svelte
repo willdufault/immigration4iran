@@ -1,6 +1,5 @@
-<main>
-    <a href={link} target="_blank" rel="noreferrer"> {text} </a>
-</main>
+<a href={link} target="_blank" rel="noreferrer"> {text} </a>
+
 
 
 <script>
