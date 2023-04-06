@@ -4,7 +4,10 @@
         <p class="social-title"> {component.title.getText()}</p>
 		<div class="block-wrapper">
 			<TextBlock>
-				<a slot="title" href="https://handbookgermany.de/" target="_blank" rel="noreferrer"> {component.handbook_title.getText()} </a>
+				<MyLink
+					slot="title"
+					link="https://handbookgermany.de/"
+					text={component.handbook_title.getText()}/>
 				<p slot="languages"> {component.available_langs.getText()} {component.handbook_lang.getText()} </p>
 				<p slot="body"> {component.handbook_body.getText()} </p>
 			</TextBlock>
@@ -16,9 +19,9 @@
 						{component.housing_body1.getText()}
 					</p>
 					<p>
-						<a href="https://www.refugees-welcome.net/" target="_blank" rel="noreferrer">
-							{component.housing_link.getText()}
-						</a>
+						<MyLink
+							link="https://www.refugees-welcome.net/"
+							text={component.housing_link.getText()}/>
 						{component.housing_body2.getText()}
 					</p>
 					<ul style="margin:1em">
@@ -71,7 +74,39 @@
 				<p slot="title"> {component.jobs_title.getText()} </p>
 				<div slot="body">
 					<p> {component.jobs_body1.getText()} </p>
-					<p>{component.jobs_body2.getText()} </p>
+					<ul style="margin:1em">
+						<li>
+							<MyLink
+								link="https://{component.jobs_list[0]}"
+								text={component.jobs_list[0]}/>
+						</li>
+						<li>
+							<MyLink
+								link="https://{component.jobs_list[1]}"
+								text={component.jobs_list[1]}/>
+						</li>
+						<li>
+							<MyLink
+								link="https://{component.jobs_list[2]}"
+								text={component.jobs_list[2]}/>
+						</li>
+						<li>
+							<MyLink
+								link="https://{component.jobs_list[3]}"
+								text={component.jobs_list[3]}/>
+						</li>
+						<li>
+							<MyLink
+								link="https://{component.jobs_list[4]}"
+								text={component.jobs_list[4]}/>
+						</li>
+					</ul>
+					<p> {component.jobs_body2.getText()}
+						<MyLink
+						link="https://{component.jobs_link.getText()}"
+						text={component.jobs_link.getText()}/>
+					</p>
+					
 				</div>
 			</TextBlock>
 
@@ -79,9 +114,9 @@
 				<p slot="title"> {component.map_title.getText()} </p>
 				<p slot="body">
 					{component.map_body1.getText()} 
-					<a href="https://bamf-navi.bamf.de/en/" target="_blank" rel="noreferrer">
-						{component.map_link.getText()}
-					</a>
+					<MyLink
+						link="https://bamf-navi.bamf.de/en/"
+						text={component.map_link.getText()}/>
 				</p>
 			</TextBlock>
 
@@ -89,22 +124,51 @@
 				<p slot="title"> {component.asylum_title.getText()} </p>
 				<p slot="body">
 					{component.asylum_body1.getText()} 
-					<a href="https://www.ecre.org/wp-content/uploads/2016/05/ELENA-Index-latest-update-May-2016.pdf" target="_blank" rel="noreferrer">
-						{component.asylum_link.getText()}
-					</a>
+					<MyLink
+						link="https://{component.asylum_link1.getText()}"
+						text={component.asylum_link1.getText()}/>
+					{component.asylum_body2.getText()} 
+					<MyLink
+						link="https://www.ecre.org/wp-content/uploads/2016/05/ELENA-Index-latest-update-May-2016.pdf"
+						text={component.asylum_link2.getText()}/>
 				</p>
 			</TextBlock>
 
 			<TextBlock>
 				<p slot="title"> {component.edu_title.getText()} </p>
 				<p slot="body">
-					<a href="https://www.ecre.org/wp-content/uploads/2016/05/ELENA-Index-latest-update-May-2016.pdf" target="_blank" rel="noreferrer">
-						{component.edu_link1.getText()}
-					</a>
+					<MyLink
+						link="https://www.google.com/maps/d/viewer?hl=de&authuser=0&mid=zi1_FmZIBexM.k9RxfL-WxtjY"
+						text={component.edu_link1.getText()}/>
 					{component.edu_body1.getText()} 
-					<a href="https://www.ecre.org/wp-content/uploads/2016/05/ELENA-Index-latest-update-May-2016.pdf" target="_blank" rel="noreferrer">
-						{component.edu_link2.getText()}
-					</a>
+					<MyLink
+						link="https://hochschulforumdigitalisierung.de/de/blog/digital-education-and-information-resources-refugees"
+						text={component.edu_link2.getText()}/>
+					{component.edu_body2.getText()}
+					<MyLink
+						link="https://{component.edu_link3.getText()}"
+						text={component.edu_link3.getText()}/>
+				</p>
+			</TextBlock>
+
+			<TextBlock>
+				<p slot="title"> {component.programs_title.getText()} </p>
+				<p slot="body">
+					<MyLink
+						link="https://www.google.com/maps/d/viewer?mid=zc6TdvfelKuY.kUvriXoSREXw"
+						text={component.programs_link.getText()}/>
+					{component.programs_body1.getText()} 
+				</p>
+			</TextBlock>
+
+			<TextBlock>
+				<p slot="title"> {component.integration_title.getText()} </p>
+				<p slot="body">
+					{component.integration_body1.getText()} 
+					<MyLink
+						link="https://www.bamf.de/EN/Themen/Integration/ZugewanderteTeilnehmende/Integrationskurse/integrationskurse-node.html"
+						text={component.integration_link.getText()}/>
+					{component.integration_body2.getText()} 
 				</p>
 			</TextBlock>
 		</div>
