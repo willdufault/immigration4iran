@@ -2,15 +2,7 @@
     <PageWrapper>
         <Header/>
         <p class="ngo-title"> {component.title.getText()}</p>
-		<!-- need to make sure "available langs" is in correct language. do we need to pass this into textblockNGO? -->
-		<!-- <TextBlockNGO
-		icon=""
-		header_text={component.wu_title.getText()}
-		header_link="https://www.welcome-united.org"
-		languages={component.wu_lang.getText()}
-		body={component.wu_body.getText()}
-		email={component.wu_contact.getText()}>
-		</TextBlockNGO> -->
+
 		<div class="block-wrapper">
 			<TextBlock>
 				<a slot="title" href="https://www.welcome-united.org" target="_blank" rel="noreferrer"> {component.wu_title.getText()} </a>
@@ -112,5 +104,4 @@
     import * as component from "./ngoText.js";
     import PageWrapper from "../pageWrapper.svelte";
 	import Icon from '@iconify/svelte';
-	import TextBlockNGO from "../textBlockNGO.svelte";
 </script>
