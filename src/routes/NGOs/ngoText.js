@@ -90,7 +90,8 @@ pa_body.setText(german, "German description of NGO");
 export let pa_lang = new Dictionary();
 pa_lang.setText(english, german + ", " + english);
 export let pa_contact = new Dictionary();
-pa_contact.setText(english, "proasyl@proasyl.de");
+pa_contact.setText(english, "proasyl@proasyl.de?subject=Asylum Help&body=Dear Pro Asyl,%0D%0A%0D%0AI am a refugee from [Country] and am currently in Germany looking for help. I am having trouble with [Problem]. What would you advise?%0D%0A%0D%0AThanks,%0D%0A[Name]");
+
 
 export let weu_title = new Dictionary();
 weu_title.setText(english, "Welcome to Europe (w2eu.info)");
@@ -124,7 +125,7 @@ mk_body.setText(german, "German description of NGO");
 export let mk_lang = new Dictionary();
 mk_lang.setText(english, german);
 export let mk_contact = new Dictionary();
-mk_contact.setText(english, "info@medibuero-kiel.de");
+mk_contact.setText(english, "info@medibuero-kiel.de?subject=Medical Consultation&body=Dear Medibüro,%0D%0A%0D%0AI am a refugee in Germany and am having trouble with [Medical Issue].%0D%0A%0D%0AThanks,%0D%0A[Name]");
 
 export let ussa_title = new Dictionary();
 ussa_title.setText(english, "Union der Syrischen Studenten und Akademiker");
