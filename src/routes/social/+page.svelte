@@ -136,19 +136,25 @@
 
 			<TextBlock>
 				<p slot="title"> {component.edu_title.getText()} </p>
-				<p slot="body">
-					<MyLink
-						link="https://www.google.com/maps/d/viewer?hl=de&authuser=0&mid=zi1_FmZIBexM.k9RxfL-WxtjY"
-						text={component.edu_link1.getText()}/>
-					{component.edu_body1.getText()} 
-					<MyLink
-						link="https://hochschulforumdigitalisierung.de/de/blog/digital-education-and-information-resources-refugees"
-						text={component.edu_link2.getText()}/>
-					{component.edu_body2.getText()}
-					<MyLink
-						link="https://{component.edu_link3.getText()}"
-						text={component.edu_link3.getText()}/>
-				</p>
+				<div slot="body">
+					<p align="center">
+						<!-- Fix link + make map-->
+						<iframe
+						class= "map" 
+						title="Education Oppurtunities" 
+						src="https://www.google.com/maps/d/embed?mid=1dIJKbgjwdzyQCkMGI_Ezai8v06o&hl=de&ehbc=2E312F"/>
+					</p>
+					<p>
+						{component.edu_body1.getText()} 
+						<MyLink
+							link="https://hochschulforumdigitalisierung.de/de/blog/digital-education-and-information-resources-refugees"
+							text={component.edu_link2.getText()}/>
+						{component.edu_body2.getText()}
+						<MyLink
+							link="https://{component.edu_link3.getText()}"
+							text={component.edu_link3.getText()}/>
+					</p>
+				</div>
 			</TextBlock>
 
 			<TextBlock>
@@ -182,6 +188,12 @@
         padding: 0;
         box-sizing: border-box;
     }
+
+	.map
+	{
+		width:100%;
+		height:20em;
+	}
 
 	.social-title
 	{
