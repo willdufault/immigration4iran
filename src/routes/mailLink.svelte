@@ -1,8 +1,9 @@
 <main>
-    <a href="mailto:{ngoContact}" target="_blank" rel="noreferrer"> {baseContact} {ngoContact} </a>
+    <a href="mailto:{ngoContact.getText()}" target="_blank" rel="noreferrer"> {baseContact.getText()} {ngoContact.getText()} </a>
 </main>
 
 <script>
-    export let baseContact;
+    import {contact} from "./NGOs/ngoText.js";
+    export let baseContact = contact;
     export let ngoContact;
 </script>
