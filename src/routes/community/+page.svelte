@@ -12,7 +12,16 @@
 			<TextBlock>
 				<a slot="title" href="http://www.farenet.org/campaigns/refugees-football-database/" target="_blank" rel="noreferrer"> {component.fnet_title.getText()} </a>
 				<p slot="languages"> {component.available_langs.getText()} {component.fnet_lang.getText()} </p>
-				<p slot="body"> {component.fnet_body.getText()} </p>
+				
+				<div slot="body"> 
+					<p align="center">
+						<iframe
+						class= "map" 
+						title="Local Programs for Refugees" 
+						src="https://www.google.com/maps/d/embed?mid=1d3pP5NOJ5WP7Qox-V3ewqk_gnc8&ehbc=2E312F"/>
+					</p>
+					{component.fnet_body.getText()} 
+				</div>
 			</TextBlock>
 
 			<TextBlock>

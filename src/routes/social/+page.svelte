@@ -159,12 +159,19 @@
 
 			<TextBlock>
 				<p slot="title"> {component.programs_title.getText()} </p>
-				<p slot="body">
+				<div slot="body">
+					<p align="center">
+						<!-- Fix link + make map-->
+						<iframe
+						class= "map" 
+						title="Local Programs for Refugees" 
+						src="https://www.google.com/maps/d/embed?mid=1SHp13afz2lzUyrPqFYouMbPgtF4&ehbc=2E312F"/>
+					</p>
 					<MyLink
 						link="https://www.google.com/maps/d/viewer?mid=zc6TdvfelKuY.kUvriXoSREXw"
 						text={component.programs_link.getText()}/>
 					{component.programs_body1.getText()} 
-				</p>
+				</div>
 			</TextBlock>
 
 			<TextBlock>
