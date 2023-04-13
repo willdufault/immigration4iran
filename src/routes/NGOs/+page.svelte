@@ -87,6 +87,7 @@
 		font-size: 3rem;
 		text-align: center;
 		padding: 3%;
+		font-weight: 400;
 	}
 
 	.block-wrapper

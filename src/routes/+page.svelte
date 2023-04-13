@@ -11,7 +11,6 @@
 		<p class="roadmap-title">Legal Roadmap</p>
 		<!-- <button on:click={() => window.open(`${base}/NGOs`)}>NGOs page</button> -->
 		<!-- <a href="{base}/NGOs">NGOs</a> -->
-		
 	</PageWrapper>
 </main>
 <style>
@@ -50,6 +49,7 @@
 	{
 		text-align: center;
 		font-size: 3rem;
+		font-family: var(--font1);
 	}
 </style>
 <script>
