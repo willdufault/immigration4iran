@@ -41,6 +41,63 @@
                 </div>
             </div>
         </div>
+
+        <div class="big-wrapper">
+            <div class="tile-wrapper">
+                <div class="tile-back" style="background:#348888;">
+                    {component.step51_body.getText()}
+                    <br />{component.step52_body.getText()}
+                    <br />{component.step53_body.getText()}
+                </div>
+                <div class="tile-front" style="background:#DAFDBA">
+                    {component.step5_title.getText()}
+                </div>
+            </div>
+            <div class="tile-wrapper">
+                <div class="tile-back" style="background:#22BABB">
+                    {component.step6_body.getText()}
+                </div>
+                <div class="tile-front" style="background:#9AEBA3">
+                    {component.step6_title.getText()}
+                </div>
+            </div>
+            <div class="tile-wrapper">
+                <div class="tile-back" style="background:#9EF8EE;">
+                    {component.step7_body.getText()}
+                </div>
+                <div class="tile-front" style="background:#45C4B0">
+                    {component.step7_title.getText()}
+                </div>
+            </div>
+            <div class="tile-wrapper">
+                <div class="tile-back" style="background:#FA7F08">
+                    {component.step8_body.getText()}
+                </div>
+                <div class="tile-front" style="background:#1d678A">
+                    {component.step8_title.getText()}
+                </div>
+            </div>
+        </div>
+
+        <div class="big-wrapper">
+            <div class="tile-wrapper">
+                <div class="tile-back" style="background:#348888;">
+                    {component.step9_body.getText()}
+                </div>
+                <div class="tile-front" style="background:#DAFDBA">
+                    {component.step9_title.getText()}
+                </div>
+            </div>
+            <div class="tile-wrapper">
+                <div class="tile-back" style="background:#22BABB">
+                    {component.step10_body.getText()}
+                </div>
+                <div class="tile-front" style="background:#9AEBA3">
+                    {component.step10_title.getText()}
+                </div>
+            </div>
+        </div>
+        
     </PageWrapper>
 </main>
 
@@ -66,6 +123,7 @@
         display: flex;
         justify-content: center;
 		gap: 1%;
+        padding-bottom: 1%;
     }
 
     .tile-wrapper
@@ -81,7 +139,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: hotpink;
         height: 100%;
         width: 100%;
 		border-radius: 0.2rem;
@@ -90,7 +147,6 @@
     .tile-back
     {
         position: absolute;
-        background: lime;
         height: 100%;
         width: 100%;
 		display: flex;
@@ -104,7 +160,6 @@
     {
         opacity: 0;
         transition: opacity 0.1s;
-        
     }
 </style>
 
