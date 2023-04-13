@@ -59,6 +59,23 @@
 	import {Dictionary} from "./dictionary.js";
 	import PageWrapper from "./pageWrapper.svelte";
 
+
 	let cur_lang =  Dictionary.currentLanguage;
+
+
+	// function load(){
+	// 	window.addEventListener("DOMContentLoaded", () => {
+	// 		let language = localStorage.getItem("language");
+	// 		Dictionary.setCurrentLanguage(language);
+	// 		//handle flipping if necessary?
+	// 	});
+	// }
+	//
+	// load();
+
+
+
+
+	//localStorage.setItem("theme", "your value goes here")
 
 </script>

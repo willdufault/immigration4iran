@@ -160,7 +160,13 @@
 	
 	let langs = Dictionary.languages;
 	let langsITR = Object.values(langs);
-	Dictionary.currentLanguage = langs.English;
+	if(typeof localStorage !== 'undefined'){
+		Dictionary.currentLanguage = localStorage.getItem("language");
+	}
+	else{
+		Dictionary.currentLanguage = langs.English;
+	}
+
 
 	let legal_dropdown;
 	let social_dropdown;
@@ -174,7 +180,11 @@
 
 	function changeLanguage(language)
 	{
+		localStorage.setItem("language", language);
+		Dictionary.setCurrentLanguage(localStorage.getItem("language"));
 		Dictionary.currentLanguage = language;
+		localStorage.setItem("language", language);
+		location.reload();
 		//refresh somehow
 	}
 
