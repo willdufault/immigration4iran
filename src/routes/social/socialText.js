@@ -20,6 +20,15 @@ let ukrainian = "українська";
 title.setText(english, "Social Services Information");
 title.setText(german, "Informationen zu sozialen Diensten");
 
+
+/* 
+export let title = new Dictionary();
+title.setText(english, "Title");
+export let body = new Dictionary();
+body.setText(english, "Body");
+*/
+
+
 export let handbook_title = new Dictionary();
 handbook_title.setText(english, "Handbook Germany");
 export let handbook_body = new Dictionary();
