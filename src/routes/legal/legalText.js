@@ -72,10 +72,13 @@ step51_body.setText(german, "German description of NGO");
 
 export let step6_title = new Dictionary();
 step6_title.setText(english, "6. Contact Foreign Office to set up personal interview");
-export let step6_body = new Dictionary();
-step6_body.setText(english, "The most important part of the asylum seeking process, applicant presents case for asylum.\
-                                Applicant can set up the interview on this website: https://www.auswaertiges-amt.de/en/about-us/contact");
-step6_body.setText(german, "German description of NGO");
+export let step61_body = new Dictionary();
+export let step62_body = new Dictionary();
+step61_body.setText(english, "The most important part of the asylum seeking process, applicant presents case for asylum.\
+                                Applicant can set up the interview on this website: ");
+step62_body.setText(english, "https://www.auswaertiges-amt.de/en/about-us/contact");
+step61_body.setText(german, "German description of NGO");
+step62_body.setText(german, "https://www.auswaertiges-amt.de/de/about-us/contact");
 
 export let step7_title = new Dictionary();
 step7_title.setText(english, "7. Personal Interview");
