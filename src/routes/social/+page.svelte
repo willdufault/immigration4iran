@@ -3,6 +3,18 @@
         <Header/>
         <p class="social-title"> {component.title.getText()}</p>
 		<div class="block-wrapper">
+
+			<!-- 
+				Template Text Block:
+				Please see "Page Content"
+			-->
+			<!-- 
+			<TextBlock>
+				<p slot="title"> {component.[component name].getText()} </p>
+				<p slot="body"> {component.[component name].getText()} </p>
+			</TextBlock>
+			-->
+
 			<TextBlock>
 				<MyLink
 					slot="title"
