@@ -70,6 +70,12 @@
 		margin: 1% 5%;
 	}
 
+	.map
+	{
+		width:100%;
+		height:20em;
+	}
+
     .discord
     {
         display: flex; 
