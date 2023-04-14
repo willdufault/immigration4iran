@@ -8,9 +8,9 @@
     <PageWrapper>
         <Header/>
         <div class="title-wrapper">
-			<h1>{component.title.getText()}</h1>
-			<h1>|</h1>
-			<h1>The Asylum Roadmap</h1>
+			<p>{component.title.getText()}</p>
+			<p>|</p>
+			<p>The Asylum Roadmap</p>
 		</div>
 		<div class="tiles-container">
 			<div class="tile center-text" style="background:#348888;">
@@ -48,7 +48,10 @@
 				</div>
 			</div>
 			<div class="tile center-text" style="background:#22BABB;">
-				<p>{component.step6_body.getText()}</p>
+				<p>
+					{component.step61_body.getText()}
+					<a href={component.step62_body.getText()} target="_blank">{component.step62_body.getText()}</a>
+				</p>
 				<div class="tile-cover center-text" style="background:#9AEBA3">
 					<p>{component.step6_title.getText()}</p>
 				</div>
@@ -108,8 +111,9 @@
 		margin: 0 20%; 
 		display: flex; 
 		justify-content: space-around;
-		margin: 3% 0;
-		margin: 4% 25%;
+		font-size: 2.5rem;
+		font-weight: 500;
+		margin: 4% 10%;
 	}
 
 	.tiles-container
@@ -132,8 +136,10 @@
 
 	.tile
 	{
+		/* font-size: 1.1rem; */
 		position: relative;
 		padding: 5%;
+		min-height: 30vh;
 		width: 30%;
 		display: flex;
 		flex-grow: 1;
@@ -148,56 +154,13 @@
 		width: 100%;
 		height: 100%;
 		border-radius: inherit;
+		padding: inherit;
 	}
 
 	.tile:hover .tile-cover
 	{
 		display: none;
 	}
-
-    /* .big-wrapper
-    {
-        display: flex;
-        justify-content: center;
-		gap: 1%;
-        padding-bottom: 1%;
-    }
-
-    .tile-wrapper
-    {
-        position: relative;
-        height: 350px;
-        width: 250px;
-    }
-
-    .tile-front
-    {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-		border-radius: 0.2rem;
-    }
-
-    .tile-back
-    {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 5%;
-		border-radius: 0.2rem;
-    }
-    
-    .tile-front:hover
-    {
-        opacity: 0;
-        transition: opacity 0.1s;
-    } */
 </style>
 
 <script>
