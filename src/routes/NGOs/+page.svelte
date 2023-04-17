@@ -21,15 +21,15 @@
 				</div>
 			</div>
 			<div class="ngo-wrapper">
-				<button bind:this={toggle_menu_button} class="toggle-filter-menu-button" on:click={() => toggleFilterMenu()}>&lt;</button>
+				<button bind:this={toggle_menu_button} class="toggle-filter-menu-button" on:click={() => toggleFilterMenu()}>&gt;</button>
 				<p class="ngo-title"> {component.title.getText()}</p>
 				<div class="block-wrapper">
 					<ul>
 						{#each ngoArray as ngo}
 							{#if ngo.getString().indexOf(search)!==-1}
 								<TextBlock>
-	<!--								<MyLink slot="title" link={ngo.getLink()} text={ngo.getTitle()}/>-->
-									<a slot="title" href={ngo.getLink()} target="_blank" rel="noreferrer"> {ngo.getTitle()} </a>
+									<MyLink slot="title" link={ngo.getLink()} text={ngo.getTitle()}/>
+									<!-- <a slot="title" href={ngo.getLink()} target="_blank" rel="noreferrer"> {ngo.getTitle()} </a> -->
 									<p slot="languages"> {ngo.getGenLangs()} {ngo.getLangs()} </p>
 									<p slot="body"> {ngo.getBody()} </p>
 									<MailLink slot="contact" ngoContact= {ngo.getContact()} ngoDisplay={ngo.getContactDisplay()}/>
@@ -65,10 +65,10 @@
 		align-items: center;
 		height: fit-content;
 		gap: 1%;
-		margin: 1%;
-		padding: 3%;
 		border-radius: 0.2rem;
-		/* border:  */
+		width: 0;
+		margin: 0;
+		padding: 0;
 	}
 
 	.filter-title
@@ -97,13 +97,13 @@
 	{
 		font-size: 3rem;
 		text-align: center;
-		padding: 3%;
+		padding: 3vh;
 		font-weight: 400;
 	}
 
 	.block-wrapper
 	{
-		margin: 1% 5%;
+		margin: 1vh 5%;
 	}
 </style>
 
@@ -116,7 +116,7 @@
     import * as component from "./ngoText.js";
     import PageWrapper from "../pageWrapper.svelte";
 	import Icon from '@iconify/svelte';
-	import MyLink from '../mailLink.svelte';
+	import MyLink from '../myLink.svelte';
     import MailLink from "../mailLink.svelte";
 	import {Ngo} from "./ngoClass.js";
 	import {onMount} from "svelte";
@@ -149,19 +149,19 @@
 	let toggle_menu_button;
 	let filter_menu;
 
-
 	function toggleFilterMenu()
 	{	
-		if(toggle_menu_button.style.transform === "scaleX(-1)")
+		console.log(toggle_menu_button.style.transform);
+		if(toggle_menu_button.style.transform === "scaleX(1)")
 		{
-			toggle_menu_button.style.transform = "scaleX(1)";
+			toggle_menu_button.style.transform = "scaleX(-1)";
 			filter_menu.style.width = "fit-content";
 			filter_menu.style.padding = "3%";
 			filter_menu.style.margin = "1%";
 		}
 		else
 		{
-			toggle_menu_button.style.transform = "scaleX(-1)";
+			toggle_menu_button.style.transform = "scaleX(1)";
 			filter_menu.style.width = 0;
 			filter_menu.style.padding = 0;
 			filter_menu.style.margin = 0;
