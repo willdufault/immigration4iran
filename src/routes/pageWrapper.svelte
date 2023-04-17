@@ -14,14 +14,15 @@
 		color: var(--color1);
 
 -->
-<main style="
+<main dir={Dictionary.currentLanguage === Dictionary.languages.Persian ? "rtl" : "ltr"} style="
 	--color1: {color1}; 
 	--color2: {color2}; 
 	--color3: {color3}; 
 	--color4: {color4}; 
 	--font1: {font1};
 	--font2: {font2};
-	">
+	"
+	>
     <slot></slot>
 </main>
 <style>
@@ -40,6 +41,7 @@
 	}
 </style>
 <script>
+	import { Dictionary } from "./dictionary";
 	// import JS variables
 	import { color1, color2, color3, color4, font1, font2} from "../theme";
 </script>
