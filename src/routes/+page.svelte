@@ -75,7 +75,10 @@
 		<!-- <div class="sdg-wrapper">
 			<img on:click={() => window.open(`${base}/legal`)} src="https://conflictoflaws.net/News/2019/04/english_SDG_17goals_poster_all_languages_with_UN_emblem_1.png" alt="sdgs"/>
 		</div> -->
+		<hr class="gradient">
 		<p class="roadmap-title">About Us</p>
+		
+		<h1>Hello we are I4I, we are a student team from Worcester Polytechnic Institute that worked on this project for our interqualifying project. </h1>
 	</PageWrapper>
 </main>
 <style>
@@ -84,6 +87,21 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
+	}
+
+	hr.gradient
+	{
+		/* border: 2px solid blue; */
+		height: 3px;
+		border: none;
+		border-radius: 6px;
+		background: linear-gradient(
+		90deg,
+		rgb(29, 18, 255) 0%,
+		rgb(12, 12, 174) 21%,
+		rgba(6, 84, 170, 1) 51%,
+		rgb(0, 255, 115) 100%
+		);	
 	}
 
 	.roadmap-title
