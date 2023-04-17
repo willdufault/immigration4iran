@@ -15,9 +15,6 @@
 					<div class="dropdown-item">
 						<p>thing 2</p>
 					</div>
-					<div class="dropdown-item">
-						<p>thing 3</p>
-					</div>
 				</div>
 			</div>
 			<div class="nav-item" on:mouseover={() => toggleDropDown(social_dropdown, true)} on:mouseleave={() => toggleDropDown(social_dropdown, false)} on:focus={{}}>
@@ -31,9 +28,6 @@
 					<div class="dropdown-item">
 						<p>thing 2</p>
 					</div>
-					<div class="dropdown-item">
-						<p>thing 3</p>
-					</div>
 				</div>
 			</div>
 			<div class="nav-item" on:mouseover={() => toggleDropDown(comm_dropdown, true)} on:mouseleave={() => toggleDropDown(comm_dropdown, false)} on:focus={{}}>
@@ -46,9 +40,6 @@
 					</div>
 					<div class="dropdown-item">
 						<p>thing 2</p>
-					</div>
-					<div class="dropdown-item">
-						<p>thing 3</p>
 					</div>
 				</div>
 			</div>
@@ -93,7 +84,7 @@
 
 	.logo-wrapper:hover
 	{
-		color: var(--color1);
+		/* color: var(--color1); */
 	}
 
 	.nav-wrapper
@@ -113,9 +104,8 @@
 		position: relative;
 		display: flex;
 		align-items: center;
-		padding: 8% 1vw;
+		padding: 10% 1vw;
 		z-index: 2;
-		background: var(--color3);
 		justify-content: space-between;
 	}
 
@@ -135,7 +125,7 @@
 
 	.dropdown-item
 	{
-		padding: 1vh;
+		padding: 1.5vh;
 		background: var(--color3);
 	}
 
@@ -146,7 +136,7 @@
 
 	.nav-title:hover, .dropdown-item:hover
 	{
-		color: var(--color1);
+		/* color: var(--color1); */
 		background: var(--color4);
 	}
 </style>

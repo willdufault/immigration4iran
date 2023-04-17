@@ -38,6 +38,7 @@
 		/* causes issues with margin on bottom element, temporarily in app.html */
 		/* background: #99c0ff; */
 		min-height: 100vh;
+		font-family: var(--font2);
 	}
 </style>
 <script>

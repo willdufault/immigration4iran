@@ -36,14 +36,24 @@
 				<p slot="body"> {component.be_body.getText()} </p>
 			</TextBlock>
 
-			<div class = "discord">
-				<TextBlock>
-					<a slot="title" href="https://discord.gg/ur5qMP9WEE" target="_blank" rel="noreferrer"> {component.disc_title.getText()} </a>
-					<p slot="languages"> {component.available_langs.getText()} {component.disc_lang.getText()} </p>
-					<p slot="body"> {component.disc_body.getText()} </p>
-				</TextBlock>
-				<iframe title="I4I Discord" src="https://discord.com/widget?id=1089878589115224074&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>    
-			</div>
+
+			<!-- DISCORD EMBED IN ANOTHER LANGAUGE? -->
+			<TextBlock>
+				<a slot="title" href="https://discord.gg/ur5qMP9WEE" target="_blank" rel="noreferrer"> {component.disc_title.getText()} </a>
+				<p slot="languages"> {component.available_langs.getText()} {component.disc_lang.getText()} </p>
+				<div slot="body"> 
+					<p align="center">
+						<iframe 
+						class="map"
+						title="I4I Discord"
+						src="https://discord.com/widget?id=1089878589115224074&theme=dark"
+						allowtransparency="true"
+						frameborder="0"
+						sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"/>
+					</p>
+					{component.disc_body.getText()} 
+				</div>
+			</TextBlock> 
 			
 		</div>
 
@@ -73,18 +83,7 @@
 	.map
 	{
 		width:100%;
-		height:20em;
-	}
-
-    .discord
-    {
-        display: flex; 
-		gap: 3%;
-    }
-
-	.discord iframe
-	{
-		height: 20rem;
+		height:20rem;
 	}
 </style>
 

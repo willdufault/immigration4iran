@@ -211,7 +211,7 @@
 	.map
 	{
 		width:100%;
-		height:20em;
+		height:20rem;
 	}
 
 	.social-title
