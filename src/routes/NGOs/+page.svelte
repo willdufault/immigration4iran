@@ -91,6 +91,7 @@
 	.ngo-wrapper
 	{
 		/* border: 2px double red; */
+		width: 100%;
 	}
 
 	.ngo-title
