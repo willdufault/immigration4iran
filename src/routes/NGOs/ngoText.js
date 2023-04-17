@@ -18,7 +18,7 @@ let ukrainian = "українська";
 export let contact = new Dictionary();
 contact.setText(english, "Contact:");
 contact.setText(german, "Kontact:");
-contact.setText(persian, ":مخاطب");
+contact.setText(persian, "مخاطب:");
 
 export let title = new Dictionary();
 
