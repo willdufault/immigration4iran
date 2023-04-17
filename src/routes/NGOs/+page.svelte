@@ -26,7 +26,7 @@
 				<div class="block-wrapper">
 					<ul>
 						{#each ngoArray as ngo}
-							{#if ngo.getString().indexOf(search)!==-1}
+							{#if ngo.getString().toLowerCase().indexOf(search.toLowerCase()) !== -1}
 								<TextBlock>
 									<MyLink slot="title" link={ngo.getLink()} text={ngo.getTitle()}/>
 									<!-- <a slot="title" href={ngo.getLink()} target="_blank" rel="noreferrer"> {ngo.getTitle()} </a> -->
