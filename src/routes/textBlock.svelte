@@ -24,8 +24,12 @@
 		<div class="languages-wrapper">
 			<slot name="languages"> </slot>
 		</div>
-        <slot name="body"> Text Body </slot>
-        <slot name="contact"> </slot>
+		<div class="body-wrapper">
+			<slot name="body"> Text Body </slot>
+		</div>
+		<div class="contact-wrapper">
+			<slot name="contact"> </slot>
+		</div>
     </div>
 </main>
 
@@ -82,16 +86,23 @@
 	{
 		font-size: 3rem;
 		color: black;
+		font-weight: 700;
 		text-decoration: none;
-	}
-
-	.title-wrapper :global(*)
-	{
-		font-size: 3rem;
 	}
 
 	.languages-wrapper :global(*)
 	{
-		font-size: 1.5rem;
+		font-size: 1rem;
+		margin-bottom: 1%;
+	}
+
+	.body-wrapper :global(*)
+	{
+		font-size: 1.3rem;
+	}
+
+	.contact-wrapper :global(*)
+	{
+		font-size: 1.3rem;
 	}
 </style>
