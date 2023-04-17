@@ -36,7 +36,8 @@ handbook_body.setText(english, "Handbook Germany is a helpful source that gives 
                                     available in many languages. Includes information about housing, work, language, rights, health, and the asylum-seeking process.");
 handbook_body.setText(german, "German description of NGO");
 export let handbook_lang = new Dictionary();
-handbook_lang.setText(english, arabic + ", " + german + ", " + english + ", " + persian + ", " + french + ", " + russian + ", " + turkish + ", " + ukrainian);
+handbook_lang.setText(english, `${arabic}, ${german}, ${english}, ${persian}, ${french}, ${russian}, ${turkish}, ${ukrainian}`);
+
 
 export let housing_title = new Dictionary();
 housing_title.setText(english, "Housing");

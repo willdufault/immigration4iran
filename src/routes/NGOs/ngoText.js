@@ -39,7 +39,7 @@ wu_body.setText(english, "Welcome United is a social and antiracism group that o
                               Welcome United newsletter.");
 wu_body.setText(german, "German description of NGO");
 export let wu_lang = new Dictionary();
-wu_lang.setText(english, german + ", " + english);
+wu_lang.setText(english, `${german}, ${english}`);
 export let wu_contact = new Dictionary();
 wu_contact.setText(english, "mail@welcome-united.org");
 
@@ -65,7 +65,7 @@ kar_body.setText(english, "The Caravan is a website which allows users to post a
                                 The website aims to connect refugees through an online forum and encourages people to share local events.");
 kar_body.setText(german, "German description of NGO");
 export let kar_lang = new Dictionary();
-kar_lang.setText(english, german + ", " + english + ", " + french + ", " + turkish + ", " + persian);
+kar_lang.setText(english, `${german}, ${english}, ${french}, ${turkish}, ${persian}`);
 export let kar_contact = new Dictionary();
 kar_contact.setText(english, "caravan@emdash.org");
 
@@ -75,7 +75,7 @@ export let voice_body = new Dictionary();
 voice_body.setText(english, "The VOICE is a forum for refugees, where users can post about events, news, and other community activities.");
 voice_body.setText(german, "German description of NGO");
 export let voice_lang = new Dictionary();
-voice_lang.setText(english, german + ", " + english);
+voice_lang.setText(english, `${german}, ${english}`);
 export let voice_contact = new Dictionary();
 voice_contact.setText(english, "thevoicerefugeeforum@gmx.de");
 
@@ -88,7 +88,7 @@ pa_body.setText(english, "For human rights and refugee protection in Europe (wit
                             Solely funded by membership fees, donations, grants from foundations.");
 pa_body.setText(german, "German description of NGO");
 export let pa_lang = new Dictionary();
-pa_lang.setText(english, german + ", " + english);
+pa_lang.setText(english, `${german}, ${english}`);
 export let pa_contact = new Dictionary();
 pa_contact.setText(english, "proasyl@proasyl.de?subject=Asylum Help&body=Dear Pro Asyl,%0D%0A%0D%0AI am a refugee from [Country] and am currently in Germany looking for help. I am having trouble with [Problem]. What would you advise?%0D%0A%0D%0AThanks,%0D%0A[Name]");
 
@@ -101,7 +101,7 @@ weu_body.setText(english, "Welcome to Europe gives migrants and refugees informa
                             including information about the legal processes and available social services.");
 weu_body.setText(german, "German description of NGO");
 export let weu_lang = new Dictionary();
-weu_lang.setText(english, arabic + ", " + english + ", " + french + ", " + persian);
+weu_lang.setText(english, `${arabic}, ${english}, ${french}, ${persian}`);
 export let weu_contact = new Dictionary();
 weu_contact.setText(english, "contact@w2eu.info");
 
@@ -135,7 +135,7 @@ ussa_body.setText(english, "This is an organization of students with Syrian desc
                             Verband Deutsch-Syrischer Hilfsvereine e.V. also offers many programs to support Syrians in Germany.");
 ussa_body.setText(german, "German description of NGO");
 export let ussa_lang = new Dictionary();
-ussa_lang.setText(english, arabic + ", " + german);
+ussa_lang.setText(english, `${arabic}, ${german}`);
 export let ussa_contact = new Dictionary();
 ussa_contact.setText(english, "info@ussa-syria.org");
 
@@ -146,7 +146,7 @@ ufu_body.setText(english, "United for Ukraine offers a wide range of information
                             focusing on asylum seekers from Ukraine. There are useful resources for all refugees, including legal and social support.");
 ufu_body.setText(german, "German description of NGO");
 export let ufu_lang = new Dictionary();
-ufu_lang.setText(english, english + ", " + russian + ", " + ukrainian);
+ufu_lang.setText(english, `${english}, ${russian}, ${ukrainian}`);
 export let ufu_contact = new Dictionary();
 ufu_contact.setText(english, "info@unitedforukraine.org");
 
@@ -158,6 +158,6 @@ ifu_body.setText(english, "Immigration4Ukraine is a website created by UPJ Pro B
                             Much of the information on the website could be helpful to refugees from any country.");
 ufu_body.setText(german, "German description of NGO");
 export let ifu_lang = new Dictionary();
-ifu_lang.setText(english, german + ", " + english + ", " + russian + ", " + ukrainian);
+ifu_lang.setText(english, `${german}, ${english}, ${russian}, ${ukrainian}`);
 export let ifu_contact = new Dictionary();
 ifu_contact.setText(english, "immigration4ukraine@upj.de");

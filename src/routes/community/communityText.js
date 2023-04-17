@@ -35,7 +35,7 @@ gsbtb_body.setText(english, "Give Something Back to Berlin holds local events in
                               like Guitar and Piano.");
 gsbtb_body.setText(german, "German description of NGO");
 export let gsbtb_lang = new Dictionary();
-gsbtb_lang.setText(english, german + ", " + english);
+gsbtb_lang.setText(english, `${german}, ${english}`);
 
 
 export let fnet_title = new Dictionary();
@@ -68,7 +68,7 @@ be_body.setText(english, "The official website for the city of Berlin displays e
                             monthly events like arts and crafts, opera, and various concerts.");
 be_body.setText(german, "German description of Website");
 export let be_lang = new Dictionary();
-be_lang.setText(english, german + ", " + english + ", " + italian + ", " + french);
+be_lang.setText(english, `${german}, ${english}, ${italian}, ${french}`);
 
 
 export let disc_title = new Dictionary();
@@ -79,8 +79,4 @@ disc_body.setText(english, "Join our local community on Discord! Click the Join 
                                 are coming to Germany.");
 disc_body.setText(german, "German description of Website");
 export let disc_lang = new Dictionary();
-disc_lang.setText(english, german + ", " + english + ", " + arabic + "       ," + persian);
-
-
-
-
+disc_lang.setText(english, `${german}, ${english}, ${arabic}, ${persian}`);
