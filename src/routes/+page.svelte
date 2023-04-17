@@ -15,42 +15,57 @@
 		</div>
 
 		<div class="tiles-container">
-			<div class="tile center-text" style="background:#348888;">
+			<div class="tile center-text" style="background:#348888;" on:click={() => window.open(`${base}/legal`, "_self")} on:keypress={{}}>
 				<p>{component.legal_body.getText()}</p>
 				<div class="tile-cover center-text" style="background:#DAFDBA">
 					<div class="icon-wrapper">
-						<Icon icon="file-icons:pogoscript"/>
+						<Icon icon="mdi:legal"/>
 					</div>
 					<p>{component.legal_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" style="background:#348888;">
+			<div class="tile center-text" style="background:#348888;" on:click={() => window.open(`${base}/social`, "_self")} on:keypress={{}}>
 				<p>{component.social_body.getText()}</p>
 				<div class="tile-cover center-text" style="background:#DAFDBA">
+					<div class="icon-wrapper">
+						<Icon icon="medical-icon:i-social-services"/>
+					</div>
 					<p>{component.social_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" style="background:#348888;">
+			<div class="tile center-text" style="background:#348888;" on:click={() => window.open(`${base}/community`, "_self")} on:keypress={{}}>
 				<p>{component.community_body.getText()}</p>
 				<div class="tile-cover center-text" style="background:#DAFDBA">
+					<div class="icon-wrapper">
+						<Icon icon="fluent:people-community-24-filled"/>
+					</div>
 					<p>{component.community_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" style="background:#348888;">
+			<div class="tile center-text" style="background:#348888;" on:click={() => window.open(`${base}/NGOs`, "_self")} on:keypress={{}}>
 				<p>{component.ngo_body.getText()}</p>
 				<div class="tile-cover center-text" style="background:#DAFDBA">
+					<div class="icon-wrapper">
+						<Icon icon="mdi:building"/>
+					</div>
 					<p>{component.ngo_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" style="background:#348888;">
+			<div class="tile center-text" style="background:#348888;" on:click={() => window.open(`${base}/education`, "_self")} on:keypress={{}}>
 				<p>{component.edu_body.getText()}</p>
 				<div class="tile-cover center-text" style="background:#DAFDBA">
+					<div class="icon-wrapper">
+						<Icon icon="mdi:education-outline"/>
+					</div>
 					<p>{component.edu_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" style="background:#348888;">
+			<div class="tile center-text" style="background:#348888;" on:click={() => window.open(`${base}/jobs`, "_self")} on:keypress={{}}>
 				<p>{component.jobs_body.getText()}</p>
 				<div class="tile-cover center-text" style="background:#DAFDBA">
+					<div class="icon-wrapper">
+						<Icon icon="ic:outline-work-outline"/>
+					</div>
 					<p>{component.jobs_title.getText()}</p>
 				</div>
 			</div>
@@ -108,6 +123,7 @@
 	.tile
 	{
 		/* font-size: 1.1rem; */
+		cursor: pointer;
 		position: relative;
 		padding: 5%;
 		min-height: 30vh;

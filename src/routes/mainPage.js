@@ -41,7 +41,7 @@ legal_body.setText(german, "Klicken Sie hier, um zu unserer Rechtshilfeseite zu 
                         für das Asylverfahren und rechtliche Hilfsmittel, die während des gesamten Verfahrens helfen.");
 
 export let social_title = new Dictionary();
-social_title.setText(english, "Social Page");
+social_title.setText(english, "Social Services Page");
 social_title.setText(german, "Soziale Seite");
 export let social_body = new Dictionary();
 social_body.setText(english, "Click to navigate to our social page, it contains places to find social services like housing, jobs, education and\
@@ -50,7 +50,7 @@ social_body.setText(german, "Klicken Sie hier, um zu unserer sozialen Seite zu g
                             Wohnen, Arbeit, Bildung und Gesundheit.");
 
 export let community_title = new Dictionary();
-community_title.setText(english, "Commuity Page");
+community_title.setText(english, "Community Page");
 community_title.setText(german, "Gemeinschaft Seite");
 export let community_body = new Dictionary();
 community_body.setText(english, "Click to navigate to our community page, it contains information like ways to connect to the local community and\
