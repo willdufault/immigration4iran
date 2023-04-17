@@ -13,11 +13,42 @@
 			<p>|</p>
 			<p>{component.introText.getText()}</p>
 		</div>
+
 		<div class="tiles-container">
 			<div class="tile center-text" style="background:#348888;">
-				<p>a</p>
+				<p>{component.legal_body.getText()}</p>
 				<div class="tile-cover center-text" style="background:#DAFDBA">
-					<p>b</p>
+					<p>{component.legal_title.getText()}</p>
+				</div>
+			</div>
+			<div class="tile center-text" style="background:#348888;">
+				<p>{component.social_body.getText()}</p>
+				<div class="tile-cover center-text" style="background:#DAFDBA">
+					<p>{component.social_title.getText()}</p>
+				</div>
+			</div>
+			<div class="tile center-text" style="background:#348888;">
+				<p>{component.community_body.getText()}</p>
+				<div class="tile-cover center-text" style="background:#DAFDBA">
+					<p>{component.community_title.getText()}</p>
+				</div>
+			</div>
+			<div class="tile center-text" style="background:#348888;">
+				<p>{component.ngo_body.getText()}</p>
+				<div class="tile-cover center-text" style="background:#DAFDBA">
+					<p>{component.ngo_title.getText()}</p>
+				</div>
+			</div>
+			<div class="tile center-text" style="background:#348888;">
+				<p>{component.edu_body.getText()}</p>
+				<div class="tile-cover center-text" style="background:#DAFDBA">
+					<p>{component.edu_title.getText()}</p>
+				</div>
+			</div>
+			<div class="tile center-text" style="background:#348888;">
+				<p>{component.jobs_body.getText()}</p>
+				<div class="tile-cover center-text" style="background:#DAFDBA">
+					<p>{component.jobs_title.getText()}</p>
 				</div>
 			</div>
 
