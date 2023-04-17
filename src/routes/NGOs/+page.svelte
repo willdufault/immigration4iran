@@ -149,25 +149,27 @@
 	let toggle_menu_button;
 	let filter_menu;
 
+	let filter_menu_open = false;
+
 	function toggleFilterMenu()
-	{	
-		console.log(toggle_menu_button.style.transform);
-		if(toggle_menu_button.style.transform === "scaleX(1)")
+	{
+		if(filter_menu_open)
 		{
+			// close it
+			toggle_menu_button.style.transform = "scaleX(1)";
+			filter_menu.style.width = 0;
+			filter_menu.style.padding = 0;
+			filter_menu.style.margin = 0;
+		}
+		else
+		{
+			// open it
 			toggle_menu_button.style.transform = "scaleX(-1)";
 			filter_menu.style.width = "fit-content";
 			filter_menu.style.padding = "3%";
 			filter_menu.style.margin = "1%";
 		}
-		else
-		{
-			toggle_menu_button.style.transform = "scaleX(1)";
-			filter_menu.style.width = 0;
-			filter_menu.style.padding = 0;
-			filter_menu.style.margin = 0;
-
-
-		}
+		filter_menu_open = !filter_menu_open;
 	}
 
 	function filter(strings){
