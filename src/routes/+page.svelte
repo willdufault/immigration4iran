@@ -4,7 +4,7 @@
 </svelte:head>
 <!-- flip for right-to-left (rtl) languages -->
 <!-- to add languages, add "|| [language]" (|| = or) after Persian for every additional rtl language -->
-<main dir={Dictionary.currentLanguage === Dictionary.languages.Persian ? "rtl" : "ltr"}>
+<main>
 	<PageWrapper>
 		<Header/>
 		<div class="sdg-wrapper">

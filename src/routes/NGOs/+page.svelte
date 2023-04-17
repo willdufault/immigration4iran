@@ -2,11 +2,26 @@
     <PageWrapper>
         <Header/>
 		<div class="page-wrapper">
-			<div class="filter-wrapper">
-				<p class="filter-title">Filter Search</p>
-				<div class="filters"></div>
+			<div bind:this={filter_menu} class="filter-wrapper">
+				<p class="filter-title">Filter NGOs</p>
+				<div class="filter-list">
+					<form>
+						<label for="searchbar">Search:</label>
+						<input type="search" id="searchbar">
+						<br>
+						<input type="checkbox" id="legal">
+						<label for="legal">Legal</label>
+						<br>
+						<input type="checkbox" id="legal">
+						<label for="legal">Legal</label>
+						<br>
+						<input type="checkbox" id="legal">
+						<label for="legal">Legal</label>
+					</form>
+				</div>
 			</div>
 			<div class="ngo-wrapper">
+				<button bind:this={toggle_menu_button} class="toggle-filter-menu-button" on:click={() => toggleFilterMenu()}>&lt;</button>
 				<p class="ngo-title"> {component.title.getText()}</p>
 				<div class="block-wrapper">
 					<TextBlock>
@@ -97,13 +112,17 @@
 
 	.filter-wrapper
 	{
-		background: var(--color4);
+		overflow: hidden;
+		background: var(--color3);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		border: 3px groove yellow;
-		width: 30%;
-		padding: 2%;
+		height: fit-content;
+		gap: 1%;
+		margin: 1%;
+		padding: 3%;
+		border-radius: 0.2rem;
+		/* border:  */
 	}
 
 	.filter-title
@@ -111,9 +130,21 @@
 		font-size: 2rem;
 	}
 
+	.toggle-filter-menu-button
+	{
+		transform: scaleX(1);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 2rem;
+		height: 2rem;
+		font-size: 2rem;
+		cursor: pointer;
+	}
+
 	.ngo-wrapper
 	{
-		border: 2px double red;
+		/* border: 2px double red; */
 	}
 
 	.ngo-title
@@ -141,4 +172,27 @@
 	import Icon from '@iconify/svelte';
 	import MyLink from '../mailLink.svelte';
     import MailLink from "../mailLink.svelte";
+
+	let toggle_menu_button;
+	let filter_menu;
+
+	function toggleFilterMenu()
+	{	
+		if(toggle_menu_button.style.transform === "scaleX(-1)")
+		{
+			toggle_menu_button.style.transform = "scaleX(1)";
+			filter_menu.style.width = "fit-content";
+			filter_menu.style.padding = "3%";
+			filter_menu.style.margin = "1%";
+		}
+		else
+		{
+			toggle_menu_button.style.transform = "scaleX(-1)";
+			filter_menu.style.width = 0;
+			filter_menu.style.padding = 0;
+			filter_menu.style.margin = 0;
+
+
+		}
+	}
 </script>
