@@ -41,7 +41,7 @@
 					<p>Community Building</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
 				<div bind:this={comm_dropdown} class="dropdown-wrapper">
-					<div on:click={() => openNGO()} class="dropdown-item">
+					<div class="dropdown-item" on:click={() => openNGO()} on:keypress={{}}>
 						<p>NGOs</p>
 					</div>
 					<div class="dropdown-item">
@@ -59,7 +59,7 @@
 				<div bind:this={lang_dropdown} class="dropdown-wrapper">
 					<ul>
 						{#each langsITR as lang}
-							<div class="dropdown-item" on:click={() => changeLanguage(lang)}>
+							<div class="dropdown-item" on:click={() => changeLanguage(lang)} on:keypress={{}}>
 								<p>{lang}</p>
 							</div>
 						{/each}
@@ -114,7 +114,6 @@
 		display: flex;
 		align-items: center;
 		padding: 8% 1vw;
-		position: relative;
 		z-index: 2;
 		background: var(--color3);
 		justify-content: space-between;

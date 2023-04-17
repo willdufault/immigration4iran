@@ -2,15 +2,15 @@
 	<link rel="icon" href="./favicon.png" type="image/png" />
 	<title>Immigration4Iran</title>
 </svelte:head>
-<main dir={cur_lang === Dictionary.languages.Persian ? "rtl" : "ltr"}>
+<!-- flip for right-to-left (rtl) languages -->
+<!-- to add languages, add "|| [language]" (|| = or) after Persian for every additional rtl language -->
+<main dir={Dictionary.currentLanguage === Dictionary.languages.Persian ? "rtl" : "ltr"}>
 	<PageWrapper>
 		<Header/>
 		<div class="sdg-wrapper">
 			<img on:click={() => window.open(`${base}/legal`)} src="https://conflictoflaws.net/News/2019/04/english_SDG_17goals_poster_all_languages_with_UN_emblem_1.png" alt="sdgs"/>
 		</div>
 		<p class="roadmap-title">Legal Roadmap</p>
-		<!-- <button on:click={() => window.open(`${base}/NGOs`)}>NGOs page</button> -->
-		<!-- <a href="{base}/NGOs">NGOs</a> -->
 	</PageWrapper>
 </main>
 <style>
@@ -33,7 +33,7 @@
 	{
 		background: white;
 		padding: 1%;
-		box-shadow: 0 0 0.5em #444;
+		box-shadow: 0 0 0.5rem #444;
 		transition: 0.3s ease-in-out;
 		border-radius: 0.2rem;;
 		cursor: pointer;
@@ -58,24 +58,4 @@
 	import TextBlock from "./textBlock.svelte";
 	import {Dictionary} from "./dictionary.js";
 	import PageWrapper from "./pageWrapper.svelte";
-
-
-	let cur_lang =  Dictionary.currentLanguage;
-
-
-	// function load(){
-	// 	window.addEventListener("DOMContentLoaded", () => {
-	// 		let language = localStorage.getItem("language");
-	// 		Dictionary.setCurrentLanguage(language);
-	// 		//handle flipping if necessary?
-	// 	});
-	// }
-	//
-	// load();
-
-
-
-
-	//localStorage.setItem("theme", "your value goes here")
-
 </script>
