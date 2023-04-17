@@ -22,8 +22,24 @@
 			</div>
 			<div class="ngo-wrapper">
 				<button bind:this={toggle_menu_button} class="toggle-filter-menu-button" on:click={() => toggleFilterMenu()}>&lt;</button>
+				<ul>
+					{#each ngoArray as ngo}
+						{#if ngo.getString().indexOf("")!==-1}
+							<TextBlock>
+<!--								<MyLink slot="title" link={ngo.getLink()} text={ngo.getTitle()}/>-->
+								<a slot="title" href={ngo.getLink()} target="_blank" rel="noreferrer"> {ngo.getTitle()} </a>
+								<p slot="languages"> {ngo.getGenLangs()} {ngo.getLangs()} </p>
+								<p slot="body"> {ngo.getBody()} </p>
+								<MailLink slot="contact" ngoContact= {ngo.getContact()} ngoDisplay={ngo.getContactDisplay()}/>
+							</TextBlock>
+						{/if}
+					{/each}
+				</ul>
 				<p class="ngo-title"> {component.title.getText()}</p>
 				<div class="block-wrapper">
+					{#if true}
+						<p>this is showing</p>
+					{/if}
 					<TextBlock>
 						<!-- <Icon slot="icon" icon="carbon:face-cool" /> -->
 						<a slot="title" href="https://www.welcome-united.org" target="_blank" rel="noreferrer"> {component.wu_title.getText()} </a>
@@ -172,9 +188,25 @@
 	import Icon from '@iconify/svelte';
 	import MyLink from '../mailLink.svelte';
     import MailLink from "../mailLink.svelte";
+	import {Ngo} from "./ngoClass.js";
+
+	let ngoArray = [
+		new Ngo("https://www.welcome-united.org", component.wu_title.getText(), component.available_langs.getText(), component.wu_lang.getText(), component.wu_body.getText(), component.wu_contact.getText(), component.wu_contact.getText()),
+		new Ngo("http://jogspace.net", component.jog_title.getText(), component.available_langs.getText(), component.jog_lang.getText(), component.jog_body.getText(), component.jog_contact.getText(), component.jog_contact.getText()),
+		new Ngo("http://thecaravan.org", component.kar_title.getText(), component.available_langs.getText(), component.kar_lang.getText(), component.kar_body.getText(), component.kar_contact.getText(), component.kar_contact.getText()),
+		new Ngo("http://www.thevoiceforum.org/", component.voice_title.getText(), component.available_langs.getText(), component.voice_lang.getText(), component.voice_body.getText(), component.voice_contact.getText(), component.voice_contact.getText()),
+		new Ngo("https://www.proasyl.de", component.pa_title.getText(), component.available_langs.getText(), component.pa_lang.getText(), component.pa_body.getText(), component.pa_contact.getText(), "proasyl@proasyl.de"),
+		new Ngo("https://w2eu.info", component.weu_title.getText(), component.available_langs.getText(), component.weu_lang.getText(), component.weu_body.getText(), component.weu_contact.getText(), component.weu_contact.getText()),
+		new Ngo("https://www.frauenrechte.de/", component.tdf_title.getText(), component.available_langs.getText(), component.tdf_lang.getText(), component.tdf_body.getText(), component.tdf_contact.getText(), component.tdf_contact.getText()),
+		new Ngo("https://www.medibuero-kiel.de/", component.mk_title.getText(), component.available_langs.getText(), component.mk_lang.getText(), component.mk_body.getText(), component.mk_contact.getText(), "info@medibuero-kiel.de"),
+		new Ngo("https://verband-dsh.de/ussa/", component.ussa_title.getText(), component.available_langs.getText(), component.ussa_lang.getText(), component.ussa_body.getText(), component.ussa_contact.getText(), component.ussa_contact.getText()),
+		new Ngo("https://www.unitedforukraine.org", component.ufu_title.getText(), component.available_langs.getText(), component.ufu_lang.getText(), component.ufu_body.getText(), component.ufu_contact.getText(), component.ufu_contact.getText()),
+		new Ngo("https://immigration4ukraine.eu/", component.ifu_title.getText(), component.available_langs.getText(), component.ifu_lang.getText(), component.ifu_body.getText(), component.ifu_contact.getText(), component.ifu_contact.getText())
+	];
 
 	let toggle_menu_button;
 	let filter_menu;
+
 
 	function toggleFilterMenu()
 	{	
@@ -194,5 +226,9 @@
 
 
 		}
+	}
+
+	function filter(strings){
+		//return index of search terms != -1
 	}
 </script>
