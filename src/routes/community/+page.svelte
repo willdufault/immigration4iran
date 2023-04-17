@@ -36,14 +36,14 @@
 				<p slot="body"> {component.be_body.getText()} </p>
 			</TextBlock>
 
-
-			<!-- DISCORD EMBED IN ANOTHER LANGAUGE? -->
+			<!-- DISCORD EMBED IN ANOTHER LANGUAGE? -->
+			<!-- TODO: FIGURE OUT HOW TO STYLE DISCORD EMBED, RN HAS MAP CLASS -->
 			<TextBlock>
 				<a slot="title" href="https://discord.gg/ur5qMP9WEE" target="_blank" rel="noreferrer"> {component.disc_title.getText()} </a>
 				<p slot="languages"> {component.available_langs.getText()} {component.disc_lang.getText()} </p>
-				<div slot="body"> 
+				<div class="discord-wrapper" slot="body"> 
 					<p align="center">
-						<iframe 
+						<iframe
 						class="map"
 						title="I4I Discord"
 						src="https://discord.com/widget?id=1089878589115224074&theme=dark"
@@ -82,8 +82,20 @@
 
 	.map
 	{
-		width:100%;
-		height:20rem;
+		width: 100%;
+		height: 20rem;
+	}
+
+	.discord-wrapper
+	{
+		display: block;
+		width: 100%;
+	}
+
+	.discord-wrapper iframe
+	{
+		/* height: 20rem;
+		width: 20rem; */
 	}
 </style>
 
