@@ -130,13 +130,4 @@
 	import * as component from "./mainPage.js";
 	import {Dictionary} from "./dictionary.js";
 	import PageWrapper from "./pageWrapper.svelte";
-
-	let langs = Dictionary.languages;
-
-	if(typeof localStorage !== 'undefined'){
-		Dictionary.currentLanguage = localStorage.getItem("language");
-	}
-	else{
-		Dictionary.currentLanguage = langs.English;
-	}
 </script>
