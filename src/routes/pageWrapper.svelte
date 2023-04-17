@@ -5,8 +5,10 @@
 		@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 		/* font 2: Open Sans */
 		@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-		/* font 3: Kalam */
-		@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+		/* font 3: ABeeZee */
+		@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+		/* font 4: Nunito Sans */
+		@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 		</style>
 </svelte:head>
 <!-- assign JS variables to CSS variables -->
@@ -24,6 +26,7 @@
 	--font1: {font1};
 	--font2: {font2};
 	--font3: {font3};
+	--font4: {font4};
 	"
 	>
     <slot></slot>
@@ -41,13 +44,13 @@
 		/* causes issues with margin on bottom element, temporarily in app.html */
 		/* background: #99c0ff; */
 		min-height: 100vh;
-		font-family: var(--font2);
+		font-family: var(--font4);
 	}
 </style>
 <script>
 	import { Dictionary } from "./dictionary";
 	// import JS variables
-	import { color1, color2, color3, color4, font1, font2, font3} from "../theme";
+	import { color1, color2, color3, color4, font1, font2, font3, font4} from "../theme";
 	let langs = Dictionary.languages;
 	if(typeof localStorage !== 'undefined'){
 		Dictionary.currentLanguage = localStorage.getItem("language");

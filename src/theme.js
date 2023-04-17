@@ -44,4 +44,5 @@ export let color4 = "#dddddd";
 // fonts
 export let font1 = "Fira Sans";
 export let font2 = "Open Sans";
-export let font3 = "Kalam";
+export let font3 = "ABeeZee";
+export let font4 = "Nunito Sans";

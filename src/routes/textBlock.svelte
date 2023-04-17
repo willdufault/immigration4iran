@@ -61,7 +61,7 @@
 		transform: scale(1.02) */
 	}
 
-	.tile-wrapper:hover .title-wrapper :global(*)
+	.tile-wrapper:hover .title-wrapper :global(a)
 	{
 		text-decoration: 0.2rem underline;
 	}

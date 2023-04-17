@@ -13,11 +13,45 @@
 			<p>|</p>
 			<p>{component.introText.getText()}</p>
 		</div>
+
 		<div class="tiles-container">
 			<div class="tile center-text" style="background:#348888;">
-				<p>a</p>
+				<p>{component.legal_body.getText()}</p>
 				<div class="tile-cover center-text" style="background:#DAFDBA">
-					<p>b</p>
+					<div class="icon-wrapper">
+						<Icon icon="file-icons:pogoscript"/>
+					</div>
+					<p>{component.legal_title.getText()}</p>
+				</div>
+			</div>
+			<div class="tile center-text" style="background:#348888;">
+				<p>{component.social_body.getText()}</p>
+				<div class="tile-cover center-text" style="background:#DAFDBA">
+					<p>{component.social_title.getText()}</p>
+				</div>
+			</div>
+			<div class="tile center-text" style="background:#348888;">
+				<p>{component.community_body.getText()}</p>
+				<div class="tile-cover center-text" style="background:#DAFDBA">
+					<p>{component.community_title.getText()}</p>
+				</div>
+			</div>
+			<div class="tile center-text" style="background:#348888;">
+				<p>{component.ngo_body.getText()}</p>
+				<div class="tile-cover center-text" style="background:#DAFDBA">
+					<p>{component.ngo_title.getText()}</p>
+				</div>
+			</div>
+			<div class="tile center-text" style="background:#348888;">
+				<p>{component.edu_body.getText()}</p>
+				<div class="tile-cover center-text" style="background:#DAFDBA">
+					<p>{component.edu_title.getText()}</p>
+				</div>
+			</div>
+			<div class="tile center-text" style="background:#348888;">
+				<p>{component.jobs_body.getText()}</p>
+				<div class="tile-cover center-text" style="background:#DAFDBA">
+					<p>{component.jobs_title.getText()}</p>
 				</div>
 			</div>
 
@@ -35,30 +69,6 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-	}
-
-	.sdg-wrapper
-	{
-		margin: 3%;
-		display: flex;
-		justify-content: center;
-		width: auto;
-	}
-	
-	.sdg-wrapper img
-	{
-		background: white;
-		padding: 1%;
-		box-shadow: 0 0 0.5rem #444;
-		transition: 0.3s ease-in-out;
-		border-radius: 0.2rem;;
-		cursor: pointer;
-	}
-
-	.sdg-wrapper img:hover
-	{
-		box-shadow: 0 0 1.5em #666;
-		transform: scale(1.02)
 	}
 
 	.roadmap-title
@@ -116,6 +126,15 @@
 		height: 100%;
 		border-radius: inherit;
 		padding: inherit;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 1.5rem;
+	}
+
+	.icon-wrapper 
+	{
+		font-size: 3rem;
 	}
 
 	.tile:hover .tile-cover
@@ -130,4 +149,5 @@
 	import * as component from "./mainPage.js";
 	import {Dictionary} from "./dictionary.js";
 	import PageWrapper from "./pageWrapper.svelte";
+	import Icon from "@iconify/svelte";
 </script>
