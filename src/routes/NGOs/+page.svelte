@@ -1,11 +1,12 @@
 <main>
     <PageWrapper>
         <Header/>
+		<p class="ngo-title"> {component.title.getText()}</p>
 		<div class="page-wrapper">
-			<div bind:this={filter_menu} class="filter-wrapper">
+			<div class="filter-wrapper">
 				<p class="filter-title">Filter NGOs</p>
 				<div class="filter-list">
-					<form>
+					<form class="filter-list-form">
 						<label for="searchbar">Search:</label>
 						<input type="search" id="searchbar" bind:value={search}>
 						<br>
@@ -21,8 +22,6 @@
 				</div>
 			</div>
 			<div class="ngo-wrapper">
-				<button bind:this={toggle_menu_button} class="toggle-filter-menu-button" on:click={() => toggleFilterMenu()}>&gt;</button>
-				<p class="ngo-title"> {component.title.getText()}</p>
 				<div class="block-wrapper">
 					<ul>
 						{#each ngoArray as ngo}
@@ -66,26 +65,15 @@
 		height: fit-content;
 		gap: 1%;
 		border-radius: 0.2rem;
-		width: 0;
-		margin: 0;
-		padding: 0;
+		width: fit-content;
+		margin: 1vh 0 0 2%;
+		padding: 2%;
+		border: 0.1rem solid #666666;
 	}
 
 	.filter-title
 	{
 		font-size: 2rem;
-	}
-
-	.toggle-filter-menu-button
-	{
-		transform: scaleX(1);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 2rem;
-		height: 2rem;
-		font-size: 2rem;
-		cursor: pointer;
 	}
 
 	.ngo-wrapper
@@ -95,10 +83,11 @@
 
 	.ngo-title
 	{
+		margin: 1%;
 		font-size: 3rem;
 		text-align: center;
 		padding: 3vh;
-		font-weight: 400;
+		font-weight: 700;
 	}
 
 	.block-wrapper
@@ -145,32 +134,6 @@
 	onMount(async () => {
 		loadNGOArray();
 	});
-
-	let toggle_menu_button;
-	let filter_menu;
-
-	let filter_menu_open = false;
-
-	function toggleFilterMenu()
-	{
-		if(filter_menu_open)
-		{
-			// close it
-			toggle_menu_button.style.transform = "scaleX(1)";
-			filter_menu.style.width = 0;
-			filter_menu.style.padding = 0;
-			filter_menu.style.margin = 0;
-		}
-		else
-		{
-			// open it
-			toggle_menu_button.style.transform = "scaleX(-1)";
-			filter_menu.style.width = "fit-content";
-			filter_menu.style.padding = "3%";
-			filter_menu.style.margin = "1%";
-		}
-		filter_menu_open = !filter_menu_open;
-	}
 
 	function filter(strings){
 		//return index of search terms != -1
