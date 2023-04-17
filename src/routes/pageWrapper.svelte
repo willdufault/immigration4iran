@@ -51,4 +51,11 @@
 	import { Dictionary } from "./dictionary";
 	// import JS variables
 	import { color1, color2, color3, color4, font1, font2, font3, font4} from "../theme";
+	let langs = Dictionary.languages;
+	if(typeof localStorage !== 'undefined'){
+		Dictionary.currentLanguage = localStorage.getItem("language");
+	}
+	else{
+		Dictionary.currentLanguage = langs.English;
+	}
 </script>
