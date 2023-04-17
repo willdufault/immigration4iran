@@ -9,7 +9,7 @@
 		<Header/>
 
         <div class="title-wrapper">
-			<p>{component.intro.getText()}something</p>
+			<p>{component.intro.getText()}</p>
 			<p>|</p>
 			<p>{component.introText.getText()}</p>
 		</div>
@@ -130,4 +130,13 @@
 	import * as component from "./mainPage.js";
 	import {Dictionary} from "./dictionary.js";
 	import PageWrapper from "./pageWrapper.svelte";
+
+	let langs = Dictionary.languages;
+
+	if(typeof localStorage !== 'undefined'){
+		Dictionary.currentLanguage = localStorage.getItem("language");
+	}
+	else{
+		Dictionary.currentLanguage = langs.English;
+	}
 </script>
