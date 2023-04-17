@@ -5,7 +5,9 @@
 		@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 		/* font 2: Open Sans */
 		@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-	</style>
+		/* font 3: Kalam */
+		@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+		</style>
 </svelte:head>
 <!-- assign JS variables to CSS variables -->
 <!-- to use these variables in styling, use var(--[variable name]) -->
@@ -21,6 +23,7 @@
 	--color4: {color4}; 
 	--font1: {font1};
 	--font2: {font2};
+	--font3: {font3};
 	"
 	>
     <slot></slot>
@@ -44,5 +47,5 @@
 <script>
 	import { Dictionary } from "./dictionary";
 	// import JS variables
-	import { color1, color2, color3, color4, font1, font2} from "../theme";
+	import { color1, color2, color3, color4, font1, font2, font3} from "../theme";
 </script>

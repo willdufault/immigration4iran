@@ -78,7 +78,8 @@
 
 	.logo-wrapper
 	{
-		font-size: 2rem;
+		font-size: 1.8rem;
+		font-family: var(--font3);
 		padding: 0 1%;
 	}
 
@@ -90,7 +91,7 @@
 	.nav-wrapper
 	{
 		display: flex;
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 	}
 
 	.nav-item
