@@ -79,7 +79,7 @@
 	.logo-wrapper
 	{
 		font-size: 1.8rem;
-		font-family: var(--font3);
+		font-weight: 700;
 		padding: 0 1%;
 	}
 

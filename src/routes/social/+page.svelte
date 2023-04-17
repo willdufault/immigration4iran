@@ -217,6 +217,7 @@
 	.social-title
 	{
 		font-size: 3rem;
+		font-weight: 600;
 		text-align: center;
 		padding: 3%;
 	}
