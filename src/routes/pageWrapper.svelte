@@ -41,10 +41,11 @@
 
 	main
 	{
-		/* causes issues with margin on bottom element, temporarily in app.html */
-		/* background: #99c0ff; */
+		background: #99c0ff;
 		min-height: 100vh;
 		font-family: var(--font4);
+		/* necessary for margin on border of page */
+		padding: 1px;
 	}
 </style>
 <script>

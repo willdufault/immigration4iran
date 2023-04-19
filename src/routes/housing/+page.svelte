@@ -1,8 +1,7 @@
 <main>
 	<PageWrapper>
 		<Header/>
-		legal page
-		(old legal page moved to /roadmap)
+		housing page
 	</PageWrapper>
 </main>
 <style>
