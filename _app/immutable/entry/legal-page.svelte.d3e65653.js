@@ -1,0 +1,5 @@
+import{S as $,i as _,s as d,k as h,y as m,l as v,m as x,z as p,h as l,n as w,b as i,A as c,g as f,d as g,B as u,q as y,r as P}from"../chunks/index.63db366c.js";import{P as b,H as q}from"../chunks/pageWrapper.0036bf7d.js";function z(s){let t,a,n;return t=new q({}),{c(){m(t.$$.fragment),a=y(`\r
+		legal page\r
+		(old legal page moved to /roadmap)`)},l(e){p(t.$$.fragment,e),a=P(e,`\r
+		legal page\r
+		(old legal page moved to /roadmap)`)},m(e,r){c(t,e,r),i(e,a,r),n=!0},i(e){n||(f(t.$$.fragment,e),n=!0)},o(e){g(t.$$.fragment,e),n=!1},d(e){u(t,e),e&&l(a)}}}function A(s){let t,a,n;return a=new b({props:{$$slots:{default:[z]},$$scope:{ctx:s}}}),{c(){t=h("main"),m(a.$$.fragment),this.h()},l(e){t=v(e,"MAIN",{class:!0});var r=x(t);p(a.$$.fragment,r),r.forEach(l),this.h()},h(){w(t,"class","svelte-7z2b4")},m(e,r){i(e,t,r),c(a,t,null),n=!0},p(e,[r]){const o={};r&1&&(o.$$scope={dirty:r,ctx:e}),a.$set(o)},i(e){n||(f(a.$$.fragment,e),n=!0)},o(e){g(a.$$.fragment,e),n=!1},d(e){e&&l(t),u(a)}}}class k extends ${constructor(t){super(),_(this,t,null,A,d,{})}}export{k as default};
