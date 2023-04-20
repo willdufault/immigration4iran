@@ -45,11 +45,11 @@ style={convertJSToCSS()}>
 		Dictionary.currentLanguage = langs.English;
 	}
 
-	
 	function convertJSToCSS()
 	{
 		let res = ""; // css style string
 		let theme_keys = Object.keys(theme_vars);  // var names in theme.js
+		// iterate through vars in theme.js and add to style string
 		for(let key of theme_keys)
 		{
 			res += `--${key}: ${theme_vars[key]}; `;
