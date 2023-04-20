@@ -7,7 +7,7 @@ let german = langs.German;
 let persian = langs.Persian;
 
 export let available_langs = new Dictionary();
-available_langs.setText(english, "Available in: ");
+available_langs.setText(english, "Available in: "); //change to ngo reference
 
 let french = "Français";
 let turkish = "Türkçe";

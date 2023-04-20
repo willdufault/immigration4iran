@@ -7,7 +7,7 @@ let german = langs.German;
 let persian = langs.Persian;
 
 export let available_langs = new Dictionary();
-available_langs.setText(english, "Available in: ");
+available_langs.setText(english, "Available in: "); //note: change to external reference due to reuse
 
 let french = "Français";
 let turkish = "Türkçe";
@@ -20,7 +20,7 @@ let italian = "Italiano";
 
 export let contact = new Dictionary();
 contact.setText(english, "Contact:");
-contact.setText(german, "Kontact:")
+contact.setText(german, "Kontact:") //set to external reference due to reuse
 
 export let title = new Dictionary();
 

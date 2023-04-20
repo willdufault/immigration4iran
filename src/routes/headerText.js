@@ -5,6 +5,7 @@ export let legal = new Dictionary();
 export let socialServices = new Dictionary();
 export let communityBuilding = new Dictionary();
 export let language = new Dictionary();
+export let ngos = new Dictionary();
 
 let langs = Dictionary.languages;
 
@@ -18,3 +19,8 @@ title.setText(persian, "مهاجرت4ایران");
 
 legal.setText(english, "Legal");
 legal.setText(german, "Gesetzlich");
+
+socialServices.setText("Social Services");
+communityBuilding.setText("Community Building");
+ngos.setText("NGO Finder");
+

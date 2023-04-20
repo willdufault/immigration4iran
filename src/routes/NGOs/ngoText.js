@@ -16,7 +16,7 @@ let russian = "русский";
 let ukrainian = "українська";
 
 export let contact = new Dictionary();
-contact.setText(english, "Contact:");
+contact.setText(english, "Contact:"); //change to referecne contact in home page
 contact.setText(german, "Kontact:");
 contact.setText(persian, "مخاطب:");
 
@@ -29,7 +29,7 @@ export let sample1title = new Dictionary();
 sample1title.setText(english, "Name of NGO");
 sample1title.setText(german, "Name von NGO");
 export let sample1body = new Dictionary();
-sample1body.setText(english, "Description of NGO");
+sample1body.setText(english, "Name of NGO");
 sample1body.setText(german, "German description of NGO");
 
 export let wu_title = new Dictionary();
