@@ -69,16 +69,12 @@
 					<p>{component.jobs_title.getText()}</p>
 				</div>
 			</div>
-
 		</div>
-
-		<!-- <div class="sdg-wrapper">
-			<img on:click={() => window.open(`${base}/legal`)} src="https://conflictoflaws.net/News/2019/04/english_SDG_17goals_poster_all_languages_with_UN_emblem_1.png" alt="sdgs"/>
-		</div> -->
 		<hr class="gradient">
 		<p class="roadmap-title">About Us</p>
-		
 		<h1>Hello we are I4I, we are a student team from Worcester Polytechnic Institute that worked on this project for our interqualifying project. </h1>
+		<div class="footer-spacer" style="margin: 8%"></div>
+		<Footer/>
 	</PageWrapper>
 </main>
 <style>
@@ -184,4 +180,5 @@
 	import {Dictionary} from "./dictionary.js";
 	import PageWrapper from "./pageWrapper.svelte";
 	import Icon from "@iconify/svelte";
+	import Footer from "./footer.svelte";
 </script>

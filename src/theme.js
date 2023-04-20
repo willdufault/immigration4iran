@@ -3,24 +3,9 @@
 HOW TO EDIT THE WEBSITE THEME:
 NOTE: anything in square brackets should be substituted for an actual value
 
-1) add variables here with this format: 
+add variables here with this format: 
 	
 	export let [variable name] = [value];
-
-2) in pageWrapper.svelte, import the variables at the bottom in the script tag using this format:
-	
-	import { [variable name 1], [variable name 2], ... , color1 } from "../theme.js";
-
-3) in pageWrapper.svelte, add each variable to the <main> tag under the style option with using this format:
-   NOTE: the value on the right is in curly braces
-	
-   <main style="
-	--[variable name 1]: {[value1]};
-	--[variable name 2]: {[value2]};
-	...
-	--color1: "#ff0000"
-	--font1: "Arial";
-	">
 
 FOR FONTS ONLY:
 

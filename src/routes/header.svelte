@@ -9,11 +9,8 @@
 					<p>{legal.getText()}</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
 				<div bind:this={legal_dropdown} class="dropdown-wrapper">
-					<div class="dropdown-item">
-						<p>thing 1</p>
-					</div>
-					<div class="dropdown-item">
-						<p>thing 2</p>
+					<div class="dropdown-item" on:click={() => openRoadmap()} on:keypress={{}}>
+						<p>Roadmap</p> <!-- "Legal Roadmap" goes onto two lines -->
 					</div>
 				</div>
 			</div>
@@ -22,11 +19,14 @@
 					<p>Social Services</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
 				<div bind:this={social_dropdown} class="dropdown-wrapper">
-					<div class="dropdown-item">
-						<p>thing 1</p>
+					<div class="dropdown-item" on:click={() => openJobs()} on:keypress={{}}>
+						<p>Jobs</p>
 					</div>
-					<div class="dropdown-item">
-						<p>thing 2</p>
+					<div class="dropdown-item" on:click={() => openHousing()} on:keypress={{}}>
+						<p>Housing</p>
+					</div>
+					<div class="dropdown-item" on:click={() => openEdu()} on:keypress={{}}>
+						<p>Education</p>
 					</div>
 				</div>
 			</div>
@@ -37,9 +37,6 @@
 				<div bind:this={comm_dropdown} class="dropdown-wrapper">
 					<div class="dropdown-item" on:click={() => openNGO()} on:keypress={{}}>
 						<p>NGOs</p>
-					</div>
-					<div class="dropdown-item">
-						<p>thing 2</p>
 					</div>
 				</div>
 			</div>
@@ -201,5 +198,25 @@
 	function openNGO()
 	{
 		window.open(`${base}/NGOs`, "_self")
+	}
+
+	function openJobs()
+	{
+		window.open(`${base}/jobs`, "_self")
+	}
+
+	function openHousing()
+	{
+		window.open(`${base}/housing`, "_self")
+	}
+
+	function openEdu()
+	{
+		window.open(`${base}/education`, "_self")
+	}
+
+	function openRoadmap()
+	{
+		window.open(`${base}/roadmap`, "_self")
 	}
 </script>
