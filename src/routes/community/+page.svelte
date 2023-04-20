@@ -71,6 +71,7 @@
 	.comm-title
 	{
 		font-size: 3rem;
+		font-weight: 700;
 		text-align: center;
 		padding: 3%;
 	}

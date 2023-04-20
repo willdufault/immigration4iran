@@ -14,7 +14,6 @@
 <main dir={Dictionary.currentLanguage === Dictionary.languages.Persian ? "rtl" : "ltr"}
 style={convertJSToCSS()}>
     <slot></slot>
-	<button on:click={() => convertJSToCSS()}>test</button>
 </main>
 <style>
 	*
@@ -27,10 +26,12 @@ style={convertJSToCSS()}>
 	main
 	{
 		background: #99c0ff;
-		min-height: 100vh;
 		font-family: var(--font4);
 		/* necessary for margin on border of page */
-		padding: 1px;
+		padding-bottom: 1px;
+		position: relative;
+		min-height: 100vh;
+		/* width: 100%; */
 	}
 </style>
 <script>

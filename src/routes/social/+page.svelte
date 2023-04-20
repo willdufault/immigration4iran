@@ -25,52 +25,37 @@
 			</TextBlock>
 
 			<TextBlock>
-				<p slot="title"> {component.housing_title.getText()} </p>
-				<div slot="body">
-					<p> 
-						{component.housing_body1.getText()}
-					</p>
-					<p>
-						<MyLink
-							link="https://www.refugees-welcome.net/"
-							text={component.housing_link.getText()}/>
-						{component.housing_body2.getText()}
-					</p>
-					<ul style="margin:1em">
-						<li>
-							<MyLink
-								link="https://{component.housing_list[0]}"
-								text={component.housing_list[0]}/>
-						</li>
-						<li>
-							<MyLink
-								link="https://{component.housing_list[1]}"
-								text={component.housing_list[1]}/>
-						</li>
-						<li>
-							<MyLink
-								link="https://{component.housing_list[2]}"
-								text={component.housing_list[2]}/>
-						</li>
-						<li>
-							<MyLink
-								link="https://{component.housing_list[3]}"
-								text={component.housing_list[3]}/>
-						</li>
-						<li>
-							<MyLink
-								link="https://{component.housing_list[4]}"
-								text={component.housing_list[4]}/>
-						</li>
-						<li>
-							<MyLink
-								link="https://{component.housing_list[5]}"
-								text={component.housing_list[5]}/>
-						</li>
-					</ul>
-				</div>
+				<MyLink
+					slot="title"
+					link={`${base}/housing`}
+					text="Housing (NEEDS TRANSLATION)"/>
+				<p slot="body">
+					Information about finding housing in Germany. 
+				</p>
 			</TextBlock>
 
+			<TextBlock>
+				<MyLink
+					slot="title"
+					link={`${base}/jobs`}
+					text="Jobs (NEEDS TRANSLATION)"/>
+				<p slot="body">
+					Information about finding a job in Germany. 
+				</p>
+			</TextBlock>
+			
+			<TextBlock>
+				<MyLink
+					slot="title"
+					link={`${base}/education`}
+					text="Education (NEEDS TRANSLATION)"/>
+				<p slot="body">
+					Information about education in Germany. This page includes links to university opportunities,
+					integration courses, and more. 
+				</p>
+			</TextBlock>
+
+			
 			<TextBlock>
 				<p slot="title"> {component.health_title.getText()} </p>
 				<p slot="body">
@@ -80,46 +65,6 @@
 						text={component.health_link.getText()}/>
 					{component.health_body2.getText()}
 				</p>
-			</TextBlock>
-
-			<TextBlock>
-				<p slot="title"> {component.jobs_title.getText()} </p>
-				<div slot="body">
-					<p> {component.jobs_body1.getText()} </p>
-					<ul style="margin:1em">
-						<li>
-							<MyLink
-								link="https://{component.jobs_list[0]}"
-								text={component.jobs_list[0]}/>
-						</li>
-						<li>
-							<MyLink
-								link="https://{component.jobs_list[1]}"
-								text={component.jobs_list[1]}/>
-						</li>
-						<li>
-							<MyLink
-								link="https://{component.jobs_list[2]}"
-								text={component.jobs_list[2]}/>
-						</li>
-						<li>
-							<MyLink
-								link="https://{component.jobs_list[3]}"
-								text={component.jobs_list[3]}/>
-						</li>
-						<li>
-							<MyLink
-								link="https://{component.jobs_list[4]}"
-								text={component.jobs_list[4]}/>
-						</li>
-					</ul>
-					<p> {component.jobs_body2.getText()}
-						<MyLink
-						link="https://{component.jobs_link.getText()}"
-						text={component.jobs_link.getText()}/>
-					</p>
-					
-				</div>
 			</TextBlock>
 
 			<TextBlock>
@@ -147,29 +92,6 @@
 			</TextBlock>
 
 			<TextBlock>
-				<p slot="title"> {component.edu_title.getText()} </p>
-				<div slot="body">
-					<p align="center">
-						<!-- Fix link + make map-->
-						<iframe
-						class= "map" 
-						title="Education Oppurtunities" 
-						src="https://www.google.com/maps/d/embed?mid=1dIJKbgjwdzyQCkMGI_Ezai8v06o&hl=de&ehbc=2E312F"/>
-					</p>
-					<p>
-						{component.edu_body1.getText()} 
-						<MyLink
-							link="https://hochschulforumdigitalisierung.de/de/blog/digital-education-and-information-resources-refugees"
-							text={component.edu_link2.getText()}/>
-						{component.edu_body2.getText()}
-						<MyLink
-							link="https://{component.edu_link3.getText()}"
-							text={component.edu_link3.getText()}/>
-					</p>
-				</div>
-			</TextBlock>
-
-			<TextBlock>
 				<p slot="title"> {component.programs_title.getText()} </p>
 				<div slot="body">
 					<p align="center">
@@ -184,17 +106,6 @@
 						text={component.programs_link.getText()}/>
 					{component.programs_body1.getText()} 
 				</div>
-			</TextBlock>
-
-			<TextBlock>
-				<p slot="title"> {component.integration_title.getText()} </p>
-				<p slot="body">
-					{component.integration_body1.getText()} 
-					<MyLink
-						link="https://www.bamf.de/EN/Themen/Integration/ZugewanderteTeilnehmende/Integrationskurse/integrationskurse-node.html"
-						text={component.integration_link.getText()}/>
-					{component.integration_body2.getText()} 
-				</p>
 			</TextBlock>
 		</div>
     </PageWrapper>
@@ -217,9 +128,9 @@
 	.social-title
 	{
 		font-size: 3rem;
-		font-weight: 600;
+		font-weight: 700;
 		text-align: center;
-		padding: 3%;
+		margin: 3%;
 	}
 
 	.block-wrapper
