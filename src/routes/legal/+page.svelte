@@ -6,15 +6,15 @@
 		</div>
 		<div class="tools-wrapper">
 			<TextBlock>
-				<!-- <p slot="title"> {component.integration_title.getText()} </p>
-				<p slot="body">
-					{component.integration_body1.getText()} 
-					<MyLink
-						link="https://www.bamf.de/EN/Themen/Integration/ZugewanderteTeilnehmende/Integrationskurse/integrationskurse-node.html"
-						text={component.integration_link.getText()}/>
-					{component.integration_body2.getText()} 
-				</p> -->
+				<MyLink slot="title" link={`${base}/roadmap`} text={component.roadmap_title.getText()}/>
+				<p slot="body">{component.roadmap_description.getText()}</p>
 			</TextBlock>
+			<!--
+				<TextBlock>
+				<MyLink slot="title" link="https://google.com" text="legal tool name"/>
+				<p slot="body">legal tool description</p>
+			</TextBlock>
+		-->
 		</div>
 	</PageWrapper>
 </main>
@@ -41,8 +41,10 @@
 	}
 </style>
 <script>
+    import { base } from "$app/paths";
 	import PageWrapper from "../pageWrapper.svelte";
 	import Header from "../header.svelte";
 	import TextBlock from "../textBlock.svelte";
 	import * as component from "./legalText.js";
+	import MyLink from "../myLink.svelte";
 </script>
