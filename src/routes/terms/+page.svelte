@@ -5,11 +5,10 @@
 			<p>Terms and Conditions</p>
 		</div>
 		<div class="body-wrapper">
-			<p>This website was created by students from Worcester Polytechnic Institute. Immigration4Iran
-				does not collect any personalized data from its users. The information listed on Immigration4Iran
-				can not be guaranteed in its accuracy and should not be taken for legal advice. Official
-				information can be found on <a href="https://www.bamf.de" target="_blank">bamf.de</a>. Last updated
-				April 2023. 
+			<p>Immigration4Iran does not collect any personalized data from its users. The information 
+				listed on Immigration4Iran can not be guaranteed in its accuracy and should not be taken 
+				for legal advice. Official information can be found on <a href="https://www.bamf.de" target="_blank">bamf.de</a>. 
+				Last updated April 2023. 
 			</p>
 		</div>
 	</PageWrapper>
