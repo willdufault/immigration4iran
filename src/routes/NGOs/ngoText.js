@@ -14,6 +14,7 @@ let turkish = "Türkçe";
 let arabic = "عربي";
 let russian = "русский";
 let ukrainian = "українська";
+let pashto = "پښتو";
 
 export let contact = new Dictionary();
 contact.setText(english, "Contact:"); //change to referecne contact in home page
@@ -157,8 +158,75 @@ export let ifu_body = new Dictionary();
 ifu_body.setText(english, "Immigration4Ukraine is a website created by UPJ Pro Bono Rechtsberatung, \
                             made to provide information for Ukrainian refugees in Germany. \
                             Much of the information on the website could be helpful to refugees from any country.");
-ufu_body.setText(german, "German description of NGO");
+ifu_body.setText(german, "German description of NGO");
 export let ifu_lang = new Dictionary();
 ifu_lang.setText(english, `${german}, ${english}, ${russian}, ${ukrainian}`);
 export let ifu_contact = new Dictionary();
 ifu_contact.setText(english, "immigration4ukraine@upj.de");
+
+export let haw_title = new Dictionary();
+haw_title.setText(english, "Hawar");
+export let haw_body = new Dictionary();
+haw_body.setText(english, "Hawar is an NGO in Germany and Iraq that makes the projects SCORING GIRLS*,\
+                        BACK TO LIFE, #AfghanistanWeSeeYou and LEARN to ImpACT, these projects highlight\
+                        the voices of persecuted minorities.");
+haw_body.setText(german, "German description of NGO");
+export let haw_lang = new Dictionary();
+haw_lang.setText(english, `${german}, ${english}`);
+export let haw_contact = new Dictionary();
+export let haw_link = new Dictionary();
+haw_link.setText(english, "https://www.hawar.help/en/")
+haw_link.setText(german, "https://www.hawar.help/de/")
+haw_contact.setText(english, "info@hawar.help");
+
+export let gsb_title = new Dictionary();
+gsb_title.setText(english, "Give Something Back to Berlin");
+export let gsb_body = new Dictionary();
+gsb_body.setText(english, "GSBTB is an NGO that holds local events in Berlin to facilitate a helpful local\
+                        community. On their Activity Calendar website they hold social events like learning\
+                        to play musical instruments like Guitar and Piano.");
+gsb_body.setText(german, "German description of NGO");
+export let gsb_lang = new Dictionary();
+gsb_lang.setText(english, `${english}`);
+export let gsb_contact = new Dictionary();
+export let gsb_link = new Dictionary();
+gsb_contact.setText(english, "hello@gsbtb.org");
+
+export let wbs_title = new Dictionary();
+wbs_title.setText(english, "Willkommensbündnis Steglitz-Zehlendorf");
+export let wbs_body = new Dictionary();
+wbs_body.setText(english, "Willkommensbündnis is an NGO that holds local events in Berlin like johanes and\
+                        round tables where refugees can come and meet people while getting help. The round table\
+                        lets people of many different backgrounds discuss what they need help on.");
+wbs_body.setText(german, "German description of NGO");
+export let wbs_lang = new Dictionary();
+wbs_lang.setText(english, `${german}`);
+export let wbs_contact = new Dictionary();
+export let wbs_link = new Dictionary();
+wbs_contact.setText(english, "info@wikobuesz.berlin");
+
+export let flr_title = new Dictionary();
+flr_title.setText(english, "Flüchtlingsrat Berlin");
+export let flr_body = new Dictionary();
+flr_body.setText(english, "Flüchtlingsrat Berlin runs a Berlin refugee council, they connect with politicians in\
+                        Berlin and other councils in other states to further the living conditions and rights of\
+                        refugees. The council is open to all people to join.");
+flr_body.setText(german, "German description of NGO");
+export let flr_lang = new Dictionary();
+flr_lang.setText(english, `${german}`);
+export let flr_contact = new Dictionary();
+export let flr_link = new Dictionary();
+flr_contact.setText(english, "buero@fluechtlingsrat-berlin.de");
+
+export let rw_title = new Dictionary();
+rw_title.setText(english, "Refugees Welcome");
+export let rw_body = new Dictionary();
+rw_body.setText(english, "Refugees Welcome is an NGO that fosters relationships between refugees and locals.");
+rw_body.setText(german, "German description of NGO");
+export let rw_lang = new Dictionary();
+rw_lang.setText(english, `${english}`);
+export let rw_contact = new Dictionary();
+rw_contact.setText(english, "hi@refugees-welcome.net");
+
+
+
