@@ -32,7 +32,7 @@ gsbtb_title.setText(english, "Give Something Back to Berlin");
 export let gsbtb_body = new Dictionary();
 gsbtb_body.setText(english, "Give Something Back to Berlin holds local events in Berlin to facilitate a helpful local community.  \
                               On their Activity Calendar website they hold social events like learning to play musical instruments \
-                              like Guitar and Piano.");
+                              like guitar and piano.");
 gsbtb_body.setText(german, "German description of NGO");
 export let gsbtb_lang = new Dictionary();
 gsbtb_lang.setText(english, `${german}, ${english}`);
@@ -50,11 +50,11 @@ fnet_lang.setText(english, english);
 
 
 export let wb_title = new Dictionary();
-wb_title.setText(english, "Willkommensbündnis Stieglitz-Zehlendorf");
+wb_title.setText(english, "Willkommensbündnis Steglitz-Zehlendorf");
 export let wb_body = new Dictionary();
-wb_body.setText(english, "Willkommensbündnis is an NGO that holds local events in Berlin like job fares and \
-                            round tables where refugees can come and meet people while getting help. The round \
-                            table lets people of many different backgrounds discuss what they need help on.");
+wb_body.setText(english, "Willkommensbündnis is an NGO that holds local events in Berlin like job fairs and \
+                            roundtables where refugees can come and meet people while getting help. The roundtable \
+                            lets people of many different backgrounds discuss what they need help on.");
 wb_body.setText(german, "German description of NGO");
 export let wb_lang = new Dictionary();
 wb_lang.setText(english, german);
