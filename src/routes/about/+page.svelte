@@ -2,11 +2,11 @@
 	<PageWrapper>
 		<Header/>
 		<div class="title-wrapper">
-			<p>About Us</p>
+			<p> {component.about_title.getText()} </p>
 		</div>
 		<div class="body-wrapper">
 			<p>
-				about us section
+				{component.about_body.getText()}
 			</p>
 		</div>
 	</PageWrapper>
@@ -39,6 +39,8 @@
 	}
 </style>
 <script>
+	import * as component from "./aboutText.js"; 
+	import MyLink from "../myLink.svelte";
 	import PageWrapper from "../pageWrapper.svelte";
 	import Header from "../header.svelte";
 </script>
