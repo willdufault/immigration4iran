@@ -7,62 +7,60 @@
 <main>
 	<PageWrapper>
 		<Header/>
-
         <div class="title-wrapper">
 			<p>{component.intro.getText()}</p>
 			<p>|</p>
 			<p>{component.introText.getText()}</p>
 		</div>
-
 		<div class="tiles-container">
-			<div class="tile center-text" style="background:#348888;" on:click={() => window.open(`${base}/legal`, "_self")} on:keypress={{}}>
+			<div class="tile center-text" on:click={() => window.open(`${base}/legal`, "_self")} on:keypress={{}}>
 				<p>{component.legal_body.getText()}</p>
-				<div class="tile-cover center-text" style="background:#DAFDBA">
+				<div class="tile-cover center-text">
 					<div class="icon-wrapper">
 						<Icon icon="mdi:legal"/>
 					</div>
 					<p>{component.legal_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" style="background:#348888;" on:click={() => window.open(`${base}/social`, "_self")} on:keypress={{}}>
+			<div class="tile center-text" on:click={() => window.open(`${base}/social`, "_self")} on:keypress={{}}>
 				<p>{component.social_body.getText()}</p>
-				<div class="tile-cover center-text" style="background:#DAFDBA">
+				<div class="tile-cover center-text">
 					<div class="icon-wrapper">
 						<Icon icon="medical-icon:i-social-services"/>
 					</div>
 					<p>{component.social_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" style="background:#348888;" on:click={() => window.open(`${base}/community`, "_self")} on:keypress={{}}>
+			<div class="tile center-text" on:click={() => window.open(`${base}/community`, "_self")} on:keypress={{}}>
 				<p>{component.community_body.getText()}</p>
-				<div class="tile-cover center-text" style="background:#DAFDBA">
+				<div class="tile-cover center-text">
 					<div class="icon-wrapper">
 						<Icon icon="fluent:people-community-24-filled"/>
 					</div>
 					<p>{component.community_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" style="background:#348888;" on:click={() => window.open(`${base}/NGOs`, "_self")} on:keypress={{}}>
+			<div class="tile center-text" on:click={() => window.open(`${base}/NGOs`, "_self")} on:keypress={{}}>
 				<p>{component.ngo_body.getText()}</p>
-				<div class="tile-cover center-text" style="background:#DAFDBA">
+				<div class="tile-cover center-text">
 					<div class="icon-wrapper">
 						<Icon icon="mdi:building"/>
 					</div>
 					<p>{component.ngo_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" style="background:#348888;" on:click={() => window.open(`${base}/education`, "_self")} on:keypress={{}}>
+			<div class="tile center-text" on:click={() => window.open(`${base}/education`, "_self")} on:keypress={{}}>
 				<p>{component.edu_body.getText()}</p>
-				<div class="tile-cover center-text" style="background:#DAFDBA">
+				<div class="tile-cover center-text">
 					<div class="icon-wrapper">
 						<Icon icon="mdi:education-outline"/>
 					</div>
 					<p>{component.edu_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" style="background:#348888;" on:click={() => window.open(`${base}/jobs`, "_self")} on:keypress={{}}>
+			<div class="tile center-text" on:click={() => window.open(`${base}/jobs`, "_self")} on:keypress={{}}>
 				<p>{component.jobs_body.getText()}</p>
-				<div class="tile-cover center-text" style="background:#DAFDBA">
+				<div class="tile-cover center-text">
 					<div class="icon-wrapper">
 						<Icon icon="ic:outline-work-outline"/>
 					</div>
@@ -70,9 +68,6 @@
 				</div>
 			</div>
 		</div>
-		<hr class="gradient">
-		<p class="roadmap-title">About Us</p>
-		<h1>Hello we are I4I, we are a student team from Worcester Polytechnic Institute that worked on this project for our interqualifying project. </h1>
 		<div class="footer-spacer" style="margin: 8%"></div>
 		<Footer/>
 	</PageWrapper>
@@ -85,35 +80,14 @@
 		box-sizing: border-box;
 	}
 
-	hr.gradient
-	{
-		/* border: 2px solid blue; */
-		height: 3px;
-		border: none;
-		border-radius: 6px;
-		background: linear-gradient(
-		90deg,
-		rgb(29, 18, 255) 0%,
-		rgb(12, 12, 174) 21%,
-		rgba(6, 84, 170, 1) 51%,
-		rgb(0, 255, 115) 100%
-		);	
-	}
-
-	.roadmap-title
-	{
-		text-align: center;
-		font-size: 3rem;
-		font-family: var(--font1);
-	}
 	.title-wrapper
 	{
-		margin: 0 20%; 
 		display: flex; 
 		justify-content: space-around;
 		font-size: 2.5rem;
 		font-weight: 500;
-		margin: 4% 10%;
+		margin: 4% 20%;
+		color: var(--color7);
 	}
 
 	.tiles-container
@@ -145,6 +119,8 @@
 		display: flex;
 		flex-grow: 1;
 		border-radius: 0.2rem;
+		background: var(--color5);
+		color: var(--color7);
 	}
 
 	.tile-cover
@@ -160,7 +136,11 @@
 		flex-direction: column;
 		align-items: center;
 		font-size: 1.5rem;
+		background: var(--color4);
+		color: var(--color7);
+
 	}
+
 
 	.icon-wrapper 
 	{

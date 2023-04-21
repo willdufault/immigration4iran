@@ -1,9 +1,9 @@
 <main style={convertJSToCSS()}>
 	<div class="footer-wrapper">
-		<div class="footer-item">
+		<div class="footer-item" on:click={() => openTerms()} on:keypress={{}}>
 			<p>Terms and Conditions</p>
 		</div>
-		<div class="footer-item">
+		<div class="footer-item" on:click={() => openAbout()} on:keypress={{}}>
 			<p>About us</p>
 		</div>
 	</div>
@@ -28,7 +28,8 @@
 	{
 		display: flex;
 		justify-content: flex-end;
-		background: var(--color3);
+		background: var(--color2);
+		color: var(--color7);
 	}
 
 	.footer-item
@@ -39,7 +40,7 @@
 
 	.footer-item:hover
 	{
-		background: var(--color4);
+		background: var(--color3);
 		cursor: pointer;
 	}
 </style>
@@ -58,5 +59,15 @@
 			res += `--${key}: ${theme_vars[key]}; `;
 		}
 		return res;
+	}
+
+	function openAbout()
+	{
+		window.open(`${base}/about`, "_self");
+	}
+
+	function openTerms()
+	{
+		window.open(`${base}/terms`, "_self");
 	}
 </script>

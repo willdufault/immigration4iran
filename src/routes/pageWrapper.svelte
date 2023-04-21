@@ -25,7 +25,7 @@ style={convertJSToCSS()}>
 
 	main
 	{
-		background: #99c0ff;
+		background: var(--color8);
 		font-family: var(--font4);
 		/* necessary for margin on border of page */
 		padding-bottom: 1px;

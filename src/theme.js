@@ -22,10 +22,14 @@ and import with a new font and all instances of the old font will be replaced wi
 */
 
 // colors
-export let color1 = "#ff0000";
-export let color2 = "#0000ff";
-export let color3 = "#ffffff";
-export let color4 = "#dddddd";
+export let color1 = "#212529";
+export let color2 = "#dee2e6";
+export let color3 = "#ced4da";
+export let color4 = "#fecf3e";
+export let color5 = "#ffe246";
+export let color6 = "#f05454";
+export let color7 = "#001d3d";
+export let color8 = "#eeeeee";
 // fonts
 export let font1 = "Fira Sans";
 export let font2 = "Open Sans";
