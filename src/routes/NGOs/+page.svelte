@@ -128,7 +128,13 @@
 			new Ngo("https://www.medibuero-kiel.de/", component.mk_title.getText(), component.available_langs.getText(), component.mk_lang.getText(), component.mk_body.getText(), component.mk_contact.getText(), "info@medibuero-kiel.de"),
 			new Ngo("https://verband-dsh.de/ussa/", component.ussa_title.getText(), component.available_langs.getText(), component.ussa_lang.getText(), component.ussa_body.getText(), component.ussa_contact.getText(), component.ussa_contact.getText()),
 			new Ngo("https://www.unitedforukraine.org", component.ufu_title.getText(), component.available_langs.getText(), component.ufu_lang.getText(), component.ufu_body.getText(), component.ufu_contact.getText(), component.ufu_contact.getText()),
-			new Ngo("https://immigration4ukraine.eu/", component.ifu_title.getText(), component.available_langs.getText(), component.ifu_lang.getText(), component.ifu_body.getText(), component.ifu_contact.getText(), component.ifu_contact.getText())
+			new Ngo("https://immigration4ukraine.eu/", component.ifu_title.getText(), component.available_langs.getText(), component.ifu_lang.getText(), component.ifu_body.getText(), component.ifu_contact.getText(), component.ifu_contact.getText()),
+			new Ngo(component.haw_link.getText(), component.haw_title.getText(), component.available_langs.getText(), component.haw_lang.getText(), component.haw_body.getText(), component.haw_contact.getText(), component.haw_contact.getText()),
+			new Ngo("https://gsbtb.org/", component.gsb_title.getText(), component.available_langs.getText(), component.gsb_lang.getText(), component.gsb_body.getText(), component.gsb_contact.getText(), component.gsb_contact.getText()),
+			new Ngo("https://www.willkommensbuendnis-steglitz-zehlendorf.de/", component.wbs_title.getText(), component.available_langs.getText(), component.wbs_lang.getText(), component.wbs_body.getText(), component.wbs_contact.getText(), component.wbs_contact.getText()),
+			new Ngo("https://fluechtlingsrat-berlin.de/", component.flr_title.getText(), component.available_langs.getText(), component.flr_lang.getText(), component.flr_body.getText(), component.flr_contact.getText(), component.flr_contact.getText()),
+			new Ngo("https://www.refugees-welcome.net/", component.rw_title.getText(), component.available_langs.getText(), component.rw_lang.getText(), component.rw_body.getText(), component.rw_contact.getText(), component.rw_contact.getText())
+			
 		];
 	}
 
