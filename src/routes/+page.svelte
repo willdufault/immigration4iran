@@ -13,7 +13,7 @@
 			<p>{component.introText.getText()}</p>
 		</div>
 		<div class="tiles-container">
-			<div class="tile center-text" on:click={() => window.open(`${base}/legal`, "_self")} on:keypress={{}}>
+			<div class="tile center-text round-top-left" on:click={() => window.open(`${base}/legal`, "_self")} on:keypress={{}}>
 				<p>{component.legal_body.getText()}</p>
 				<div class="tile-cover center-text">
 					<div class="icon-wrapper">
@@ -31,7 +31,7 @@
 					<p>{component.social_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" on:click={() => window.open(`${base}/community`, "_self")} on:keypress={{}}>
+			<div class="tile center-text round-top-right" on:click={() => window.open(`${base}/community`, "_self")} on:keypress={{}}>
 				<p>{component.community_body.getText()}</p>
 				<div class="tile-cover center-text">
 					<div class="icon-wrapper">
@@ -40,7 +40,7 @@
 					<p>{component.community_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" on:click={() => window.open(`${base}/NGOs`, "_self")} on:keypress={{}}>
+			<div class="tile center-text round-bottom-left" on:click={() => window.open(`${base}/NGOs`, "_self")} on:keypress={{}}>
 				<p>{component.ngo_body.getText()}</p>
 				<div class="tile-cover center-text">
 					<div class="icon-wrapper">
@@ -58,7 +58,7 @@
 					<p>{component.edu_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" on:click={() => window.open(`${base}/jobs`, "_self")} on:keypress={{}}>
+			<div class="tile center-text round-bottom-right" on:click={() => window.open(`${base}/jobs`, "_self")} on:keypress={{}}>
 				<p>{component.jobs_body.getText()}</p>
 				<div class="tile-cover center-text">
 					<div class="icon-wrapper">
@@ -141,6 +141,25 @@
 
 	}
 
+	.round-top-left
+	{
+		border-start-start-radius: 2rem;
+	}
+
+	.round-top-right
+	{
+		border-start-end-radius: 2rem;
+	}
+
+	.round-bottom-left
+	{
+		border-end-start-radius: 2rem;
+	}
+
+	.round-bottom-right
+	{
+		border-end-end-radius: 2rem;
+	}
 
 	.icon-wrapper 
 	{

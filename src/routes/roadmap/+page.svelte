@@ -182,12 +182,12 @@
 		border-start-end-radius: 2rem;
 	}
 
-	.round-bottom-right
+	.round-bottom-left
 	{
 		border-end-start-radius: 2rem;
 	}
 
-	.round-bottom-left
+	.round-bottom-right
 	{
 		border-end-end-radius: 2rem;
 	}
