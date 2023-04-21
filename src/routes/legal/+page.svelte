@@ -1,8 +1,21 @@
 <main>
 	<PageWrapper>
 		<Header/>
-		legal page
-		(old legal page moved to /roadmap)
+		<div class="title-wrapper">
+			<p>{component.title.getText()}</p>
+		</div>
+		<div class="tools-wrapper">
+			<TextBlock>
+				<MyLink slot="title" link={`${base}/roadmap`} text={component.roadmap_title.getText()}/>
+				<p slot="body">{component.roadmap_description.getText()}</p>
+			</TextBlock>
+			<!--
+				<TextBlock>
+				<MyLink slot="title" link="https://google.com" text="legal tool name"/>
+				<p slot="body">legal tool description</p>
+			</TextBlock>
+		-->
+		</div>
 	</PageWrapper>
 </main>
 <style>
@@ -12,8 +25,26 @@
 		padding: 0;
 		box-sizing: border-box;
 	}
+
+	.title-wrapper
+	{
+		font-size: 3rem;
+		font-weight: 700;
+		display: flex;
+		justify-content: center;
+		margin: 4%;
+	}
+
+	.tools-wrapper
+	{
+		margin: 0 10%;
+	}
 </style>
 <script>
+    import { base } from "$app/paths";
 	import PageWrapper from "../pageWrapper.svelte";
 	import Header from "../header.svelte";
+	import TextBlock from "../textBlock.svelte";
+	import * as component from "./legalText.js";
+	import MyLink from "../myLink.svelte";
 </script>
