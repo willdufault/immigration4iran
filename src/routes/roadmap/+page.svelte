@@ -11,70 +11,80 @@
 			<p>The Asylum Roadmap</p>
 		</div>
 		<div class="tiles-container">
-			<div class="tile center-text" style="background:#348888;">
+			<div class="tile center-text round-top-left">
 				<p>{component.step1_body.getText()}</p>
-				<div class="tile-cover center-text" style="background:#DAFDBA">
+				<div class="tile-cover center-text">
+					<p class="cover-num">1</p>
 					<p>{component.step1_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" style="background:#22BABB;">
+			<div class="tile center-text">
 				<p>{component.step2_body.getText()}</p>
-				<div class="tile-cover center-text" style="background:#9AEBA3">
+				<div class="tile-cover center-text">
+					<p class="cover-num">2</p>
 					<p>{component.step2_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" style="background:#9EF8EE;">
+			<div class="tile center-text round-top-right">
 				<p>{component.step3_body.getText()}</p>
-				<div class="tile-cover center-text" style="background:#45C4B0">
+				<div class="tile-cover center-text">
+					<p class="cover-num">3</p>
 					<p>{component.step3_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" style="background:#FA7F08;">
+			<div class="tile center-text">
 				<p>{component.step4_body.getText()}</p>
-				<div class="tile-cover center-text" style="background:#1d678A">
+				<div class="tile-cover center-text">
+					<p class="cover-num">4</p>
 					<p>{component.step4_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" style="background:#348888;">
+			<div class="tile center-text">
 				<p>
 					{component.step51_body.getText()}
 					<br />{component.step52_body.getText()}
 					<br />{component.step53_body.getText()}	
 				</p>
-				<div class="tile-cover center-text" style="background:#DAFDBA">
+				<div class="tile-cover center-text">
+					<p class="cover-num">5</p>
 					<p>{component.step5_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" style="background:#22BABB;">
+			<div class="tile center-text">
 				<p>
 					{component.step61_body.getText()}
 					<a href={component.step62_body.getText()} target="_blank">{component.step62_body.getText()}</a>
 				</p>
-				<div class="tile-cover center-text" style="background:#9AEBA3">
+				<div class="tile-cover center-text">
+					<p class="cover-num">6</p>
 					<p>{component.step6_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" style="background:#9EF8EE;">
+			<div class="tile center-text">
 				<p>{component.step7_body.getText()}</p>
-				<div class="tile-cover center-text" style="background:#45C4B0">
+				<div class="tile-cover center-text">
+					<p class="cover-num">7</p>
 					<p>{component.step7_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" style="background:#FA7F08;">
+			<div class="tile center-text">
 				<p>{component.step8_body.getText()}</p>
-				<div class="tile-cover center-text" style="background:#1d678A">
+				<div class="tile-cover center-text">
+					<p class="cover-num">8</p>
 					<p>{component.step8_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" style="background:#348888;">
+			<div class="tile center-text">
 				<p>{component.step9_body.getText()}</p>
-				<div class="tile-cover center-text" style="background:#DAFDBA">
+				<div class="tile-cover center-text">
+					<p class="cover-num">9</p>
 					<p>{component.step9_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text" style="background:#22BABB;">
+			<div class="tile center-text round-bottom-right round-bottom-left">
 				<p>{component.step10_body.getText()}</p>
-				<div class="tile-cover center-text" style="background:#9AEBA3">
+				<div class="tile-cover center-text">
+					<p class="cover-num">10</p>
 					<p>{component.step10_title.getText()}</p>
 				</div>
 			</div>
@@ -106,7 +116,6 @@
 
 	.title-wrapper
 	{
-		margin: 0 20%; 
 		display: flex; 
 		justify-content: space-around;
 		font-size: 2.5rem;
@@ -134,7 +143,7 @@
 
 	.tile
 	{
-		/* font-size: 1.1rem; */
+		font-size: 1.1rem;
 		position: relative;
 		padding: 5%;
 		min-height: 30vh;
@@ -142,6 +151,8 @@
 		display: flex;
 		flex-grow: 1;
 		border-radius: 0.2rem;
+		background: var(--color5);
+		color: var(--color7);
 	}
 
 	.tile-cover
@@ -153,6 +164,37 @@
 		height: 100%;
 		border-radius: inherit;
 		padding: inherit;
+		display: flex;
+		flex-direction: column;
+		gap: 2%;
+		background: var(--color4);
+		color: var(--color7);
+		font-size: 1.5rem;
+	}
+
+	.round-top-left
+	{
+		border-start-start-radius: 2rem;
+	}
+
+	.round-top-right
+	{
+		border-start-end-radius: 2rem;
+	}
+
+	.round-bottom-right
+	{
+		border-end-start-radius: 2rem;
+	}
+
+	.round-bottom-left
+	{
+		border-end-end-radius: 2rem;
+	}
+	
+	.cover-num
+	{
+		font-size: 2.5rem;
 	}
 
 	.tile:hover .tile-cover
