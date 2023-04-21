@@ -35,7 +35,7 @@ export let legal_title = new Dictionary();
 legal_title.setText(english, "Legal Page");
 legal_title.setText(german, "Rechtliche Seite")
 export let legal_body = new Dictionary();
-legal_body.setText(english, "Click to navigate to our legal help page, it contains information like a step by step guide to the asylum process\
+legal_body.setText(english, "Click to navigate to our legal help page, it contains information like a step-by-step guide to the asylum process\
                             as well as legal tools to help throughout the process.");
 legal_body.setText(german, "Klicken Sie hier, um zu unserer Rechtshilfeseite zu gelangen. Sie enthält Informationen wie einen schrittweisen Leitfaden\
                         für das Asylverfahren und rechtliche Hilfsmittel, die während des gesamten Verfahrens helfen.");
@@ -44,7 +44,7 @@ export let social_title = new Dictionary();
 social_title.setText(english, "Social Services Page");
 social_title.setText(german, "Soziale Seite");
 export let social_body = new Dictionary();
-social_body.setText(english, "Click to navigate to our social page, it contains places to find social services like housing, jobs, education and\
+social_body.setText(english, "Click to navigate to our social page, it contains places to find social services like housing, jobs, education, and\
                             healthcare.");
 social_body.setText(german, "Klicken Sie hier, um zu unserer sozialen Seite zu gelangen. Dort finden Sie Informationen zu sozialen Diensten wie\
                             Wohnen, Arbeit, Bildung und Gesundheit.");
@@ -73,7 +73,7 @@ export let edu_title = new Dictionary();
 edu_title.setText(english, "Education Page");
 edu_title.setText(german, "Bildung Seite");
 export let edu_body = new Dictionary();
-edu_body.setText(english, "Click to navigate to our education page, it contains information like locations of universities, and integration\
+edu_body.setText(english, "Click to navigate to our education page, it contains information like locations of universities, as well as integration\
                             and language courses.");
 edu_body.setText(german, "Klicken Sie hier, um zu unserer Bildungsseite zu gelangen. Sie enthält Informationen wie Standorte von Universitäten,\
                             Integrations- und Sprachkurse.");
