@@ -6,7 +6,7 @@
 		</div>
 		<div class="body-wrapper">
 			<p>Immigration4Iran does not collect any personalized data from its users. The information 
-				listed on Immigration4Iran can not be guaranteed in its accuracy and should not be taken 
+				listed on Immigration4Iran gcan not be guaranteed in its accuracy and should not be taken 
 				for legal advice. Official information can be found on <a href="https://www.bamf.de" target="_blank">bamf.de</a>. 
 				Last updated April 2023. 
 			</p>
