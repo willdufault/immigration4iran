@@ -1,6 +1,7 @@
 <main>
 	<div class="header-wrapper">
 		<div class="logo-wrapper" >
+			<!-- <p on:click={() => openHome()} on:keypress={{}}>{title.getText()}</p> -->
 			<p on:click={() => openHome()} on:keypress={{}}>{title.getText()}</p>
 		</div>
 		<div class="nav-wrapper">
@@ -83,7 +84,7 @@
 
 	.logo-wrapper:hover
 	{
-		/* color: var(--color1); */
+		color: var(--color4);
 	}
 
 	.nav-wrapper
@@ -125,7 +126,7 @@
 	.dropdown-item
 	{
 		padding: 1.5vh;
-		background: var(--color2);
+		background: var(--color1);
 	}
 
 	.nav-title, .dropdown-item, .logo-wrapper p
@@ -136,7 +137,7 @@
 	.nav-title:hover, .dropdown-item:hover
 	{
 		/* color: var(--color1); */
-		background: var(--color3);
+		background: var(--color9);
 	}
 </style>
 <script>

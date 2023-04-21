@@ -110,7 +110,7 @@
 		display: flex; 
 		justify-content: space-around;
 		font-size: 2.5rem;
-		font-weight: 500;
+		font-weight: 700;
 		margin: 4% 10%;
 	}
 

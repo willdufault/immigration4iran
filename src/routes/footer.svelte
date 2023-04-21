@@ -28,8 +28,8 @@
 	{
 		display: flex;
 		justify-content: flex-end;
-		background: var(--color2);
-		color: var(--color7);
+		background: var(--color1);
+		color: var(--color8);
 	}
 
 	.footer-item
@@ -40,7 +40,7 @@
 
 	.footer-item:hover
 	{
-		background: var(--color3);
+		background: var(--color9);
 		cursor: pointer;
 	}
 </style>
