@@ -201,6 +201,38 @@
 	{
 		display: none;
 	}
+
+	/* media queries */
+	@media (max-width: 768px)
+	{
+		.tile
+		{
+			width: 100%;
+		}
+
+		/* make it so only first and last tile in mobile view have rounded corners */
+		.round-top-left
+		{
+			border-start-start-radius: 2rem;
+			border-start-end-radius: 2rem;
+		}
+
+		.round-top-right
+		{
+			border-start-end-radius: 0.2rem;
+		}
+
+		.round-bottom-left
+		{
+			border-end-start-radius: 0.2rem;
+		}
+
+		.round-bottom-right
+		{
+			border-end-start-radius: 2rem;
+			border-end-end-radius: 2rem;
+		}
+	}
 </style>
 
 <script>

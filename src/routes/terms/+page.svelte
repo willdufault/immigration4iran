@@ -36,7 +36,7 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		margin: 0 10%;
+		margin: 0 20%;
 		font-size: 1.5rem;
 	}
 </style>

@@ -20,7 +20,7 @@ style={convertJSToCSS()}>
 	{
 		margin: 0;
 		padding: 0;
-		box-sizing: border-box;
+		/* box-sizing: border-box; */
 	}
 
 	main
@@ -30,8 +30,11 @@ style={convertJSToCSS()}>
 		/* necessary for margin on border of page */
 		padding-bottom: 1px;
 		position: relative;
+		overflow-x: hidden;
+		top: 0;
+		left: 0;
 		min-height: 100vh;
-		/* width: 100%; */
+		width: 100%;
 	}
 </style>
 <script>

@@ -9,7 +9,8 @@
 		<Header/>
         <div class="title-wrapper">
 			<p>{component.intro.getText()}</p>
-			<p>|</p>
+			<p class="desktop">|</p>
+			<hr class="mobile mobile-title-divider"/>
 			<p>{component.introText.getText()}</p>
 		</div>
 		<div class="tiles-container">
@@ -31,7 +32,7 @@
 					<p>{component.social_title.getText()}</p>
 				</div>
 			</div>
-			<div class="tile center-text round-top-right" on:click={() => window.open(`${base}/community`, "_self")} on:keypress={{}}>
+			<div class="tile third center-text round-top-right" on:click={() => window.open(`${base}/community`, "_self")} on:keypress={{}}>
 				<p>{component.community_body.getText()}</p>
 				<div class="tile-cover center-text">
 					<div class="icon-wrapper">
@@ -80,6 +81,16 @@
 		box-sizing: border-box;
 	}
 
+	.desktop
+	{
+		display: block;
+	}
+
+	.mobile
+	{
+		display: none;
+	}
+
 	.title-wrapper
 	{
 		display: flex; 
@@ -88,6 +99,12 @@
 		font-weight: 500;
 		margin: 4% 20%;
 		color: var(--color7);
+	}
+
+	.mobile-title-divider
+	{
+		border-top: 0.1rem solid var(--color1);
+		margin: 2% 20%;
 	}
 
 	.tiles-container
@@ -110,7 +127,7 @@
 
 	.tile
 	{
-		/* font-size: 1.1rem; */
+		font-size: 1.1rem;
 		cursor: pointer;
 		position: relative;
 		padding: 5%;
@@ -138,7 +155,6 @@
 		font-size: 1.5rem;
 		background: var(--color4);
 		color: var(--color7);
-
 	}
 
 	.round-top-left
@@ -169,6 +185,54 @@
 	.tile:hover .tile-cover
 	{
 		display: none;
+	}
+
+	/* media queries */
+	@media (max-width: 768px)
+	{
+		.mobile
+		{
+			display: block;
+		}
+
+		.desktop
+		{
+			display: none;
+		}
+
+		.title-wrapper
+		{
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.tile
+		{
+			width: 100%;
+		}
+
+		/* make it so only first and last tile in mobile view have rounded corners */
+		.round-top-left
+		{
+			border-start-start-radius: 2rem;
+			border-start-end-radius: 2rem;
+		}
+
+		.round-top-right
+		{
+			border-start-end-radius: 0.2rem;
+		}
+
+		.round-bottom-left
+		{
+			border-end-start-radius: 0.2rem;
+		}
+
+		.round-bottom-right
+		{
+			border-end-start-radius: 2rem;
+			border-end-end-radius: 2rem;
+		}
 	}
 </style>
 <script>
