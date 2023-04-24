@@ -2,13 +2,15 @@
 	<PageWrapper>
 		<Header/>
 		<div class="title-wrapper">
-			<p>Terms and Conditions</p>
+			<p> {component.terms_title.getText()} </p>
 		</div>
 		<div class="body-wrapper">
-			<p>Immigration4Iran does not collect any personalized data from its users. The information 
-				listed on Immigration4Iran gcan not be guaranteed in its accuracy and should not be taken 
-				for legal advice. Official information can be found on <a href="https://www.bamf.de" target="_blank">bamf.de</a>. 
-				Last updated April 2023. 
+			<p> {component.terms_body1.getText()} 
+				<MyLink
+					link="https://bamf.de"
+					text={component.terms_link.getText()} 
+				/>
+			{component.terms_body2.getText()}
 			</p>
 		</div>
 	</PageWrapper>
@@ -41,6 +43,8 @@
 	}
 </style>
 <script>
+	import * as component from "./termsText.js"; 
+	import MyLink from "../myLink.svelte";
 	import PageWrapper from "../pageWrapper.svelte";
 	import Header from "../header.svelte";
 </script>

@@ -2,15 +2,15 @@
 	<PageWrapper>
 		<Header/>
 		<div class="title-wrapper">
-			<p>About Us</p>
+			<p> {component.about_title.getText()} </p>
 		</div>
 		<div class="body-wrapper">
 			<p>
-				This website was created by the group, Immigration4Iran, which is made up of four undergraduate 
-				students from Worcester Polytechnic Institute (WPI). As part of their Interactive Qualifying 
-				Project (IQP) at WPI, Immigration4Iran spent eight weeks researching the Germany asylum-seeking
-				process through interviews and analysis of previous research, and building this website 
-				in collaboration with Felix Hoffman.
+				{component.about_body.getText()}
+				<MyLink
+					link="https://digital.wpi.edu"
+					text={component.about_link.getText()}
+					/>
 			</p>
 		</div>
 	</PageWrapper>
@@ -43,6 +43,9 @@
 	}
 </style>
 <script>
+	import * as component from "./aboutText.js"; 
+	import MyLink from "../myLink.svelte";
 	import PageWrapper from "../pageWrapper.svelte";
 	import Header from "../header.svelte";
+    import { getContext } from "svelte";
 </script>

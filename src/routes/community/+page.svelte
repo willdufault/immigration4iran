@@ -93,11 +93,6 @@
 		width: 100%;
 	}
 
-	.discord-wrapper iframe
-	{
-		/* height: 20rem;
-		width: 20rem; */
-	}
 </style>
 
 <script>
