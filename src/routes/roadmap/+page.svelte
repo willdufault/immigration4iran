@@ -128,7 +128,7 @@
 		margin: 0 10%;
 		display: flex;
 		flex-wrap: wrap;
-		gap: 2%;
+		gap: 2vh;
 		row-gap: 2vh;
 		padding-bottom: 5%;
 	}

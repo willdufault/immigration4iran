@@ -60,6 +60,7 @@
 		</div>
 
 		<!-- mobile nav menu -->
+		<!-- !BUG: you can scroll the page through the nav menu -->
 
 		<div class="mobile mobile-nav-wrapper">
 			<div class="mobile-menu-icon-wrapper" on:click={() => openMobileMenu()} on:keypress={{}}>
@@ -72,15 +73,18 @@
 				<div class="mobile-nav-item" on:click={() => openLegal()} on:keypress={{}}>
 					<p>Legal</p>
 				</div>
+				<hr class="mobile-menu-divider"/>
 				<div class="mobile-nav-item" on:click={() => openRoadmap()} on:keypress={{}}>
 					<p>
 						&nbsp;&nbsp;
 						Roadmap
 					</p>
 				</div>
+				<br/>
 				<div class="mobile-nav-item" on:click={() => openJobs()} on:keypress={{}}>
 					<p>Social Services</p>
 				</div>
+				<hr class="mobile-menu-divider"/>
 				<div class="mobile-nav-item" on:click={() => openJobs()} on:keypress={{}}>
 					<p>
 						&nbsp;&nbsp;
@@ -99,19 +103,22 @@
 						Education
 					</p>
 				</div>
+				<br/>
 				<div class="mobile-nav-item" on:click={() => openComm()} on:keypress={{}}>
 					<p>Community Building</p>
 				</div>
-				
+				<hr class="mobile-menu-divider"/>
 				<div class="mobile-nav-item" on:click={() => openNGO()} on:keypress={{}}>
 					<p>
 						&nbsp;&nbsp;
 						NGOs
 					</p>
 				</div>
+				<br/>
 				<div class="mobile-nav-item">
 					<p>Langauge</p>
 				</div>
+				<hr class="mobile-menu-divider"/>
 				<ul>
 					{#each langsITR as lang}
 						<div class="mobile-nav-item" on:click={() => changeLanguage(lang)} on:keypress={{}}>
@@ -230,7 +237,7 @@
 
 	.mobile-nav-menu
 	{
-		position: absolute;
+		position: fixed;
 		top: 0;
 		right: -100%;
 		height: 100vh;
@@ -256,6 +263,11 @@
 	.mobile-nav-item
 	{
 		font-size: 2rem;
+	}
+
+	.mobile-menu-divider
+	{
+		border-top: 0.1rem solid var(--color2);
 	}
 
 	/* media queries */
