@@ -14,13 +14,15 @@ let ukrainian = "українська";
 let italian = "Italiano";
 
 export let terms_title = new Dictionary();
-terms_title.setText(english, "Terms and Conditions");
+terms_title.setText(english, "Terms of Use");
 export let terms_body1 = new Dictionary();
-terms_body1.setText(english, "Immigration4Iran does not collect any personalized data from its users. The information \
-                                listed on Immigration4Iran can not be guaranteed in its accuracy and should not be taken \
-                                for legal advice. Official information can be found on ");
+terms_body1.setText(english, `Immigration4Iran does not collect any personalized data from its users. 
+								The information listed on Immigration4Iran can not be guaranteed in its 
+								accuracy and should not be taken for legal advice. Official information 
+								can be found on `);
 
 export let terms_link = new Dictionary();
-terms_link.setText(english, "bamf.de");
+terms_link.setText(english, "https://www.bamf.de/EN/Startseite/startseite_node.html");
+terms_link.setText(german, "https://www.bamf.de/DE/Startseite/startseite_node.html")
 export let terms_body2 = new Dictionary();
 terms_body2.setText(english, "Last updated April 2023.");

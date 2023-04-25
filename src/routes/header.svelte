@@ -119,7 +119,7 @@
 				</div>
 				<br/>
 				<div class="mobile-nav-item">
-					<p>Langauge</p>
+					<p>Language</p>
 				</div>
 				<hr class="mobile-menu-divider"/>
 				<ul>

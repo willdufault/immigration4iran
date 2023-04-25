@@ -8,9 +8,9 @@
 			<p>
 				{component.about_body.getText()}
 				<MyLink
-					link="https://digital.wpi.edu"
-					text={component.about_link.getText()}
-					/>
+					link={component.about_link.getText()}
+					text="digital.wpi.edu"
+				/>.
 			</p>
 		</div>
 	</PageWrapper>
@@ -47,5 +47,4 @@
 	import MyLink from "../myLink.svelte";
 	import PageWrapper from "../pageWrapper.svelte";
 	import Header from "../header.svelte";
-    import { getContext } from "svelte";
 </script>

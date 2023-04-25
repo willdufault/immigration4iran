@@ -16,10 +16,11 @@ let italian = "Italiano";
 export let about_title = new Dictionary();
 about_title.setText(english, "About Us");
 export let about_body = new Dictionary();
-about_body.setText(english, "Created by students from Worcester Polytechnic Institute as part of an Interactive Qualifying Project. \
-                                To learn more about projects done by WPI students, please visit the institution website: ");
+about_body.setText(english, `Created by students from Worcester Polytechnic Institute as part of an Interactive Qualifying Project.
+                                To learn more about projects done by WPI students, please visit the institution website: `);
 export let about_link = new Dictionary();
-about_link.setText(english, "digital.wpi.edu.");
+about_link.setText(english, "https://digital.wpi.edu/?locale=en");
+about_link.setText(german, "https://digital.wpi.edu/?locale=de");
 
 /*
 

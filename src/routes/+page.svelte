@@ -9,8 +9,7 @@
 		<Header/>
         <div class="title-wrapper">
 			<p>{component.intro.getText()}</p>
-			<p class="desktop">|</p>
-			<hr class="mobile mobile-title-divider"/>
+			<div class="title-divider"/>
 			<p>{component.introText.getText()}</p>
 		</div>
 		<div class="tiles-container">
@@ -81,16 +80,6 @@
 		box-sizing: border-box;
 	}
 
-	.desktop
-	{
-		display: block;
-	}
-
-	.mobile
-	{
-		display: none;
-	}
-
 	.footer-spacer
 	{
 		margin: 6%;
@@ -100,21 +89,24 @@
 	{
 		display: flex; 
 		justify-content: space-around;
+		align-items: center;
 		font-size: 2.5rem;
 		font-weight: 500;
 		margin: 4% 20%;
 		color: var(--color7);
 	}
 
-	.mobile-title-divider
+	.title-divider
 	{
-		border-top: 0.1rem solid var(--color1);
-		margin: 2% 20%;
+		height: 3rem;
+		background: var(--color4);
+		width: 0.1rem;
+		margin: 0 5%;
 	}
 
 	.tiles-container
 	{
-		margin: 0 10%;
+		margin: 2% 10%;
 		display: flex;
 		flex-wrap: wrap;
 		gap: 2vh;
@@ -195,20 +187,17 @@
 	/* media queries */
 	@media (max-width: 768px)
 	{
-		.mobile
-		{
-			display: block;
-		}
-
-		.desktop
-		{
-			display: none;
-		}
-
 		.title-wrapper
 		{
 			flex-direction: column;
 			text-align: center;
+		}
+
+		.title-divider
+		{
+			width: 50%;
+			height: 0.1rem;
+			margin: 5% 0;
 		}
 
 		.tile

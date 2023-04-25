@@ -84,19 +84,12 @@
 		height: 20rem;
 	}
 
-	.discord-wrapper
-	{
-		display: block;
-		width: 100%;
-	}
-
 </style>
 
 <script>
     import { base } from "$app/paths";
     import Header from "../header.svelte";
     import TextBlock from "../textBlock.svelte";
-    import {Dictionary} from "../dictionary.js";
     import * as component from "./communityText.js";
     import PageWrapper from "../pageWrapper.svelte";
 </script>
