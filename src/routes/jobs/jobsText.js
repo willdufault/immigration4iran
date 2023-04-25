@@ -45,7 +45,7 @@ cl_title.setText(german, "Anschreiben Machen")
 export let cl_body = new Dictionary();
 
 cl_body.setText(english, `A cover letter is an introduction to yourself and your skills. Cover letters
-                        are not mandatory but recommended for most jobs. Every cover letter should contian an introduction,
+                        are not mandatory but recommended for most jobs. Every cover letter should contain an introduction,
                         your relevant skills and experience, and why you would be a good fit for the job. Cover letters should
                         conclude with a call to action for the job, such as asking to set up an interview. Click the above link for
 						a free cover letter creator.`)
