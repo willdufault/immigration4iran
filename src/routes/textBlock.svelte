@@ -51,7 +51,7 @@
         justify-content: space-between;
         width: 100%;
         flex-direction: column;
-		border: 0.1rem solid #cccccc;
+		border: 0.1rem solid var(--color6);
 		/* un-comment for 3d shadow effect */
 		/* box-shadow: 0 0 0.5em #444;
 		transition: 0.3s ease-in-out; */
@@ -59,7 +59,7 @@
 
 	.tile-wrapper:hover
 	{
-		border: 0.1rem solid #666666;
+		border: 0.1rem solid var(--color1);
 		/* un-comment for 3d shadow effect */
 		/* box-shadow: 0 0 1.5em #666;
 		transform: scale(1.02) */
@@ -85,14 +85,14 @@
 	.title-wrapper :global(*)
 	{
 		font-size: 3rem;
-		color: black;
+		color: var(--color1);
 		font-weight: 700;
 		text-decoration: none;
 	}
 
 	.languages-wrapper :global(*)
 	{
-		font-size: 1rem;
+		font-size: 1.1rem;
 		margin-bottom: 1%;
 	}
 

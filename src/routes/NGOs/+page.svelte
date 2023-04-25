@@ -33,7 +33,7 @@
 									<!-- <a slot="title" href={ngo.getLink()} target="_blank" rel="noreferrer"> {ngo.getTitle()} </a> -->
 									<p slot="languages"> {ngo.getGenLangs()} {ngo.getLangs()} </p>
 									<p slot="body"> {ngo.getBody()} </p>
-									<MailLink slot="contact" ngoContact= {ngo.getContact()} ngoDisplay={ngo.getContactDisplay()}/>
+									<MailLink slot="contact" ngoContact={ngo.getContact()} ngoDisplay={ngo.getContactDisplay()}/>
 								</TextBlock>
 							{/if}
 						{/each}
@@ -138,8 +138,9 @@
 			new Ngo("https://gsbtb.org/", component.gsb_title.getText(), component.available_langs.getText(), component.gsb_lang.getText(), component.gsb_body.getText(), component.gsb_contact.getText(), component.gsb_contact.getText()),
 			new Ngo("https://www.willkommensbuendnis-steglitz-zehlendorf.de/", component.wbs_title.getText(), component.available_langs.getText(), component.wbs_lang.getText(), component.wbs_body.getText(), component.wbs_contact.getText(), component.wbs_contact.getText()),
 			new Ngo("https://fluechtlingsrat-berlin.de/", component.flr_title.getText(), component.available_langs.getText(), component.flr_lang.getText(), component.flr_body.getText(), component.flr_contact.getText(), component.flr_contact.getText()),
-			new Ngo("https://www.refugees-welcome.net/", component.rw_title.getText(), component.available_langs.getText(), component.rw_lang.getText(), component.rw_body.getText(), component.rw_contact.getText(), component.rw_contact.getText())
-			
+			new Ngo("https://www.refugees-welcome.net/", component.rw_title.getText(), component.available_langs.getText(), component.rw_lang.getText(), component.rw_body.getText(), component.rw_contact.getText(), component.rw_contact.getText()),
+			new Ngo("https://gsbtb.org/", component.gsbtb_title.getText(), component.available_langs.getText(), component.gsbtb_lang.getText(), component.gsbtb_body.getText(), component.gsbtb_contact.getText(), component.gsbtb_contact.getText()),
+			new Ngo("https://www.willkommensbuendnis-steglitz-zehlendorf.de/", component.wb_title.getText(), component.available_langs.getText(), component.wb_lang.getText(), component.wb_body.getText(),component.wb_contact.getText(),component.wb_contact.getText())
 		];
 	}
 

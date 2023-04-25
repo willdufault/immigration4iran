@@ -32,58 +32,52 @@ introText.setText(english, "Navigate Around");
 introText.setText(german, "Sehen Pages");
 
 export let legal_title = new Dictionary();
-legal_title.setText(english, "Legal Page");
-legal_title.setText(german, "Rechtliche Seite")
+legal_title.setText(english, "Legal");
+legal_title.setText(german, "Rechtliche")
 export let legal_body = new Dictionary();
-legal_body.setText(english, "Click to navigate to our legal help page, it contains information like a step-by-step guide to the asylum process\
-                            as well as legal tools to help throughout the process.");
-legal_body.setText(german, "Klicken Sie hier, um zu unserer Rechtshilfeseite zu gelangen. Sie enthält Informationen wie einen schrittweisen Leitfaden\
-                        für das Asylverfahren und rechtliche Hilfsmittel, die während des gesamten Verfahrens helfen.");
+legal_body.setText(english, `Click to navigate to our legal help page. It contains information like a step-by-step
+								guide to the asylum process as well as various other legal tools.`);
+legal_body.setText(german, `German translation`);
 
 export let social_title = new Dictionary();
-social_title.setText(english, "Social Services Page");
-social_title.setText(german, "Soziale Seite");
+social_title.setText(english, "Social Services");
+social_title.setText(german, "Soziale");
 export let social_body = new Dictionary();
-social_body.setText(english, "Click to navigate to our social page, it contains places to find social services like housing, jobs, education, and\
-                            healthcare.");
-social_body.setText(german, "Klicken Sie hier, um zu unserer sozialen Seite zu gelangen. Dort finden Sie Informationen zu sozialen Diensten wie\
-                            Wohnen, Arbeit, Bildung und Gesundheit.");
+social_body.setText(english, `Click to navigate to our social page. It contains places to find social 
+								services like housing, jobs, education, and healthcare.`);
+social_body.setText(german, "German translation");
 
 export let community_title = new Dictionary();
-community_title.setText(english, "Community Page");
-community_title.setText(german, "Gemeinschaft Seite");
+community_title.setText(english, "Community");
+community_title.setText(german, "Gemeinschaft");
 export let community_body = new Dictionary();
-community_body.setText(english, "Click to navigate to our community page, it contains information like ways to connect to the local community and\
-                            meet people of all ages. It includes activities like soccer and cricket clubs.");
-community_body.setText(german, "Klicken Sie hier, um zu unserer sozialen Seite zu gelangen. Sie enthält Informationen über Möglichkeiten, sich\
-                            mit der örtlichen Gemeinschaft zu verbinden und Menschen jeden Alters zu treffen. Dazu gehören Aktivitäten wie\
-                            Fußball- und Cricket-Clubs.");
+community_body.setText(english, `Click to navigate to our community page. It contains information like 
+									ways to connect to the local community and meet people of all ages,
+									as well as activities like soccer and cricket clubs.`);
+community_body.setText(german, "German translation");
 
 export let ngo_title = new Dictionary();
-ngo_title.setText(english, "NGO Page");
-ngo_title.setText(german, "NRO Seite");
+ngo_title.setText(english, "NGOs");
+ngo_title.setText(german, "NROs");
 export let ngo_body = new Dictionary();
-ngo_body.setText(english, "Click to navigate to our NGO page, it contains a sorted list of NGOS and what they can provide to asylum seekers.\
-                        The various NGOs cover various subjects like legal help, social services, and community activities.");
-ngo_body.setText(german, "Klicken Sie hier, um zu unserer NRO-Seite zu gelangen. Sie enthält eine sortierte Liste von NROs und deren Angebote\
-                        für Asylbewerber. Die verschiedenen Nichtregierungsorganisationen decken verschiedene Themenbereiche ab, wie z. B.\
-                        Rechtshilfe, soziale Dienste und Gemeinschaftsaktivitäten.");
+ngo_body.setText(english, `Click to navigate to our NGO page. It contains a sorted list of NGOs and 
+							what they can provide to asylum seekers. The NGOs cover subjects including 
+							legal help, social services, and community activities.`);
+ngo_body.setText(german, "German translation");
 
 export let edu_title = new Dictionary();
-edu_title.setText(english, "Education Page");
-edu_title.setText(german, "Bildung Seite");
+edu_title.setText(english, "Education");
+edu_title.setText(german, "Bildung");
 export let edu_body = new Dictionary();
-edu_body.setText(english, "Click to navigate to our education page, it contains information like locations of universities, as well as integration\
-                            and language courses.");
-edu_body.setText(german, "Klicken Sie hier, um zu unserer Bildungsseite zu gelangen. Sie enthält Informationen wie Standorte von Universitäten,\
-                            Integrations- und Sprachkurse.");
+edu_body.setText(english, `Click to navigate to our education page. It contains information like locations
+							of universities and integration courses.`);
+edu_body.setText(german, "German translation");
 
 export let jobs_title = new Dictionary();
-jobs_title.setText(english, "Jobs Page");
-jobs_title.setText(german, "Jobs Seite");
+jobs_title.setText(english, "Jobs");
+jobs_title.setText(german, "Jobs");
 export let jobs_body = new Dictionary();
-jobs_body.setText(english, "Click to navigate to our jobs page, it contains information like locations how to create a CV and Lebenslauf,\
-                            and how to apply to jobs. It also contains links to popular job sites to get a start.");
-jobs_body.setText(german, "Klicken Sie hier, um zu unserer Jobseite zu gelangen. Sie enthält Informationen darüber, wie Sie einen Lebenslauf\
-                            erstellen und sich auf Stellen bewerben können. Sie enthält auch Links zu beliebten Stellenbörsen, um einen Anfang\
-                            zu machen.");
+jobs_body.setText(english, `Click to navigate to our jobs page. It contains information about creating 
+							a Lebenslauf and cover letter, and how to apply to jobs. It also contains 
+							links to popular job sites to get started.`);
+jobs_body.setText(german, "German translation");

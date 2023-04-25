@@ -1,7 +1,7 @@
 <main style={convertJSToCSS()}>
 	<div class="footer-wrapper">
 		<div class="footer-item" on:click={() => openTerms()} on:keypress={{}}>
-			<p>Terms and Conditions</p>
+			<p>Terms of Use</p>
 		</div>
 		<div class="footer-item" on:click={() => openAbout()} on:keypress={{}}>
 			<p>About us</p>

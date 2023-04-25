@@ -7,8 +7,8 @@
 		<div class="body-wrapper">
 			<p> {component.terms_body1.getText()} 
 				<MyLink
-					link="https://bamf.de"
-					text={component.terms_link.getText()} 
+					link={component.terms_link.getText()}
+					text="bamf.de" 
 				/>
 			{component.terms_body2.getText()}
 			</p>

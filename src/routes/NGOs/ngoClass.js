@@ -2,7 +2,6 @@ export class Ngo {
     link;
     title;
     genLangs;
-
     langs;
     body;
     contact;

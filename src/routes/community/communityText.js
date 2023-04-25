@@ -27,37 +27,16 @@ export let title = new Dictionary();
 title.setText(english, "Community Information");
 title.setText(german, "Community-Informationen");
 
-export let gsbtb_title = new Dictionary();
-gsbtb_title.setText(english, "Give Something Back to Berlin");
-export let gsbtb_body = new Dictionary();
-gsbtb_body.setText(english, "Give Something Back to Berlin holds local events in Berlin to facilitate a helpful local community.  \
-                              On their Activity Calendar website they hold social events like learning to play musical instruments \
-                              like guitar and piano.");
-gsbtb_body.setText(german, "German description of NGO");
-export let gsbtb_lang = new Dictionary();
-gsbtb_lang.setText(english, `${german}, ${english}`);
-
 
 export let fnet_title = new Dictionary();
 fnet_title.setText(english, "Fare Network Football Map");
 export let fnet_body = new Dictionary();
-fnet_body.setText(english, "Fare Networks is a football network that believes sports plays an important role in community building.  \
-                              Their website linked below displays a helpful map of teams and football clubs that facilitates \
+fnet_body.setText(english, "Fare Networks is a football network that believes sports play an important role in community building.  \
+                              Their website linked below displays a helpful map of teams and football clubs that facilitate \
                               welcoming refugees to training sessions or other fun activities.");
 fnet_body.setText(german, "German description of NGO");
 export let fnet_lang = new Dictionary();
 fnet_lang.setText(english, english);
-
-
-export let wb_title = new Dictionary();
-wb_title.setText(english, "Willkommensbündnis Steglitz-Zehlendorf");
-export let wb_body = new Dictionary();
-wb_body.setText(english, "Willkommensbündnis is an NGO that holds local events in Berlin like job fairs and \
-                            roundtables where refugees can come and meet people while getting help. The roundtable \
-                            lets people of many different backgrounds discuss what they need help on.");
-wb_body.setText(german, "German description of NGO");
-export let wb_lang = new Dictionary();
-wb_lang.setText(english, german);
 
 
 export let be_title = new Dictionary();
