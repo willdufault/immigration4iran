@@ -3,38 +3,6 @@
         <Header/>
         <p class="comm-title"> {component.title.getText()}</p>
 		<div class="block-wrapper">
-			<TextBlock>
-				<a slot="title" href="https://gsbtb.org/activity-calendar/" target="_blank" rel="noreferrer"> {component.gsbtb_title.getText()} </a>
-				<p slot="languages"> {component.available_langs.getText()} {component.gsbtb_lang.getText()} </p>
-				<p slot="body"> {component.gsbtb_body.getText()} </p>
-			</TextBlock>
-
-			<TextBlock>
-				<a slot="title" href="http://www.farenet.org/campaigns/refugees-football-database/" target="_blank" rel="noreferrer"> {component.fnet_title.getText()} </a>
-				<p slot="languages"> {component.available_langs.getText()} {component.fnet_lang.getText()} </p>
-				
-				<div slot="body"> 
-					<p align="center">
-						<iframe
-						class= "map" 
-						title="Local Programs for Refugees" 
-						src="https://www.google.com/maps/d/embed?mid=1d3pP5NOJ5WP7Qox-V3ewqk_gnc8&ehbc=2E312F"/>
-					</p>
-					{component.fnet_body.getText()} 
-				</div>
-			</TextBlock>
-
-			<TextBlock>
-				<a slot="title" href="https://www.willkommensbuendnis-steglitz-zehlendorf.de/" target="_blank" rel="noreferrer"> {component.wb_title.getText()} </a>
-				<p slot="languages"> {component.available_langs.getText()} {component.wb_lang.getText()} </p>
-				<p slot="body"> {component.wb_body.getText()} </p>
-			</TextBlock>
-
-			<TextBlock>
-				<a slot="title" href="https://www.berlin.de/en/events/" target="_blank" rel="noreferrer"> {component.be_title.getText()} </a>
-				<p slot="languages"> {component.available_langs.getText()} {component.be_lang.getText()} </p>
-				<p slot="body"> {component.be_body.getText()} </p>
-			</TextBlock>
 
 			<!-- DISCORD EMBED IN ANOTHER LANGUAGE? -->
 			<!-- TODO: FIGURE OUT HOW TO STYLE DISCORD EMBED, RN HAS MAP CLASS -->
@@ -54,9 +22,29 @@
 					{component.disc_body.getText()} 
 				</div>
 			</TextBlock> 
-			
-		</div>
 
+			<TextBlock>
+				<a slot="title" href="https://www.berlin.de/en/events/" target="_blank" rel="noreferrer"> {component.be_title.getText()} </a>
+				<p slot="languages"> {component.available_langs.getText()} {component.be_lang.getText()} </p>
+				<p slot="body"> {component.be_body.getText()} </p>
+			</TextBlock>
+
+			<TextBlock>
+				<a slot="title" href="http://www.farenet.org/campaigns/refugees-football-database/" target="_blank" rel="noreferrer"> {component.fnet_title.getText()} </a>
+				<p slot="languages"> {component.available_langs.getText()} {component.fnet_lang.getText()} </p>
+				
+				<div slot="body"> 
+					<p align="center">
+						<iframe
+						class= "map" 
+						title="Local Programs for Refugees" 
+						src="https://www.google.com/maps/d/embed?mid=1d3pP5NOJ5WP7Qox-V3ewqk_gnc8&ehbc=2E312F"/>
+					</p>
+					{component.fnet_body.getText()} 
+				</div>
+			</TextBlock>
+
+		</div>
     </PageWrapper>
 </main>
 

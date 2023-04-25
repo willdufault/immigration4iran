@@ -69,7 +69,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer-spacer" style="margin: 8%"></div>
+		<div class="footer-spacer"></div>
 		<Footer/>
 	</PageWrapper>
 </main>
@@ -89,6 +89,11 @@
 	.mobile
 	{
 		display: none;
+	}
+
+	.footer-spacer
+	{
+		margin: 6%;
 	}
 
 	.title-wrapper

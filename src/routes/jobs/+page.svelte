@@ -6,6 +6,22 @@
 		</div>
 		<div class="blocks-wrapper">
 			<TextBlock>
+				<MyLink
+					slot="title"
+					link="https://europa.eu/europass/eportfolio/screen/cv-editor?lang=en&previous=https:%2F%2Feuropa.eu%2Feuropass%2Fen"
+					text={component.ll_title.getText()}/>
+				<p slot="body">{component.ll_body.getText() }</p>
+			</TextBlock>
+			
+			<TextBlock>
+				<MyLink
+					slot="title"
+					link="https://europa.eu/europass/eportfolio/screen/cover-letter-editor?lang=en&previous=https:%2F%2Feuropa.eu%2Feuropass%2Fen"
+					text={component.cl_title.getText()}/>
+				<p slot="body"> {component.cl_body.getText()} </p>
+			</TextBlock>
+
+			<TextBlock>
 				<p slot="title"> {component.jobs_title.getText()} </p>
 				<div slot="body">
 					<p> {component.jobs_body1.getText()} </p>
@@ -42,22 +58,6 @@
 						text={component.jobs_link.getText()}/>
 					</p>
 				</div>
-			</TextBlock>
-
-			<TextBlock>
-				<MyLink
-					slot="title"
-					link="https://europa.eu/europass/eportfolio/screen/cover-letter-editor?lang=en&previous=https:%2F%2Feuropa.eu%2Feuropass%2Fen"
-					text={component.cl_title.getText()}/>
-				<p slot="body"> {component.cl_body.getText()} </p>
-			</TextBlock>
-				
-			<TextBlock>
-				<MyLink
-					slot="title"
-					link="https://europa.eu/europass/eportfolio/screen/cv-editor?lang=en&previous=https:%2F%2Feuropa.eu%2Feuropass%2Fen"
-					text={component.ll_title.getText()}/>
-				<p slot="body">{component.ll_body.getText() }</p>
 			</TextBlock>
 		</div>
 	</PageWrapper>

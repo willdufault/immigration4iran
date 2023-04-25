@@ -39,18 +39,27 @@ jobs_link.setText(english, "w2eu.info");
 
 
 export let cl_title = new Dictionary();
-cl_title.setText(english, "Cover Letter Creation")
+// cover letter / letter of motivation
+cl_title.setText(english, "Cover Letter Creator (Europass)");
 cl_title.setText(german, "Anschreiben Machen")
 export let cl_body = new Dictionary();
-cl_body.setText(english, "A cover letter is an introduction to yourself and what you are good at. Cover letters\
-                        are not mandatory but recommended for most jobs. Every cover letter should contian an introduction,\
-                        your relevant skills, experience and why you would be a good fit for the job. The cover letter should\
-                        finsih with a conclusion or call to action for the job. Click the above link for a free cover letter\
-                        creator.")
+
+cl_body.setText(english, `A cover letter is an introduction to yourself and your skills. Cover letters
+                        are not mandatory but recommended for most jobs. Every cover letter should contian an introduction,
+                        your relevant skills and experience, and why you would be a good fit for the job. Cover letters should
+                        conclude with a call to action for the job, such as asking to set up an interview. Click the above link for
+						a free cover letter creator.`)
+// cl_body.setText(english, "A cover letter is an introduction to yourself and what you are good at. Cover letters\
+//                         are not mandatory but recommended for most jobs. Every cover letter should contian an introduction,\
+//                         your relevant skills, experience and why you would be a good fit for the job. The cover letter should\
+//                         finsih with a conclusion or call to action for the job. Click the above link for a free cover letter\
+//                         creator.")
 
 
 export let ll_title = new Dictionary();
-ll_title.setText(english, "Lebenslauf/CV Creation")
+ll_title.setText(english, "Lebenslauf Creator (Europass)")
 export let ll_body = new Dictionary();
-ll_body.setText(english, "DEFINE LEBENSLAUF HERE")         
+ll_body.setText(english, `A Lebenslauf is a 2–3 page summary of a person's career and qualifications. Lebenslaufs 
+							are separated into different sections, with some common ones being contact information, 
+							academic history, professional experience, relevant skills, and awards.`);         
 
