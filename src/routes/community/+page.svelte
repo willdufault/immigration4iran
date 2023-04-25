@@ -6,7 +6,7 @@
 
 			<!-- DISCORD EMBED IN ANOTHER LANGUAGE? -->
 			<!-- TODO: FIGURE OUT HOW TO STYLE DISCORD EMBED, RN HAS MAP CLASS -->
-			<TextBlock>
+			<!-- <TextBlock>
 				<a slot="title" href="https://discord.gg/ur5qMP9WEE" target="_blank" rel="noreferrer"> {component.disc_title.getText()} </a>
 				<p slot="languages"> {component.available_langs.getText()} {component.disc_lang.getText()} </p>
 				<div class="discord-wrapper" slot="body"> 
@@ -21,7 +21,16 @@
 					</p>
 					{component.disc_body.getText()} 
 				</div>
-			</TextBlock> 
+			</TextBlock>  -->
+
+			<TextBlock>
+				<a slot="title" href={`${base}/forum`} target="_blank" rel="noreferrer"> Discord Community Forum (NEEDS DICT) </a>
+				<p slot="languages"> English, German, Persian (ADD DICT) </p>
+				<p slot="body">
+					Immigration4Iran's community forum where refugees and asylum seekers can go to 
+					ask for help with any step of the asylum-seeking process.
+				</p>
+			</TextBlock>
 
 			<TextBlock>
 				<a slot="title" href="https://www.berlin.de/en/events/" target="_blank" rel="noreferrer"> {component.be_title.getText()} </a>

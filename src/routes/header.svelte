@@ -41,10 +41,13 @@
 					<div class="dropdown-item" on:click={() => openNGO()} on:keypress={{}}>
 						<p>NGOs</p>
 					</div>
+					<div class="dropdown-item" on:click={() => openForum()} on:keypress={{}}>
+						<p>Forum</p>
+					</div>
 				</div>
 			</div>
 			<div class="nav-item" on:mouseover={() => toggleDropDown(lang_dropdown, true)} on:mouseleave={() => toggleDropDown(lang_dropdown, false)} on:focus={{}}>
-				<div class="nav-title">
+				<div class="nav-title" style="cursor: default">
 					<p>Language</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
 				<div bind:this={lang_dropdown} class="dropdown-wrapper">
@@ -374,5 +377,10 @@
 	function openRoadmap()
 	{
 		window.open(`${base}/roadmap`, "_self")
+	}
+
+	function openForum()
+	{
+		window.open(`${base}/forum`, "_self")
 	}
 </script>
