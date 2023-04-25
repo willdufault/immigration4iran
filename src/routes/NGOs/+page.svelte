@@ -10,14 +10,15 @@
 						<label for="searchbar">Search:</label>
 						<input type="search" id="searchbar" bind:value={search}>
 						<br>
-						<input type="checkbox" id="legal">
+<!--						<input type="checkbox" id="legal" name="legal" bind:checked={legal}>-->
+						<input type="checkbox" id="legal" name="legal" bind:checked={filters[0]}>
 						<label for="legal">Legal</label>
 						<br>
-						<input type="checkbox" id="legal">
-						<label for="legal">Legal</label>
+						<input type="checkbox" id="medical" name="medical" bind:checked={filters[1]}>
+						<label for="medical">Medical</label>
 						<br>
-						<input type="checkbox" id="legal">
-						<label for="legal">Legal</label>
+						<input type="checkbox" id="syria" name="syria">
+						<label for="legal">Syria</label>
 					</form>
 				</div>
 			</div>
@@ -25,7 +26,8 @@
 				<div class="block-wrapper">
 					<ul>
 						{#each ngoArray as ngo}
-							{#if ngo.getString().toLowerCase().indexOf(search.toLowerCase()) !== -1}
+							<!--{#if filterMatch(ngo.getString(), search)}-->
+							{#if myfilter(ngo.getString(), search, filters)}
 								<TextBlock>
 									<MyLink slot="title" link={ngo.getLink()} text={ngo.getTitle()}/>
 									<!-- <a slot="title" href={ngo.getLink()} target="_blank" rel="noreferrer"> {ngo.getTitle()} </a> -->
@@ -113,6 +115,9 @@
 
 	let ngoArray = [];
 	let search = "";
+	let legal = false;
+	let housing = false;
+	let filters = [];
 
 	loadNGOArray();
 
@@ -142,7 +147,21 @@
 		loadNGOArray();
 	});
 
-	function filter(strings){
+	function myfilter(string, other, filter){
+		// return string.toLowerCase().indexOf(other.toLowerCase()) !== -1; //looks for matching search words in the ngo
+		//let filtermatch = filters.toLowerCase().indexOf(filters) !== -1;
 		//return index of search terms != -1
+		//return filterMatch(string, search);
+		// console.log(filter.value);
+		console.log("legal", legal);
+		console.log(housing);
+
+		//var x = document.getElementById("legal").value;
+		//console.log(x);
+		return filterMatch(string, other) && (filterMatch(string, "legal") || !filter[0]) && (filterMatch(string, "medical") || !filter[1]);
+	}
+
+	function filterMatch(string, filter) {
+		return string.toLowerCase().indexOf(filter.toLowerCase()) !== -1;
 	}
 </script>
