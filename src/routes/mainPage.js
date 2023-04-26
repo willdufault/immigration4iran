@@ -51,9 +51,9 @@ export let community_title = new Dictionary();
 community_title.setText(english, "Community");
 community_title.setText(german, "Gemeinschaft");
 export let community_body = new Dictionary();
-community_body.setText(english, `Click to navigate to our community page. It contains information like 
-									ways to connect to the local community and meet people of all ages,
-									as well as activities like soccer and cricket clubs.`);
+community_body.setText(english, `Click to navigate to our community page. It contains information 
+									like ways to connect to the local community, meet people, and join 
+									in on soccer and cricket clubs.`);
 community_body.setText(german, "German translation");
 
 export let ngo_title = new Dictionary();
@@ -77,7 +77,7 @@ export let jobs_title = new Dictionary();
 jobs_title.setText(english, "Jobs");
 jobs_title.setText(german, "Jobs");
 export let jobs_body = new Dictionary();
-jobs_body.setText(english, `Click to navigate to our jobs page. It contains information about creating 
-							a Lebenslauf and cover letter, and how to apply to jobs. It also contains 
-							links to popular job sites to get started.`);
+jobs_body.setText(english, `Click to navigate to our jobs page. It contains information about creating a 
+								lebenslauf and cover letter. It also contains information on how to apply 
+								to jobs on popular sites.`);
 jobs_body.setText(german, "German translation");
