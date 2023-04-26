@@ -70,7 +70,7 @@
 		font-size: 3rem;
 		font-weight: 700;
 		text-align: center;
-		padding: 3%;
+		margin: 3%;
 	}
 
 	.block-wrapper
@@ -84,6 +84,32 @@
 		height: 20rem;
 	}
 
+	/* media queries */
+	@media (min-width: 1800px)
+	{
+		.comm-title
+		{
+			font-size: 4rem;
+			margin: 5%
+		}
+	}
+
+	@media (max-width: 900px)
+	{
+		.comm-title
+		{
+			font-size: 2.5rem;
+			margin: 8%;
+		}
+	}
+
+	@media (max-width: 600px)
+	{
+		.comm-title
+		{
+			margin: 10%;
+		}
+	}
 </style>
 
 <script>

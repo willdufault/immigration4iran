@@ -117,6 +117,12 @@
 						NGOs
 					</p>
 				</div>
+				<div class="mobile-nav-item" on:click={() => openForum()} on:keypress={{}}>
+					<p>
+						&nbsp;&nbsp;
+						Forum
+					</p>
+				</div>
 				<br/>
 				<div class="mobile-nav-item">
 					<p>Language</p>
@@ -274,7 +280,21 @@
 	}
 
 	/* media queries */
-	@media (max-width: 768px)
+	@media (min-width: 1800px)
+	{
+		.logo-wrapper
+		{
+			font-size: 3rem;
+			padding: 0 2%;
+		}
+		
+		.nav-wrapper
+		{
+			font-size: 2rem;
+		}
+	}
+	
+	@media (max-width: 900px)
 	{
 		.desktop
 		{
@@ -286,6 +306,9 @@
 			display: block;
 		}
 	}
+
+	@media (max-width: 600px)
+	{}
 </style>
 <script>
 	import { base } from "$app/paths";

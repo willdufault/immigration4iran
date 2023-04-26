@@ -57,15 +57,14 @@
 
 	.filter-wrapper
 	{
-		overflow: hidden;
 		background: var(--color3);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		height: fit-content;
+		width: fit-content;
 		gap: 1%;
 		border-radius: 0.2rem;
-		width: fit-content;
 		margin: 1vh 0 0 2%;
 		padding: 2%;
 		border: 0.1rem solid #666666;
@@ -84,16 +83,83 @@
 
 	.ngo-title
 	{
-		margin: 1%;
 		font-size: 3rem;
 		text-align: center;
-		padding: 3vh;
+		margin: 3%;
 		font-weight: 700;
 	}
 
 	.block-wrapper
 	{
 		margin: 1vh 5%;
+	}
+
+	/* media queries */
+	@media (min-width: 1800px)
+	{
+		.ngo-title
+		{
+			font-size: 4rem;
+			margin: 5%
+		}
+
+		.filter-wrapper
+		{
+			gap: 1%;
+			font-size: 1.6rem;
+		}
+
+		.filter-title
+		{
+			font-size: 2.5rem;
+		}
+	}
+
+	@media (max-width: 900px)
+	{
+		.ngo-title
+		{
+			font-size: 2.5rem;
+			margin: 8%;
+		}
+
+		.filter-wrapper
+		{
+			gap: 1%;
+			font-size: 1rem;
+		}
+
+		.filter-title
+		{
+			font-size: 1.8rem;
+		}
+	}
+
+	@media (max-width: 600px)
+	{
+		.ngo-title
+		{
+			margin: 10%;
+		}
+
+		.page-wrapper
+		{
+			flex-direction: column;
+		}
+
+		.filter-wrapper
+		{
+			margin: 1% 5%;
+			padding: 2%;
+			gap: 1%;
+			font-size: 1rem;
+			width: auto;
+		}
+
+		.filter-title
+		{
+			font-size: 1.8rem;
+		}
 	}
 </style>
 

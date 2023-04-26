@@ -137,6 +137,33 @@
 	{
 		margin: 1% 5%;
 	}
+
+	/* media queries */
+	@media (min-width: 1800px)
+	{
+		.social-title
+		{
+			font-size: 4rem;
+			margin: 5%
+		}
+	}
+
+	@media (max-width: 900px)
+	{
+		.social-title
+		{
+			font-size: 2.5rem;
+			margin: 8%;
+		}
+	}
+
+	@media (max-width: 600px)
+	{
+		.social-title
+		{
+			margin: 10%;
+		}
+	}
 </style>
 
 <script>

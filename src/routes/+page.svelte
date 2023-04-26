@@ -82,7 +82,7 @@
 
 	.footer-spacer
 	{
-		margin: 6%;
+		height: 4rem;
 	}
 
 	.title-wrapper
@@ -185,8 +185,39 @@
 	}
 
 	/* media queries */
-	@media (max-width: 768px)
+	@media (min-width: 1800px)
 	{
+
+		.title-wrapper
+		{
+			font-size: 3.5rem;
+		}
+
+		.title-divider
+		{
+			height: 4rem;
+			width: 0.2rem;
+		}
+
+		.tile
+		{
+			font-size: 1.8rem;
+		}
+
+		.tile-cover
+		{
+			font-size: 2.5rem;
+		}
+
+		.icon-wrapper 
+		{
+			font-size: 5rem;
+		}
+	}
+
+	@media (max-width: 900px)
+	{
+		/* for horizontal title divider */
 		.title-wrapper
 		{
 			flex-direction: column;
@@ -227,14 +258,25 @@
 			border-end-start-radius: 2rem;
 			border-end-end-radius: 2rem;
 		}
+
+		.footer-spacer
+		{
+			height: 4rem;
+		}
+	}
+	
+	@media (max-width: 600px)
+	{
+		.title-wrapper
+		{
+			font-size: 2rem;
+		}
 	}
 </style>
 <script>
 	import { base } from "$app/paths";
     import Header from "./header.svelte";
-	import TextBlock from "./textBlock.svelte";
 	import * as component from "./mainPage.js";
-	import {Dictionary} from "./dictionary.js";
 	import PageWrapper from "./pageWrapper.svelte";
 	import Icon from "@iconify/svelte";
 	import Footer from "./footer.svelte";

@@ -7,7 +7,7 @@
 <main>
     <PageWrapper>
         <Header/>
-        <div class="title-wrapper">
+        <div class="title-wrapper center-text">
 			<p>The Asylum Roadmap</p>
 		</div>
 		<div class="tiles-container">
@@ -203,8 +203,39 @@
 	}
 
 	/* media queries */
-	@media (max-width: 768px)
+	@media (min-width: 1800px)
 	{
+		.title-wrapper
+		{
+			font-size: 4rem;
+		}
+
+		.tiles-container
+		{
+			padding-bottom: 5%;
+		}
+
+		.tile
+		{
+			font-size: 1.8rem;
+			padding: 4%;
+		}
+
+		.tile-cover
+		{
+			font-size: 2.2rem;
+			gap: 2%;
+		}
+
+		.cover-num
+		{
+			font-size: 3.5rem;
+		}
+	}
+
+	@media (max-width: 900px)
+	{
+		/* blocks take up entire width */
 		.tile
 		{
 			width: 100%;
@@ -232,12 +263,61 @@
 			border-end-start-radius: 2rem;
 			border-end-end-radius: 2rem;
 		}
+
+		.title-wrapper
+		{
+			font-size: 2.5rem;
+			margin: 6% 10%;
+		}
+
+		.tiles-container
+		{
+			padding-bottom: 8%;
+		}
+
+		.tile
+		{
+			padding: 8%;
+		}
+
+		.tile-cover
+		{
+			gap: 3%;
+		}
+	
+		.cover-num
+		{
+			font-size: 2rem;
+		}
+	}
+
+	@media (max-width: 600px)
+	{
+		.title-wrapper
+		{
+			font-size: 2.2rem;
+		}
+
+		.tiles-container
+		{
+			padding-bottom: 10%;
+		}
+
+		.tile
+		{
+			font-size: 1rem;
+			padding: 8%;
+		}
+
+		.tile-cover
+		{
+			font-size: 1.4rem;
+			gap: 3%;
+		}
 	}
 </style>
 
 <script>
-    import TextBlock from "../textBlock.svelte";
-    import {Dictionary} from "../dictionary.js";
     import * as component from "./roadmapText.js";
     import PageWrapper from "../pageWrapper.svelte";
     import Header from "../header.svelte";

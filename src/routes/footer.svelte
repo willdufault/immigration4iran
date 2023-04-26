@@ -43,10 +43,35 @@
 		background: var(--color9);
 		cursor: pointer;
 	}
+
+	/* media queries */
+	@media (min-width: 1800px)
+	{
+		.footer-item
+		{
+			font-size: 2rem;
+		}
+	}
+
+	@media (max-width: 900px)
+	{
+		.footer-item
+		{
+			padding: 2% 3%;
+			font-size: 1.5rem;
+		}
+	}
+
+	@media (max-width: 600px)
+	{
+		.footer-item
+		{
+			padding: 3% 4%;
+		}
+	}
 </style>
 <script>
 	import { base } from "$app/paths";
-	import {Dictionary} from "./dictionary.js";
 	import * as theme_vars from "../theme.js"
 
 	function convertJSToCSS()

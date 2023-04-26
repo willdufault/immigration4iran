@@ -105,4 +105,69 @@
 	{
 		font-size: 1.3rem;
 	}
+	
+	/* media queries */
+	@media (min-width: 1800px)
+	{
+		.tile-wrapper
+		{
+			padding: 2%;
+		}
+
+		.title-wrapper :global(*)
+		{
+			font-size: 3rem;
+		}
+
+		.languages-wrapper :global(*)
+		{
+			font-size: 1.6rem;
+		}
+
+		.body-wrapper :global(*)
+		{
+			font-size: 2rem;
+		}
+
+		.contact-wrapper :global(*)
+		{
+			font-size: 2rem;
+		}
+	}
+
+	@media (max-width: 900px)
+	{
+		.tile-wrapper
+		{
+			padding: 4%;
+		}
+
+		.title-wrapper :global(*)
+		{
+			font-size: 2rem;
+		}
+
+		.languages-wrapper :global(*)
+		{
+			font-size: 1rem;
+		}
+
+		.body-wrapper :global(*)
+		{
+			font-size: 1.2rem;
+		}
+
+		.contact-wrapper :global(*)
+		{
+			font-size: 1.2rem;
+		}
+	}
+
+	@media (max-width: 600px)
+	{
+		.tile-wrapper
+		{
+			padding: 6%;
+		}
+	}
 </style>

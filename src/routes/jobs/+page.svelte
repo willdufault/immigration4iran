@@ -74,11 +74,7 @@
 	{
 		display: flex;
 		justify-content: center;
-		margin: 3%
-	}
-
-	.title
-	{
+		margin: 3%;
 		font-size: 3rem;
 		font-weight: 700;
 	}
@@ -86,6 +82,33 @@
 	.blocks-wrapper
 	{
 		margin: 0 5%;
+	}
+
+	/* media queries */
+	@media (min-width: 1800px)
+	{
+		.title-wrapper
+		{
+			font-size: 4rem;
+			margin: 5%
+		}
+	}
+
+	@media (max-width: 900px)
+	{
+		.title-wrapper
+		{
+			font-size: 2.5rem;
+			margin: 8%;
+		}
+	}
+
+	@media (max-width: 600px)
+	{
+		.title-wrapper
+		{
+			margin: 10%;
+		}
 	}
 </style>
 <script>
