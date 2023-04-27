@@ -10,14 +10,26 @@
 						<label for="searchbar">Search:</label>
 						<input type="search" id="searchbar" bind:value={search}>
 						<br>
-<!--						<input type="checkbox" id="legal" name="legal" bind:checked={legal}>-->
+						<!--						<input type="checkbox" id="legal" name="legal" bind:checked={legal}>-->
 						<input type="checkbox" id="legal" name="legal" bind:checked={filters[0]}>
-						<label for="legal">Legal</label>
+						<label for="legal">Asylum Seeking</label>
 						<br>
 						<input type="checkbox" id="medical" name="medical" bind:checked={filters[1]}>
 						<label for="medical">Medical</label>
 						<br>
-						<input type="checkbox" id="syria" name="syria">
+						<input type="checkbox" id="community" name="community" bind:checked={filters[2]}>
+						<label for="medical">Community</label>
+						<br>
+						<input type="checkbox" id="wiki" name="wiki" bind:checked={filters[3]}>
+						<label for="medical">Wiki Style</label>
+						<br>
+<!--						<input type="checkbox" id="asylum" name="asylum" bind:checked={filters[4]}>-->
+<!--						<label for="medical">Asylum Seeking</label>-->
+<!--						<br>-->
+						<input type="checkbox" id="iran" name="iran" bind:checked={filters[5]}>
+						<label for="medical">Iran</label>
+						<br>
+						<input type="checkbox" id="syria" name="syria"bind:checked={filters[6]}>
 						<label for="legal">Syria</label>
 					</form>
 				</div>
