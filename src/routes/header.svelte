@@ -2,8 +2,8 @@
 	<div class="header-wrapper">
 		<div class="logo-wrapper" on:click={() => openHome()} on:keypress={{}}>
 			<div class="logo-crossfade">
-				<img class="crossfade-top" src="/logo.png" alt="Immigration4Iran Logo"/>
-				<img class="crossfade-bottom" src="/logo-alt.png" alt="Immigration4Iran Logo Alt"/>
+				<img class="crossfade-top" src="./logo.png" alt="Immigration4Iran Logo"/>
+				<img class="crossfade-bottom" src="./logo-alt.png" alt="Immigration4Iran Logo Alt"/>
 			</div>
 			<p>{component.title.getText()}</p>
 		</div>
