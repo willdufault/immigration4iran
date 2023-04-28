@@ -1,7 +1,11 @@
 <main>
 	<div class="header-wrapper">
-		<div class="logo-wrapper" >
-			<p on:click={() => openHome()} on:keypress={{}}>{title.getText()}</p>
+		<div class="logo-wrapper" on:click={() => openHome()} on:keypress={{}}>
+			<div class="desktop logo-crossfade">
+				<img class="crossfade-top" src="/logo1.png" alt="Immigration4Iran Logo"/>
+				<img class="crossfade-bottom" src="/logo2.png" alt="Immigration4Iran Logo Alt"/>
+			</div>
+			<p>{title.getText()}</p>
 		</div>
 
 		<!-- desktop nav menu -->
@@ -35,7 +39,7 @@
 			</div>
 			<div class="nav-item" on:mouseover={() => toggleDropDown(comm_dropdown, true)} on:mouseleave={() => toggleDropDown(comm_dropdown, false)} on:focus={{}}>
 				<div class="nav-title" on:click={() => openComm()} on:keypress={{}}>
-					<p>Community Building</p>&nbsp;<Icon icon="ph:caret-down"/>
+					<p>Community</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
 				<div bind:this={comm_dropdown} class="dropdown-wrapper">
 					<div class="dropdown-item" on:click={() => openNGO()} on:keypress={{}}>
@@ -108,7 +112,7 @@
 				</div>
 				<br/>
 				<div class="mobile-nav-item" on:click={() => openComm()} on:keypress={{}}>
-					<p>Community Building</p>
+					<p>Community</p>
 				</div>
 				<hr class="mobile-menu-divider"/>
 				<div class="mobile-nav-item" on:click={() => openNGO()} on:keypress={{}}>
@@ -164,16 +168,51 @@
 		color: var(--color8);
 	}
 
+	.logo-crossfade
+	{
+		position: relative;
+		height: 4rem;
+		width: 4rem;
+	}
+
+	.logo-crossfade img
+	{
+		position: absolute;
+		height: 4rem;
+		width: 4rem;
+		left: 0;
+		right: 0;
+	}
+	
+	.crossfade-top
+	{
+		z-index: 1;
+	}
+
 	.logo-wrapper
 	{
 		font-size: 1.8rem;
 		font-weight: 700;
 		padding: 0 1%;
+		display: flex;
+		gap: 0.5rem;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.logo-wrapper img, .logo-wrapper p
+	{
+		transition: 0.2s ease-in-out;
 	}
 
 	.logo-wrapper:hover
 	{
 		color: var(--color4);
+	}
+
+	.logo-wrapper:hover .crossfade-top
+	{
+		opacity: 0;
 	}
 
 	.nav-wrapper
@@ -218,7 +257,7 @@
 		background: var(--color1);
 	}
 
-	.nav-title, .dropdown-item, .logo-wrapper p
+	.nav-title, .dropdown-item, .logo-wrapper
 	{
 		cursor: pointer;
 	}
@@ -291,6 +330,18 @@
 		.nav-wrapper
 		{
 			font-size: 2rem;
+		}
+
+		.logo-crossfade
+		{
+			height: 6rem;
+			width: 6rem;
+		}
+
+		.logo-crossfade img
+		{
+			height: 6rem;
+			width: 6rem;
 		}
 	}
 	

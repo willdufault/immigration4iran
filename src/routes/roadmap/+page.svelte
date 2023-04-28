@@ -1,9 +1,3 @@
-<!-- 
-
-	TODO: NEED TO PUT MANUAL TILE STYLE COLORS IN THEME.JS AND CONFIGURE THAT
-
- -->
-
 <main>
     <PageWrapper>
         <Header/>

@@ -21,6 +21,6 @@ legal.setText(english, "Legal");
 legal.setText(german, "Gesetzlich");
 
 socialServices.setText("Social Services");
-communityBuilding.setText("Community Building");
+communityBuilding.setText("Community");
 ngos.setText("NGO Finder");
 
