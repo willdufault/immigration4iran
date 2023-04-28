@@ -8,6 +8,9 @@
         <div class="title-wrapper center-text">
 			<p>{component.title.getText()}</p>
 		</div>
+		<div class="desc-wrapper center-text">
+			<p>{component.desc.getText()}</p>
+		</div>
 		<div class="tiles-container">
 			<div class="tile center-text round-top-left">
 				<p>{component.step1_body.getText()}</p>
@@ -121,14 +124,10 @@
 		margin: 4% 10%;
 	}
 
-	.tiles-container
+	.desc-wrapper
 	{
-		margin: 0 10%;
-		display: flex;
-		flex-wrap: wrap;
-		gap: 2vh;
-		row-gap: 2vh;
-		padding-bottom: 5%;
+		font-size: 1.5rem;
+		margin: 4%;
 	}
 
 	.center-text
@@ -137,6 +136,16 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+	}
+
+	.tiles-container
+	{
+		margin: 0 10%;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2vh;
+		row-gap: 2vh;
+		padding-bottom: 5%;
 	}
 
 	.tile
@@ -206,6 +215,11 @@
 		.title-wrapper
 		{
 			font-size: 4rem;
+		}
+
+		.desc-wrapper
+		{
+			font-size: 2.5rem;
 		}
 
 		.tiles-container
@@ -296,6 +310,12 @@
 			font-size: 2.2rem;
 		}
 
+		.desc-wrapper
+		{
+			font-size: 1.2rem;
+			margin: 8%;
+		}
+		
 		.tiles-container
 		{
 			padding-bottom: 10%;

@@ -5,8 +5,11 @@
 <main>
 	<PageWrapper>
 		<Header/>
-		<div class="title-wrapper">
+		<div class="title-wrapper center-text">
 			<p>{component.title.getText()}</p>
+		</div>
+		<div class="desc-wrapper center-text">
+			<p>{component.desc.getText()} </p>
 		</div>
 		<div class="blocks-wrapper">
 			<TextBlock>
@@ -22,7 +25,6 @@
 						frameborder="0"
 						sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"/>
 					</p>
-					{component.disc_body.getText()} 
 				</div>
 			</TextBlock>
 		</div>
@@ -45,6 +47,20 @@
 		margin: 3%;
 		font-size: 3rem;
 		font-weight: 700;
+	}
+
+	.desc-wrapper
+	{
+		font-size: 1.5rem;
+		margin: 4%;
+	}
+
+	.center-text
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
 	}
 
 	.blocks-wrapper

@@ -5,7 +5,10 @@
 <main>
     <PageWrapper>
         <Header/>
-		<p class="ngo-title"> {component.title.getText()}</p>
+		<p class="ngo-title center-text"> {component.title.getText()}</p>
+		<div class="desc-wrapper center-text">
+			<p>{component.desc.getText()}</p>
+		</div>
 		<div class="page-wrapper">
 			<div class="filter-wrapper">
 				<p class="filter-title">{component.filter_title.getText()}</p>
@@ -94,6 +97,21 @@
 		text-align: center;
 	}
 
+
+	.desc-wrapper
+	{
+		font-size: 1.5rem;
+		margin: 4%;
+	}
+
+	.center-text
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
 	.ngo-wrapper
 	{
 		/* border: 2px double red; */
@@ -120,6 +138,11 @@
 		{
 			font-size: 4rem;
 			margin: 5%
+		}
+
+		.desc-wrapper
+		{
+			font-size: 2.5rem;
 		}
 
 		.filter-wrapper
@@ -161,6 +184,12 @@
 			margin: 10%;
 		}
 
+		.desc-wrapper
+		{
+			font-size: 1.2rem;
+			margin: 8%;
+		}
+		
 		.page-wrapper
 		{
 			flex-direction: column;

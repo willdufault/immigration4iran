@@ -22,9 +22,12 @@ contact.setText(german, "Kontact:");
 contact.setText(persian, "مخاطب:");
 
 export let title = new Dictionary();
-
-title.setText(english, "German Support Organizaitions");
+title.setText(english, "German Support Organizations");
 title.setText(german, "german translation");
+
+export let desc = new Dictionary();
+desc.setText(english, `A collection of support organizations in Germany that can aid asylum seekers
+						with a wide range of problems.`);
 
 export let filter_title = new Dictionary();
 filter_title.setText(english, "Filter Organizations");

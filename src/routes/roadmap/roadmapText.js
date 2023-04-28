@@ -21,9 +21,12 @@ contact.setText(english, "Contact:");
 contact.setText(german, "Kontact:")
 
 export let title = new Dictionary();
-
 title.setText(english, "German Asylum Procedure");
 title.setText(german, "german translation needed");
+
+export let desc = new Dictionary();
+desc.setText(english, `A step-by-step guide on how to apply for refugee status (information from the
+						official German Federal Office).`);
 
 export let step1_title = new Dictionary();
 step1_title.setText(english, "On Arrival");
