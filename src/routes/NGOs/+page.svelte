@@ -1,36 +1,40 @@
+<svelte:head>
+	<link rel="icon" href="./favicon.png" type="image/png" />
+	<title>Immigration4Iran | {component.title.getText()}</title>
+</svelte:head>
 <main>
     <PageWrapper>
         <Header/>
 		<p class="ngo-title"> {component.title.getText()}</p>
 		<div class="page-wrapper">
 			<div class="filter-wrapper">
-				<p class="filter-title">Filter NGOs</p>
+				<p class="filter-title">{component.filter_title.getText()}</p>
 				<div class="filter-list">
 					<form class="filter-list-form">
-						<label for="searchbar">Search:</label>
+						<label for="searchbar">{component.filter_search.getText()}</label>
 						<input type="search" id="searchbar" bind:value={search}>
 						<br>
 						<!--						<input type="checkbox" id="legal" name="legal" bind:checked={legal}>-->
 						<input type="checkbox" id="legal" name="legal" bind:checked={filters[0]}>
-						<label for="legal">Asylum Seeking</label>
+						<label for="legal">{component.filter_asylum_seeking.getText()}</label>
 						<br>
 						<input type="checkbox" id="medical" name="medical" bind:checked={filters[1]}>
-						<label for="medical">Medical</label>
+						<label for="medical">{component.filter_medical.getText()}</label>
 						<br>
 						<input type="checkbox" id="community" name="community" bind:checked={filters[2]}>
-						<label for="medical">Community</label>
+						<label for="medical">{component.filter_community.getText()}</label>
 						<br>
 						<input type="checkbox" id="wiki" name="wiki" bind:checked={filters[3]}>
-						<label for="medical">Wiki Style</label>
+						<label for="medical">{component.filter_wiki.getText()}</label>
 						<br>
 <!--						<input type="checkbox" id="asylum" name="asylum" bind:checked={filters[4]}>-->
 <!--						<label for="medical">Asylum Seeking</label>-->
 <!--						<br>-->
 						<input type="checkbox" id="iran" name="iran" bind:checked={filters[5]}>
-						<label for="medical">Iran</label>
+						<label for="medical">{component.filter_iran.getText()}</label>
 						<br>
 						<input type="checkbox" id="syria" name="syria"bind:checked={filters[6]}>
-						<label for="legal">Syria</label>
+						<label for="legal">{component.filter_syria.getText()}</label>
 					</form>
 				</div>
 			</div>
@@ -87,6 +91,7 @@
 	.filter-title
 	{
 		font-size: 2rem;
+		text-align: center;
 	}
 
 	.ngo-wrapper

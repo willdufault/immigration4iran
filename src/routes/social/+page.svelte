@@ -1,3 +1,7 @@
+<svelte:head>
+	<link rel="icon" href="./favicon.png" type="image/png" />
+	<title>Immigration4Iran | {component.title.getText()}</title>
+</svelte:head>
 <main>
     <PageWrapper>
         <Header/>
@@ -18,43 +22,35 @@
 			<TextBlock>
 				<MyLink
 					slot="title"
-					link="https://handbookgermany.de/"
-					text={component.handbook_title.getText()}/>
-				<p slot="languages"> {component.available_langs.getText()} {component.handbook_lang.getText()} </p>
-				<p slot="body"> {component.handbook_body.getText()} </p>
-			</TextBlock>
-
-			<TextBlock>
-				<MyLink
-					slot="title"
 					link={`${base}/housing`}
-					text="Housing (NEEDS TRANSLATION)"/>
-				<p slot="body">
-					Information about finding housing in Germany. 
-				</p>
+					text={component.housing_title.getText()}/>
+				<p slot="body">{component.housing_body.getText()}</p>
 			</TextBlock>
 
 			<TextBlock>
 				<MyLink
 					slot="title"
 					link={`${base}/jobs`}
-					text="Jobs (NEEDS TRANSLATION)"/>
-				<p slot="body">
-					Information about finding a job in Germany. 
-				</p>
+					text={component.jobs_title.getText()}/>
+				<p slot="body">{component.jobs_body.getText()}</p>
 			</TextBlock>
 			
 			<TextBlock>
 				<MyLink
 					slot="title"
 					link={`${base}/education`}
-					text="Education (NEEDS TRANSLATION)"/>
-				<p slot="body">
-					Information about education in Germany. This page includes links to university opportunities,
-					integration courses, and more. 
-				</p>
+					text={component.education_title.getText()}/>
+				<p slot="body">{component.education_body.getText()}</p>
 			</TextBlock>
 
+			<TextBlock>
+				<MyLink
+					slot="title"
+					link="https://handbookgermany.de/"
+					text={component.handbook_title.getText()}/>
+				<p slot="languages"> {component.available_langs.getText()} {component.handbook_lang.getText()} </p>
+				<p slot="body"> {component.handbook_body.getText()} </p>
+			</TextBlock>
 			
 			<TextBlock>
 				<p slot="title"> {component.health_title.getText()} </p>

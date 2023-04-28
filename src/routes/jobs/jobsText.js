@@ -17,11 +17,11 @@ let arabic = "عربي";
 let russian = "русский";
 let ukrainian = "українська";
 
-title.setText(english, "Social Services Information");
-title.setText(german, "Informationen zu sozialen Diensten");
+title.setText(english, "Jobs");
+title.setText(german, "german translation needed");
 
 export let jobs_title = new Dictionary();
-jobs_title.setText(english, "Job Searching Websites");
+jobs_title.setText(english, "Job Search Websites");
 export let jobs_body1 = new Dictionary();
 jobs_body1.setText(english, "Those who have applied for or received a residence permit are allowed to work in Germany. Links to job boards include:");
 export const jobs_list = [

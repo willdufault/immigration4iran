@@ -38,6 +38,28 @@ handbook_body.setText(german, "German description of NGO");
 export let handbook_lang = new Dictionary();
 handbook_lang.setText(english, `${arabic}, ${german}, ${english}, ${persian}, ${french}, ${russian}, ${turkish}, ${ukrainian}`);
 
+export let housing_title = new Dictionary();
+housing_title.setText(english, "Housing");
+
+export let housing_body = new Dictionary();
+housing_body.setText(english, `Click to go to our housing page which contains information about finding
+ 								housing in Germany.`);
+
+export let jobs_title = new Dictionary();
+jobs_title.setText(english, "Jobs");
+
+export let jobs_body = new Dictionary();
+jobs_body.setText(english, `Click to go to our jobs page which contains information about finding a job
+							 in Germany.`);
+
+export let education_title = new Dictionary();
+education_title.setText(english, "Education");
+
+export let education_body = new Dictionary();
+education_body.setText(english, `Click to go to our education page which contians information about education 
+									in Germany. This page includes links to university opportunities,
+									integration courses, and more. `);
+
 export let health_title = new Dictionary();
 health_title.setText(english, "Healthcare");
 export let health_body1 = new Dictionary();

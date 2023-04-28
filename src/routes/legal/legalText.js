@@ -23,7 +23,7 @@ contact.setText(german, "Kontact:")
 export let title = new Dictionary();
 
 // change to "Legal Tools?"
-title.setText(english, "Legal Information");
+title.setText(english, "Legal Support");
 title.setText(german, "Rechtsinformation");
 
 export let roadmap_title = new Dictionary();

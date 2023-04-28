@@ -1,3 +1,7 @@
+<svelte:head>
+	<link rel="icon" href="./favicon.png" type="image/png" />
+	<title>Immigration4Iran | About Us</title>
+</svelte:head>
 <main>
 	<PageWrapper>
 		<Header/>

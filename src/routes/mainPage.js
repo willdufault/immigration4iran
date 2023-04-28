@@ -32,7 +32,7 @@ introText.setText(english, "Navigate Around");
 introText.setText(german, "Sehen Pages");
 
 export let legal_title = new Dictionary();
-legal_title.setText(english, "Legal");
+legal_title.setText(english, "Legal Support");
 legal_title.setText(german, "Rechtliche")
 export let legal_body = new Dictionary();
 legal_body.setText(english, `Click to navigate to our legal help page. It contains information like a step-by-step

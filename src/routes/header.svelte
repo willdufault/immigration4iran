@@ -1,11 +1,11 @@
 <main>
 	<div class="header-wrapper">
 		<div class="logo-wrapper" on:click={() => openHome()} on:keypress={{}}>
-			<div class="desktop logo-crossfade">
-				<img class="crossfade-top" src="/logo1.png" alt="Immigration4Iran Logo"/>
-				<img class="crossfade-bottom" src="/logo2.png" alt="Immigration4Iran Logo Alt"/>
+			<div class="logo-crossfade">
+				<img class="crossfade-top" src="/logo.png" alt="Immigration4Iran Logo"/>
+				<img class="crossfade-bottom" src="/logo-alt.png" alt="Immigration4Iran Logo Alt"/>
 			</div>
-			<p>{title.getText()}</p>
+			<p>{component.title.getText()}</p>
 		</div>
 
 		<!-- desktop nav menu -->
@@ -13,46 +13,46 @@
 		<div class="desktop nav-wrapper">
 			<div class="nav-item" on:mouseover={() => toggleDropDown(legal_dropdown, true)} on:mouseleave={() => toggleDropDown(legal_dropdown, false)} on:focus={{}}>
 				<div class="nav-title" on:click={() => openLegal()} on:keypress={{}}>
-					<p>{legal.getText()}</p>&nbsp;<Icon icon="ph:caret-down"/>
+					<p>{component.legal.getText()}</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
 				<div bind:this={legal_dropdown} class="dropdown-wrapper">
 					<div class="dropdown-item" on:click={() => openRoadmap()} on:keypress={{}}>
-						<p>Roadmap</p> <!-- "Legal Roadmap" goes onto two lines -->
+						<p>{component.roadmap.getText()}</p> <!-- "Legal Roadmap" goes onto two lines -->
 					</div>
 				</div>
 			</div>
 			<div class="nav-item" on:mouseover={() => toggleDropDown(social_dropdown, true)} on:mouseleave={() => toggleDropDown(social_dropdown, false)} on:focus={{}}>
 				<div class="nav-title" on:click={() => openSocial()} on:keypress={{}}>
-					<p>Social Services</p>&nbsp;<Icon icon="ph:caret-down"/>
+					<p>{component.social.getText()}</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
 				<div bind:this={social_dropdown} class="dropdown-wrapper">
 					<div class="dropdown-item" on:click={() => openJobs()} on:keypress={{}}>
-						<p>Jobs</p>
+						<p>{component.jobs.getText()}</p>
 					</div>
 					<div class="dropdown-item" on:click={() => openHousing()} on:keypress={{}}>
-						<p>Housing</p>
+						<p>{component.housing.getText()}</p>
 					</div>
-					<div class="dropdown-item" on:click={() => openEdu()} on:keypress={{}}>
-						<p>Education</p>
+					<div class="dropdown-item" on:click={() => openEducation()} on:keypress={{}}>
+						<p>{component.education.getText()}</p>
 					</div>
 				</div>
 			</div>
 			<div class="nav-item" on:mouseover={() => toggleDropDown(comm_dropdown, true)} on:mouseleave={() => toggleDropDown(comm_dropdown, false)} on:focus={{}}>
-				<div class="nav-title" on:click={() => openComm()} on:keypress={{}}>
-					<p>Community</p>&nbsp;<Icon icon="ph:caret-down"/>
+				<div class="nav-title" on:click={() => openCommunity()} on:keypress={{}}>
+					<p>{component.community.getText()}</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
 				<div bind:this={comm_dropdown} class="dropdown-wrapper">
 					<div class="dropdown-item" on:click={() => openNGO()} on:keypress={{}}>
-						<p>NGOs</p>
+						<p>{component.ngos.getText()}</p>
 					</div>
 					<div class="dropdown-item" on:click={() => openForum()} on:keypress={{}}>
-						<p>Forum</p>
+						<p>{component.forum.getText()}</p>
 					</div>
 				</div>
 			</div>
 			<div class="nav-item" on:mouseover={() => toggleDropDown(lang_dropdown, true)} on:mouseleave={() => toggleDropDown(lang_dropdown, false)} on:focus={{}}>
 				<div class="nav-title" style="cursor: default">
-					<p>Language</p>&nbsp;<Icon icon="ph:caret-down"/>
+					<p>{component.language.getText()}</p>&nbsp;<Icon icon="ph:caret-down"/>
 				</div>
 				<div bind:this={lang_dropdown} class="dropdown-wrapper">
 					<ul>
@@ -78,58 +78,58 @@
 					<Icon icon="tabler:x" />
 				</div>
 				<div class="mobile-nav-item" on:click={() => openLegal()} on:keypress={{}}>
-					<p>Legal</p>
+					<p>{component.legal.getText()}</p>
 				</div>
 				<hr class="mobile-menu-divider"/>
 				<div class="mobile-nav-item" on:click={() => openRoadmap()} on:keypress={{}}>
 					<p>
 						&nbsp;&nbsp;
-						Roadmap
+						{component.roadmap.getText()}
 					</p>
 				</div>
 				<br/>
 				<div class="mobile-nav-item" on:click={() => openJobs()} on:keypress={{}}>
-					<p>Social Services</p>
+					<p>{component.social.getText()}</p>
 				</div>
 				<hr class="mobile-menu-divider"/>
 				<div class="mobile-nav-item" on:click={() => openJobs()} on:keypress={{}}>
 					<p>
 						&nbsp;&nbsp;
-						Jobs
+						{component.jobs.getText()}
 					</p>
 				</div>
 				<div class="mobile-nav-item" on:click={() => openHousing()} on:keypress={{}}>
 					<p>
 						&nbsp;&nbsp;
-						Housing
+						{component.housing.getText()}
 					</p>
 				</div>
-				<div class="mobile-nav-item" on:click={() => openEdu()} on:keypress={{}}>
+				<div class="mobile-nav-item" on:click={() => openEducation()} on:keypress={{}}>
 					<p>
 						&nbsp;&nbsp;
-						Education
+						{component.education.getText()}
 					</p>
 				</div>
 				<br/>
-				<div class="mobile-nav-item" on:click={() => openComm()} on:keypress={{}}>
-					<p>Community</p>
+				<div class="mobile-nav-item" on:click={() => openCommunity()} on:keypress={{}}>
+					<p>{component.community.getText()}</p>
 				</div>
 				<hr class="mobile-menu-divider"/>
 				<div class="mobile-nav-item" on:click={() => openNGO()} on:keypress={{}}>
 					<p>
 						&nbsp;&nbsp;
-						NGOs
+						{component.ngos.getText()}
 					</p>
 				</div>
 				<div class="mobile-nav-item" on:click={() => openForum()} on:keypress={{}}>
 					<p>
 						&nbsp;&nbsp;
-						Forum
+						{component.forum.getText()}
 					</p>
 				</div>
 				<br/>
 				<div class="mobile-nav-item">
-					<p>Language</p>
+					<p>{component.language.getText()}</p>
 				</div>
 				<hr class="mobile-menu-divider"/>
 				<ul>
@@ -365,8 +365,7 @@
 	import { base } from "$app/paths";
 	import Icon from '@iconify/svelte';
 	import {Dictionary} from "./dictionary.js";
-	import {title} from "./headerText.js";
-	import {legal} from "./headerText.js";
+	import * as component from "./headerText.js";
 	
 	let langs = Dictionary.languages;
 	let langsITR = Object.values(langs);
@@ -423,7 +422,7 @@
 		window.open(`${base}/social`, "_self");
 	}
 
-	function openComm()
+	function openCommunity()
 	{
 		window.open(`${base}/community`, "_self");
 	}
@@ -443,7 +442,7 @@
 		window.open(`${base}/housing`, "_self")
 	}
 
-	function openEdu()
+	function openEducation()
 	{
 		window.open(`${base}/education`, "_self")
 	}

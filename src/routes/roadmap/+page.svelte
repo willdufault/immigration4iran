@@ -1,8 +1,12 @@
+<svelte:head>
+	<link rel="icon" href="./favicon.png" type="image/png" />
+	<title>Immigration4Iran | {component.title.getText()}</title>
+</svelte:head>
 <main>
     <PageWrapper>
         <Header/>
         <div class="title-wrapper center-text">
-			<p>The Asylum Roadmap</p>
+			<p>{component.title.getText()}</p>
 		</div>
 		<div class="tiles-container">
 			<div class="tile center-text round-top-left">

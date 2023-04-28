@@ -16,8 +16,11 @@ let russian = "русский";
 let ukrainian = "українська";
 let italian = "Italiano";
 
+export let title = new Dictionary();
+title.setText(english, "Discord Community Forum");
+
 export let disc_title = new Dictionary();
-disc_title.setText(english, "Discord Community Forum");
+disc_title.setText(english, "Join Our Discord forum!");
 export let disc_body = new Dictionary();
 disc_body.setText(english, "Join our local community on Discord! Click the Join Discord button. Our local \
                                 community consists of NGOs and volunteers dedicated to helping refugees who \

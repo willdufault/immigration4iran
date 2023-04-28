@@ -1,4 +1,7 @@
-<main>
+<svelte:head>
+	<link rel="icon" href="./favicon.png" type="image/png" />
+	<title>Immigration4Iran | {component.title.getText()}</title>
+</svelte:head><main>
     <PageWrapper>
         <Header/>
         <p class="comm-title"> {component.title.getText()}</p>
@@ -24,12 +27,9 @@
 			</TextBlock>  -->
 
 			<TextBlock>
-				<a slot="title" href={`${base}/forum`} target="_blank" rel="noreferrer"> Discord Community Forum (NEEDS DICT) </a>
-				<p slot="languages"> English, German, Persian (ADD DICT) </p>
-				<p slot="body">
-					Immigration4Iran's community forum where refugees and asylum seekers can go to 
-					ask for help with any step of the asylum-seeking process.
-				</p>
+				<a slot="title" href={`${base}/forum`} target="_blank" rel="noreferrer">{component.disc_title.getText()}</a>
+				<p slot="languages">{component.available_langs.getText()} {component.disc_lang.getText()}</p>
+				<p slot="body">{component.disc_body.getText()}</p>
 			</TextBlock>
 
 			<TextBlock>

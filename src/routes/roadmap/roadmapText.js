@@ -22,8 +22,8 @@ contact.setText(german, "Kontact:")
 
 export let title = new Dictionary();
 
-title.setText(english, "Legal Information");
-title.setText(german, "Rechtsinformation");
+title.setText(english, "German Asylum Procedure");
+title.setText(german, "german translation needed");
 
 export let step1_title = new Dictionary();
 step1_title.setText(english, "On Arrival");

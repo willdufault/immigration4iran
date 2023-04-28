@@ -1,15 +1,18 @@
+<svelte:head>
+	<link rel="icon" href="./favicon.png" type="image/png" />
+	<title>Immigration4Iran | {component.title.getText()}</title>
+</svelte:head>
 <main>
 	<PageWrapper>
 		<Header/>
 		<div class="title-wrapper">
-			<p class>Education</p>
+			<p class>{component.title.getText()}</p>
 		</div>
 		<div class="blocks-wrapper">
 			<TextBlock>
 				<p slot="title"> {component.edu_title.getText()} </p>
 				<div slot="body">
 					<p align="center">
-						<!-- Fix link + make map-->
 						<iframe
 						class= "map" 
 						title="Education Oppurtunities" 

@@ -17,11 +17,11 @@ let arabic = "عربي";
 let russian = "русский";
 let ukrainian = "українська";
 
-title.setText(english, "Social Services Information");
-title.setText(german, "Informationen zu sozialen Diensten");
+title.setText(english, "Education");
+title.setText(german, "Bildung (?)");
 
 export let edu_title = new Dictionary();
-edu_title.setText(english, "Education");
+edu_title.setText(english, "German University Map");
 export let edu_body1 = new Dictionary();
 edu_body1.setText(english, "This Google Map (from Pro Asyl) contains locations of German Universities that offer ways for refugees to learn or study, \
                                 with more information about each location on the map. There are many sources of free informative videos and articles for refugees, \

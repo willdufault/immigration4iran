@@ -17,11 +17,11 @@ let arabic = "عربي";
 let russian = "русский";
 let ukrainian = "українська";
 
-title.setText(english, "Social Services Information");
-title.setText(german, "Informationen zu sozialen Diensten");
+title.setText(english, "Housing");
+title.setText(german, "german translation");
 
 export let housing_title = new Dictionary();
-housing_title.setText(english, "Housing");
+housing_title.setText(english, "House-hunting Sites");
 export let housing_body1 = new Dictionary();
 housing_body1.setText(english, "The following resources are available for those looking for housing, either short-term or long term:");
 export let housing_link = new Dictionary();

@@ -23,8 +23,34 @@ contact.setText(persian, "مخاطب:");
 
 export let title = new Dictionary();
 
-title.setText(english, "NGO Information");
-title.setText(german, "NGO-Informationen");
+title.setText(english, "German Support Organizaitions");
+title.setText(german, "german translation");
+
+export let filter_title = new Dictionary();
+filter_title.setText(english, "Filter Organizations");
+
+export let filter_search = new Dictionary();
+filter_search.setText(english, "Search:");
+
+export let filter_asylum_seeking = new Dictionary();
+filter_asylum_seeking.setText(english, "Asylum Seeking");
+
+export let filter_medical = new Dictionary();
+filter_medical.setText(english, "Medical");
+
+export let filter_community = new Dictionary();
+filter_community.setText(english, "Community");
+
+export let filter_wiki = new Dictionary();
+filter_wiki.setText(english, "Wiki-style");
+
+export let filter_iran = new Dictionary();
+filter_iran.setText(english, "Iran");
+
+export let filter_syria = new Dictionary();
+filter_syria.setText(english, "Syria");
+
+// ngos / german support organizations
 
 export let sample1title = new Dictionary();
 sample1title.setText(english, "Name of NGO");

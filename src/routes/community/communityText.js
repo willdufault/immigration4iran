@@ -24,8 +24,8 @@ contact.setText(german, "Kontact:") //set to external reference due to reuse
 
 export let title = new Dictionary();
 
-title.setText(english, "Community Information");
-title.setText(german, "Community-Informationen");
+title.setText(english, "Community");
+title.setText(german, "Community (?)");
 
 
 export let fnet_title = new Dictionary();
@@ -53,9 +53,8 @@ be_lang.setText(english, `${german}, ${english}, ${italian}, ${french}`);
 export let disc_title = new Dictionary();
 disc_title.setText(english, "Discord Community Forum");
 export let disc_body = new Dictionary();
-disc_body.setText(english, "Join our local community on Discord! Click the Join Discord button. Our local \
-                                community consists of NGOs and volunteers dedicated to helping refugees who \
-                                are coming to Germany.");
+disc_body.setText(english, `Immigration4Iran's community forum where refugees and asylum seekers can go to 
+								ask for help with any step of the asylum-seeking process.`);
 disc_body.setText(german, "German description of Website");
 export let disc_lang = new Dictionary();
 disc_lang.setText(english, `${german}, ${english}, ${arabic}, ${persian}`);
