@@ -24,6 +24,7 @@ export let jobs_title = new Dictionary();
 jobs_title.setText(english, "Job Search Websites");
 export let jobs_body1 = new Dictionary();
 jobs_body1.setText(english, "Those who have applied for or received a residence permit are allowed to work in Germany. Links to job boards include:");
+jobs_body1.setText(persian, "کسانی که درخواست کرده یا اجازه اقامت دریافت کرده اند، اجازه کار در آلمان را دارند. پیوندهای مربوط به تابلوهای شغلی عبارتند از:");
 export const jobs_list = [
     "de.indeed.com/jobs",
     "jobs4refugees.org",
@@ -34,6 +35,8 @@ export const jobs_list = [
 export let jobs_body2 = new Dictionary();
 jobs_body2.setText(english, "All German employees have rights while working in the country. Information\
                             about these rights and resources to resolve labor-related issues can be found on");
+jobs_body2.setText(persian, "همه کارمندان آلمانی در حین کار در این کشور از حقوق برخوردار هستند. اطلاعات مربوط به این حقوق و منابع برای حل مسائل مربوط به کار را می توان در این قسمت یافت");
+
 export let jobs_link = new Dictionary();
 jobs_link.setText(english, "w2eu.info");
 
