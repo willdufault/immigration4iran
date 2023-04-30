@@ -8,6 +8,7 @@ let persian = langs.Persian;
 
 export let available_langs = new Dictionary();
 available_langs.setText(english, "Available in: ");
+available_langs.setText(persian, "قابل دسترسی در:");
 
 let french = "Français";
 let turkish = "Türkçe";
@@ -24,6 +25,7 @@ contact.setText(persian, "مخاطب:");
 export let title = new Dictionary();
 title.setText(english, "German Support Organizations");
 title.setText(german, "german translation");
+title.setText(persian, "اطلاعات سازمان مردم نهاد");
 
 export let desc = new Dictionary();
 desc.setText(english, `A collection of support organizations in Germany that can aid asylum seekers
@@ -58,8 +60,10 @@ filter_syria.setText(english, "Syria");
 export let sample1title = new Dictionary();
 sample1title.setText(english, "Name of NGO");
 sample1title.setText(german, "Name von NGO");
+sample1title.setText(persian, "نام سازمان مردم نهاد");
 export let sample1body = new Dictionary();
 sample1body.setText(english, "Name of NGO");
+sample1body.setText(persian, "نام سازمان مردم نهاد");
 sample1body.setText(german, "German description of NGO");
 
 export let wu_title = new Dictionary();
@@ -69,6 +73,12 @@ wu_body.setText(english, "Welcome United is a social and antiracism group that o
                               On their website, you can network with other community members, attend local events, and sign up for the \
                               Welcome United newsletter.");
 wu_body.setText(german, "German description of NGO");
+wu_body.setText(persian, `Welcome United
+یک گروه اجتماعی و ضد نژادپرستی است که رویدادها و اعتراضات را در سراسر آلمان سازماندهی می کند. در وب‌سایت آن‌ها، می‌توانید با سایر اعضای انجمن ارتباط برقرار کنید، در رویدادهای محلی شرکت 
+کنید و برای خبرنامه
+Welcome United
+ثبت‌نام کنید.
+`);
 export let wu_lang = new Dictionary();
 wu_lang.setText(english, `${german}, ${english}`);
 export let wu_contact = new Dictionary();
@@ -77,11 +87,13 @@ wu_contact.setText(english, "mail@welcome-united.org");
 export let jog_title = new Dictionary();
 jog_title.setText(english, "Youth without Borders");
 jog_title.setText(german, "Jungendliche ohne Grenzen");
+jog_title.setText(persian, `جوانان بدون مرز`);
 export let jog_body = new Dictionary();
 jog_body.setText(english, "Youth without Borders is an organization for German refugees with a focus on protecting the rights of young refugees \
                                 who may face any form of discrimination. The organization has regular meetings, hosts local events, and works with \
                                 other similar NGOs.");
 jog_body.setText(german, "German description of NGO");
+jog_body.setText(persian, "translation needed");
 export let jog_lang = new Dictionary();
 jog_lang.setText(english, german);
 export let jog_contact = new Dictionary();
@@ -91,10 +103,13 @@ jog_contact.setText(english, "info@b-umf.de");
 export let kar_title = new Dictionary();
 kar_title.setText(english, "The Caravan for the Right of Refugees and Migrants");
 kar_title.setText(german, "Karawane für die Rechte der Flüchtlinge und Migrantinnen");
+kar_title.setText(persian, "کاروان حقوق پناهندگان و مهاجران");
 export let kar_body = new Dictionary();
 kar_body.setText(english, "The Caravan is a website which allows users to post about events, news, and other community activities. \
                                 The website aims to connect refugees through an online forum and encourages people to share local events.");
 kar_body.setText(german, "German description of NGO");
+kar_body.setText(persian, `The Caravan
+وب‌سایتی است که به کاربران اجازه می‌دهد درباره رویدادها، اخبار و سایر فعالیت‌های جامعه پست کنند. هدف این وب سایت برقراری ارتباط بین پناهندگان از طریق یک انجمن آنلاین و تشویق مردم به اشتراک گذاری رویدادهای محلی است.`);
 export let kar_lang = new Dictionary();
 kar_lang.setText(english, `${german}, ${english}, ${french}, ${turkish}, ${persian}`);
 export let kar_contact = new Dictionary();
@@ -102,9 +117,12 @@ kar_contact.setText(english, "caravan@emdash.org");
 
 export let voice_title = new Dictionary();
 voice_title.setText(english, "The VOICE Refugee Forum Germany");
+voice_title.setText(persian, `انجمن پناهندگان صدای آلمان`);
 export let voice_body = new Dictionary();
 voice_body.setText(english, "The VOICE is a forum for refugees, where users can post about events, news, and other community activities.");
 voice_body.setText(german, "German description of NGO");
+voice_body.setText(persian, `The Voice
+ یک انجمن برای پناهندگان است که در آن کاربران می توانند درباره رویدادها، اخبار و سایر فعالیت های اجتماعی پست کنند.`);
 export let voice_lang = new Dictionary();
 voice_lang.setText(english, `${german}, ${english}`);
 export let voice_contact = new Dictionary();
@@ -118,6 +136,7 @@ pa_body.setText(english, "For human rights and refugee protection in Europe (wit
                             Includes hotline for legal or general advice, as well as resources regarding refugee rights and support. \
                             Solely funded by membership fees, donations, grants from foundations.");
 pa_body.setText(german, "German description of NGO");
+pa_body.setText(persian, `برای حقوق بشر و حمایت از پناهندگان در اروپا (با تمرکز بر آلمان). شامل خط تلفن برای مشاوره حقوقی یا عمومی و همچنین منابعی در مورد حقوق پناهندگان و پشتیبانی می باشد. صرفاً از طریق حق عضویت، کمک های مالی، کمک های مالی از بنیادها تامین می شود.`);
 export let pa_lang = new Dictionary();
 pa_lang.setText(english, `${german}, ${english}`);
 export let pa_contact = new Dictionary();
@@ -131,6 +150,8 @@ weu_body.setText(english, "Welcome to Europe gives migrants and refugees informa
                             On the website there are a lot of helpful resources for refugees coming to Germany, \
                             including information about the legal processes and available social services.");
 weu_body.setText(german, "German description of NGO");
+weu_body.setText(persian, `Welcome to Europe
+به مهاجران و پناهندگان اطلاعاتی در مورد آمدن و زندگی در اروپا می دهد. در وب سایت، منابع مفید زیادی برای پناهندگانی که به آلمان می آیند وجود دارد، از جمله اطلاعاتی در مورد فرآیندهای قانونی و خدمات اجتماعی موجود.`);
 export let weu_lang = new Dictionary();
 weu_lang.setText(english, `${arabic}, ${english}, ${french}, ${persian}`);
 export let weu_contact = new Dictionary();
@@ -142,6 +163,8 @@ export let tdf_body = new Dictionary();
 tdf_body.setText(english, "Terre des Femmes is an organization focused on womens’ rights. \
                             Their website includes a newsletter, recent campaigns, and ways to get involved.");
 tdf_body.setText(german, "German description of NGO");
+tdf_body.setText(persian, `Terre des Femmes 
+یک سازمان متمرکز بر حقوق زنان است. وب سایت آنها شامل یک خبرنامه، کمپین های اخیر و راه هایی برای مشارکت است.`);
 export let tdf_lang = new Dictionary();
 tdf_lang.setText(english, german);
 export let tdf_contact = new Dictionary();
@@ -160,11 +183,15 @@ mk_contact.setText(english, "info@medibuero-kiel.de?subject=Medical Consultation
 
 export let ussa_title = new Dictionary();
 ussa_title.setText(english, "Union der Syrischen Studenten und Akademiker");
+ussa_title.setText(persian, `اتحادیه دانشجویان و دانشگاهیان سوری`);
 export let ussa_body = new Dictionary();
 ussa_body.setText(english, "This is an organization of students with Syrian descent, with a focus of helping Syrian refugees. \
                             USSA also offers consultation in Arabic for refugees. Their parent organization: \
                             Verband Deutsch-Syrischer Hilfsvereine e.V. also offers many programs to support Syrians in Germany.");
 ussa_body.setText(german, "German description of NGO");
+ussa_body.setText(persian, `این سازمانی متشکل از دانشجویان سوری تبار است که تمرکز آن بر کمک به پناهندگان سوری است. USSA همچنین مشاوره به زبان عربی را برای پناهندگان ارائه می دهد. سازمان مادر آنها: 
+Verband Deutsch-Syrischer Hilfsvereine e.V.
+ همچنین برنامه های بسیاری را برای حمایت از سوری ها در آلمان ارائه می دهد.`);
 export let ussa_lang = new Dictionary();
 ussa_lang.setText(english, `${arabic}, ${german}`);
 export let ussa_contact = new Dictionary();
@@ -172,10 +199,12 @@ ussa_contact.setText(english, "info@ussa-syria.org");
 
 export let ufu_title = new Dictionary();
 ufu_title.setText(english, "United for Ukraine");
+ufu_title.setText(persian, `متحد برای اوکراین`);
 export let ufu_body = new Dictionary();
 ufu_body.setText(english, "United for Ukraine offers a wide range of information for those coming to European countries, \
                             focusing on asylum seekers from Ukraine. There are useful resources for all refugees, including legal and social support.");
 ufu_body.setText(german, "German description of NGO");
+ufu_body.setText(persian, `متحد برای اوکراین طیف گسترده ای از اطلاعات را برای کسانی که به کشورهای اروپایی می آیند ارائه می دهد، با تمرکز بر پناهجویان از اوکراین. منابع مفیدی برای همه پناهندگان از جمله حمایت حقوقی و اجتماعی وجود دارد.`);
 export let ufu_lang = new Dictionary();
 ufu_lang.setText(english, `${english}, ${russian}, ${ukrainian}`);
 export let ufu_contact = new Dictionary();
@@ -188,6 +217,11 @@ ifu_body.setText(english, "Immigration4Ukraine is a website created by UPJ Pro B
                             made to provide information for Ukrainian refugees in Germany. \
                             Much of the information on the website could be helpful to refugees from any country.");
 ifu_body.setText(german, "German description of NGO");
+ifu_body.setText(persian, `Immigration4Ukraine 
+وب سایتی است که توسط 
+UPJ Pro Bono Rechtsberatung 
+ایجاد شده است و برای
+ ارائه اطلاعات برای پناهندگان اوکراینی در آلمان ساخته شده است. بسیاری از اطلاعات موجود در وب سایت می تواند برای پناهندگان از هر کشوری مفید باشد.`);
 export let ifu_lang = new Dictionary();
 ifu_lang.setText(english, `${german}, ${english}, ${russian}, ${ukrainian}`);
 export let ifu_contact = new Dictionary();

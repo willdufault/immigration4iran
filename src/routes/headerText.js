@@ -18,27 +18,36 @@ title.setText(persian, "مهاجرت4ایران");
 
 legal.setText(english, "Legal Support");
 legal.setText(german, "Gesetzlich");
+legal.setText(persian, "صفحه حقوقی");
 
 social.setText(english, "Social Services");
+social.setText(persian, "صفحه خدمات اجتماعی");
+
 community.setText(english, "Community");
+community.setText(persian, "صفحه انجمن");
 
 language.setText(english, "Language");
 language.setText(german, "Lange");
+language.setText(persian, "فارسی");
 
 export let roadmap = new Dictionary();
 roadmap.setText(english, "Asylum Procedure");
 
 export let jobs = new Dictionary();
 jobs.setText(english, "Jobs");
+jobs.setText(german, "Jobs");
+jobs.setText(persian, "صفحه مشاغل");
 
 export let housing = new Dictionary();
 housing.setText(english, "Housing");
 
 export let education = new Dictionary();
 education.setText(english, "Education");
+education.setText(persian, "صفحه آموزش");
 
 export let ngos = new Dictionary();
 ngos.setText(english, "Support Organizations");
+ngos.setText(persian, "صفحه سازمان مردم نهاد");
 
 export let forum = new Dictionary();
 forum.setText(english, "Community Forum");
