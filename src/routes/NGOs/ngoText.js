@@ -244,11 +244,15 @@ haw_contact.setText(english, "info@hawar.help");
 
 export let gsb_title = new Dictionary();
 gsb_title.setText(english, "Give Something Back to Berlin");
+gsb_title.setText(persian, "چیزی را به برلین برگردان");
 export let gsb_body = new Dictionary();
 gsb_body.setText(english, "GSBTB is an NGO that holds local events in Berlin to facilitate a helpful local\
                         community. On their Activity Calendar website they hold social events like learning\
                         to play musical instruments like Guitar and Piano.");
 gsb_body.setText(german, "German description of NGO");
+gsb_body.setText(persian, `Give Something Back to Berlin
+رویدادهای محلی را در
+برلین برگزار می کند تا یک جامعه محلی مفید را تسهیل کند. آنها در وب سایت Activity Calendar رویدادهای اجتماعی مانند یادگیری نواختن آلات موسیقی مانند گیتار و پیانو را برگزار می کنند.`);
 export let gsb_lang = new Dictionary();
 gsb_lang.setText(english, `${english}`);
 export let gsb_contact = new Dictionary();
@@ -262,6 +266,10 @@ wbs_body.setText(english, "Willkommensbündnis is an NGO that holds local events
                         round tables where refugees can come and meet people while getting help. The round table\
                         lets people of many different backgrounds discuss what they need help on.");
 wbs_body.setText(german, "German description of NGO");
+wbs_body.setText(persian, `Willkommensbündnis
+یک سازمان غیردولتی است که رویدادهای محلی مانند نمایشگاه های کار ومیزگردهایی که در آن پناهندگان می توانند بیایند و در حین دریافت کمک با مردم ملاقات کنند. این میزگرد به افراد با پیشینه‌های مختلف اجازه می‌دهد تا در مورد آنچه به کمک نیاز دارند، بحث کنند.
+
+`);
 export let wbs_lang = new Dictionary();
 wbs_lang.setText(english, `${german}`);
 export let wbs_contact = new Dictionary();
