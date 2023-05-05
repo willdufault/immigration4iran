@@ -36,7 +36,7 @@ fnet_body.setText(english, "Fare Networks is a football network that believes sp
                               Their website linked below displays a helpful map of teams and football clubs that facilitate \
                               welcoming refugees to training sessions or other fun activities.");
 fnet_body.setText(german, "German description of NGO");
-fnet_body.setText(german, "Fare Networks یک شبکه فوتبال است که معتقد است ورزش نقش مهمی در ایجاد جامعه دارد. وب سایت آنها که در زیر پیوند داده شده است، نقشه مفیدی از تیم ها و باشگاه های فوتبال را نشان می دهد که استقبال از پناهندگان را در جلسات آموزشی یا سایر فعالیت های سرگرم کننده تسهیل می کند.");
+fnet_body.setText(persian, "Fare Networks یک شبکه فوتبال است که معتقد است ورزش نقش مهمی در ایجاد جامعه دارد. وب سایت آنها که در زیر پیوند داده شده است، نقشه مفیدی از تیم ها و باشگاه های فوتبال را نشان می دهد که استقبال از پناهندگان را در جلسات آموزشی یا سایر فعالیت های سرگرم کننده تسهیل می کند.");
 export let fnet_lang = new Dictionary();
 fnet_lang.setText(english, english);
 
