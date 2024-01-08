@@ -1,30 +1,8 @@
-# create-svelte
+<img src='https://github.com/willdufault/immigration4iran/assets/99445180/e1bd5169-8b33-407d-97ce-270c768b6425' alt='Immigration4Iran Logo' height='200' width='200'>
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+# Immigration4Iran
 
-## Installing npm
+[Website](https://willdufault.github.io/immigration4iran) <br/>
+[Project Report](https://digital.wpi.edu/pdfviewer/37720h16k)
 
-To run your app you must first install npm. The most recent version of npm can be found on [`npmjs.com`](https://www.npmjs.com/package/npm).
-
-## Developing
-
-Once you've installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+A website containing legal advice, social service information, and community building opportunities for refugees trying to enter Germany. Created as part of the Interactive Qualifying Project of Zeb Carty, Will Dufault, Adeline Evans, and Colin Fyock. Sponsored by Felix Hoffman and advised by Sarah Stanlick and Gizem Arslan.
