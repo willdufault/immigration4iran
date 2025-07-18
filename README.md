@@ -5,4 +5,4 @@
 [Website](https://willdufault.github.io/immigration4iran) <br/>
 [Project Report](https://digital.wpi.edu/pdfviewer/37720h16k)
 
-A website containing legal advice, social service information, and community building opportunities for refugees trying to enter Germany. Created as part of the Interactive Qualifying Project of Zeb Carty, Will Dufault, Adeline Evans, and Colin Fyock. Sponsored by Felix Hoffman and advised by Sarah Stanlick and Gizem Arslan.
+A website containing legal advice, social service information, and community building opportunities for refugees trying to enter Germany. Created as part of the WPI Interactive Qualifying Project of Zeb Carty, Will Dufault, Adeline Evans, and Colin Fyock. Sponsored by Felix Hoffman and advised by Sarah Stanlick and Gizem Arslan.
